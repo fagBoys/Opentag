@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Opentag.Data;
 using Opentag.Models;
 
 namespace Opentag.Controllers
@@ -17,9 +18,22 @@ namespace Opentag.Controllers
         {
             _logger = logger;
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Index(Contact contact)
+        {
+            if(ModelState.IsValid)
+            { 
+                ApplicationDbContext Context = new ApplicationDbContext();
+                Context.Contact.Add(contact);
+                await Context.SaveChangesAsync();
+                return View();
+            }
             return View();
         }
 
