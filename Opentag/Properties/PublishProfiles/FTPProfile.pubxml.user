@@ -17,7 +17,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/11/2020 16:17:03</publishTime>
     </File>
     <File Include="appsettings.production.json">
-      <publishTime>09/11/2020 16:23:28</publishTime>
+      <publishTime>09/18/2020 00:17:32</publishTime>
     </File>
     <File Include="Microsoft.AspNetCore.Cryptography.Internal.dll">
       <publishTime>07/22/2020 23:04:06</publishTime>
@@ -131,25 +131,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/22/2019 01:06:16</publishTime>
     </File>
     <File Include="Opentag.deps.json">
-      <publishTime>09/11/2020 16:23:18</publishTime>
+      <publishTime>09/18/2020 00:17:25</publishTime>
     </File>
     <File Include="Opentag.dll">
-      <publishTime>09/11/2020 16:23:15</publishTime>
+      <publishTime>09/18/2020 00:17:24</publishTime>
     </File>
     <File Include="Opentag.exe">
-      <publishTime>09/11/2020 16:23:15</publishTime>
+      <publishTime>09/18/2020 00:17:24</publishTime>
     </File>
     <File Include="Opentag.pdb">
-      <publishTime>09/11/2020 16:23:15</publishTime>
+      <publishTime>09/18/2020 00:17:24</publishTime>
     </File>
     <File Include="Opentag.runtimeconfig.json">
-      <publishTime>09/11/2020 16:23:19</publishTime>
+      <publishTime>09/18/2020 00:17:25</publishTime>
     </File>
     <File Include="Opentag.Views.dll">
-      <publishTime>09/11/2020 16:23:17</publishTime>
+      <publishTime>09/18/2020 00:17:25</publishTime>
     </File>
     <File Include="Opentag.Views.pdb">
-      <publishTime>09/11/2020 16:23:17</publishTime>
+      <publishTime>09/18/2020 00:17:25</publishTime>
     </File>
     <File Include="runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll">
       <publishTime>05/15/2018 13:29:40</publishTime>
@@ -194,7 +194,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/15/2019 08:37:42</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>09/11/2020 16:23:28</publishTime>
+      <publishTime>09/18/2020 00:17:32</publishTime>
     </File>
     <File Include="wwwroot/css/bootstrap-grid.css">
       <publishTime>08/31/2020 00:49:44</publishTime>
@@ -334,17 +334,23 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="wwwroot/images/about/12798.jpg">
       <publishTime>08/31/2020 00:49:44</publishTime>
     </File>
+    <File Include="wwwroot/images/about/About.jpg">
+      <publishTime>09/17/2020 23:56:28</publishTime>
+    </File>
     <File Include="wwwroot/images/about/Thumbs.db">
-      <publishTime>09/05/2020 13:32:22</publishTime>
+      <publishTime>09/18/2020 00:08:49</publishTime>
     </File>
     <File Include="wwwroot/images/contact/contact-image.jpg">
       <publishTime>08/31/2020 00:49:44</publishTime>
     </File>
+    <File Include="wwwroot/images/contact/Contact.jpg">
+      <publishTime>09/18/2020 00:00:21</publishTime>
+    </File>
     <File Include="wwwroot/images/contact/Thumbs.db">
-      <publishTime>09/11/2020 13:31:47</publishTime>
+      <publishTime>09/18/2020 00:11:02</publishTime>
     </File>
     <File Include="wwwroot/images/Main.jpg">
-      <publishTime>08/31/2020 00:49:44</publishTime>
+      <publishTime>09/17/2020 23:52:18</publishTime>
     </File>
     <File Include="wwwroot/images/members/Portrait1.png">
       <publishTime>08/31/2020 00:49:44</publishTime>
@@ -359,7 +365,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/31/2020 00:49:44</publishTime>
     </File>
     <File Include="wwwroot/images/members/Thumbs.db">
-      <publishTime>09/05/2020 13:32:17</publishTime>
+      <publishTime>09/18/2020 00:00:40</publishTime>
     </File>
     <File Include="wwwroot/images/technologies/coding.png">
       <publishTime>08/31/2020 00:49:44</publishTime>
@@ -374,7 +380,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/31/2020 00:49:44</publishTime>
     </File>
     <File Include="wwwroot/images/technologies/Thumbs.db">
-      <publishTime>09/05/2020 13:27:53</publishTime>
+      <publishTime>09/18/2020 00:00:43</publishTime>
     </File>
     <File Include="wwwroot/images/Thumbs.db">
       <publishTime>09/05/2020 01:55:07</publishTime>
@@ -494,7 +500,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/28/2020 21:59:50</publishTime>
     </File>
     <File Include="wwwroot/style.css">
-      <publishTime>09/05/2020 13:38:09</publishTime>
+      <publishTime>09/18/2020 00:11:29</publishTime>
     </File>
   </ItemGroup>
   <ItemGroup>

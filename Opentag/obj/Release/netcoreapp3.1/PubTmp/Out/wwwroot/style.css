@@ -164,7 +164,7 @@ a.menu-text-style:hover
 .about-image-style
 {
   height: 100vh;
-  background-image: url("../images/about/12798.jpg");
+  background-image: url("../images/about/About.jpg");
   background-size: cover;
   background-position: 40%;
 }
@@ -192,7 +192,7 @@ a.menu-text-style:hover
 .contact-image-style
 {
   height: 100vh;
-  background-image: url("../images/contact/contact-image.jpg");
+  background-image: url("../images/contact/Contact.jpg");
   background-size: cover;
   background-position: 70%;
 }
