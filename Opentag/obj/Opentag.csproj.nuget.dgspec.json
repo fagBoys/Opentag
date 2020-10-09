@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mjn110\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {}
+    "C:\\Users\\ali\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mjn110\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {
+    "C:\\Users\\ali\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mjn110\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
+        "projectUniqueName": "C:\\Users\\ali\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
         "projectName": "Opentag",
-        "projectPath": "C:\\Users\\mjn110\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
-        "packagesPath": "C:\\Users\\mjn110\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mjn110\\Documents\\GitHub\\Opentag\\Opentag\\obj\\",
+        "projectPath": "C:\\Users\\ali\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
+        "packagesPath": "C:\\Users\\ali\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ali\\Documents\\GitHub\\Opentag\\Opentag\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mjn110\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,13 +41,25 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.7, )"
             },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[3.1.8, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
@@ -84,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
