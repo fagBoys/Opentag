@@ -1,0 +1,81 @@
+﻿@model Opentag.Models.Contact
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<h1>Contact</h1>
+
+<h4>Contact us through this form</h4>
+<hr />
+
+<div class="row w-100 m-auto">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.18946170562612!2d50.89427738725866!3d34.62864710300089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f93bc64458d496b%3A0x67145704e2c4de96!2sQom%2C%20Qom%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1626899653612!5m2!1sen!2s" style="border:1px solid; color:#ced4da; width:inherit; height:300px;" allowfullscreen="" loading="lazy"></iframe>
+
+</div>
+
+<div class="row mt-3">
+    <div class="col-lg-6 form-group mt-2">
+        <input asp-for="FullName" placeholder="Full name" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+    <div class="col-lg-6 form-group mt-2">
+        <input asp-for="EmailAddress" placeholder="Email address" class="form-control" />
+        <span asp-validation-for="EmailAddress" class="text-danger"></span>
+    </div>
+    <div class="col-lg-6 form-group mt-2">
+        <input asp-for="PhoneNumber" placeholder="Phone number" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+    <div class="col-lg-6 form-group mt-2">
+        <input asp-for="Subject" placeholder="Subject" class="form-control" />
+        <span asp-validation-for="Subject" class="text-danger"></span>
+    </div>
+    <div class="col-lg-12 form-group mt-2">
+        <textarea asp-for="Message" placeholder="Message" style="height:250px;" class="form-control"></textarea>
+        <span asp-validation-for="Message" class="text-danger"></span>
+    </div>
+    <div class="col-lg-12 form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</div>
+@*<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Contact">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailAddress" class="control-label"></label>
+                <input asp-for="EmailAddress" class="form-control" />
+                <span asp-validation-for="EmailAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <input asp-for="Message" class="form-control" />
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>*@
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

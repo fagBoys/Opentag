@@ -23,7 +23,10 @@ namespace Opentag.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=185.192.112.82;Database=DB01Opentag;User Id=fagboys;Password=OPENpass123");
+            //optionsBuilder.UseSqlServer("Server=185.192.112.82;Database=DB01Opentag;User Id=fagboys;Password=OPENpass123");
+
+            optionsBuilder.UseSqlServer("Server =.; Database = DB01Opentag; Trusted_Connection = True; MultipleActiveResultSets = true");
+
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {

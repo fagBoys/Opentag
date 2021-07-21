@@ -42,6 +42,23 @@ namespace Opentag.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Contact(Contact contact)
+        {
+            ApplicationDbContext context = new ApplicationDbContext();
+            context.Add(contact);
+            context.SaveChanges();
+
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

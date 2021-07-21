@@ -54,7 +54,7 @@ namespace Opentag
 
             app.UseRouting();
 
-            
+
 
             app.UseAuthentication();
             app.UseAuthorization();
