@@ -6459,23 +6459,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ali\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\MJ\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ali\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
+      "projectUniqueName": "C:\\Users\\MJ\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
       "projectName": "Opentag",
-      "projectPath": "C:\\Users\\ali\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
-      "packagesPath": "C:\\Users\\ali\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ali\\Documents\\GitHub\\Opentag\\Opentag\\obj\\",
+      "projectPath": "C:\\Users\\MJ\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
+      "packagesPath": "C:\\Users\\MJ\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MJ\\Documents\\GitHub\\Opentag\\Opentag\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6487,6 +6483,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -6498,6 +6495,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": {
             "target": "Package",
@@ -6554,7 +6552,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
