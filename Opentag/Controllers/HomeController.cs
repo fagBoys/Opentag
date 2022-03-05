@@ -7,11 +7,26 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Opentag.Data;
 using Opentag.Models;
+using MailKit.Net.Smtp;
+using MimeKit;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using MimeKit.Utils;
 
 namespace Opentag.Controllers
 {
     public class HomeController : Controller
     {
+
+        private IWebHostEnvironment _environment;
+
+
+        public HomeController(IWebHostEnvironment environment)
+        {
+            _environment = environment;
+
+
+        }
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -64,6 +79,72 @@ namespace Opentag.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Services()
+        {
+            return View();
+        }
+        
+        
+        [HttpPost]
+        public IActionResult Order(Order order)
+        {            
+            
+            //EF core code
+
+            ApplicationDbContext context = new ApplicationDbContext();
+
+            context.Order.Add(Order);
+
+            context.SaveChanges();
+
+            //EF core code ends
+
+
+            ///////    Send Email     ///////
+            MimeMessage message = new MimeMessage();
+
+            MailboxAddress from = new MailboxAddress("vira.co", "viradeveloper.co@gmail.com");
+            message.From.Add(from);
+
+            MailboxAddress to = new MailboxAddress("vira.co", "viradeveloper.co@gmail.com");
+            message.To.Add(to);
+
+            message.Subject = "New order";
+
+            BodyBuilder bodyBuilder = new BodyBuilder();
+
+            var mybody = @System.IO.File.ReadAllText(_environment.WebRootPath + @"\Email\emailbody-order.html");
+            mybody = mybody.Replace("Value01", Order.FullName.ToString());
+            mybody = mybody.Replace("Value02", Order.PhoneNumber.ToString());
+            mybody = mybody.Replace("Value03", Order.EmailAddress.ToString());
+            mybody = mybody.Replace("Value04", Order.Subject.ToString());
+            mybody = mybody.Replace("Value05", Order.Description.ToString());
+
+            bodyBuilder.HtmlBody = mybody;
+
+            var usericon = bodyBuilder.LinkedResources.Add(_environment.WebRootPath + @"/Email/newuser.png");
+            usericon.ContentId = MimeUtils.GenerateMessageId();
+
+            bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{", "{{");
+            bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("}", "}}");
+            bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{{0}}", "{0}");
+
+            bodyBuilder.HtmlBody = string.Format(bodyBuilder.HtmlBody, usericon.ContentId);
+
+            message.Body = bodyBuilder.ToMessageBody();
+
+
+            SmtpClient client = new SmtpClient();
+            client.Connect("smtp.gmail.com", 465, true);
+            client.Authenticate("viradeveloper.co@gmail.com", "Vira2020");
+            client.Send(message);
+            ///////    Send Email     ///////
+
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
