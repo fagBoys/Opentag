@@ -88,14 +88,14 @@ namespace Opentag.Controllers
         
         
         [HttpPost]
-        public IActionResult Order(Order order)
+        public IActionResult AddOrder(Order AddOrder)
         {            
             
             //EF core code
 
             ApplicationDbContext context = new ApplicationDbContext();
 
-            context.Order.Add(Order);
+            context.Order.Add(AddOrder);
 
             context.SaveChanges();
 
@@ -116,11 +116,11 @@ namespace Opentag.Controllers
             BodyBuilder bodyBuilder = new BodyBuilder();
 
             var mybody = @System.IO.File.ReadAllText(_environment.WebRootPath + @"\Email\emailbody-order.html");
-            mybody = mybody.Replace("Value01", Order.FullName.ToString());
-            mybody = mybody.Replace("Value02", Order.PhoneNumber.ToString());
-            mybody = mybody.Replace("Value03", Order.EmailAddress.ToString());
-            mybody = mybody.Replace("Value04", Order.Subject.ToString());
-            mybody = mybody.Replace("Value05", Order.Description.ToString());
+            mybody = mybody.Replace("Value01", AddOrder.FullName.ToString());
+            mybody = mybody.Replace("Value02", AddOrder.PhoneNumber.ToString());
+            mybody = mybody.Replace("Value03", AddOrder.EmailAddress.ToString());
+            mybody = mybody.Replace("Value04", AddOrder.Subject.ToString());
+            mybody = mybody.Replace("Value05", AddOrder.Discription.ToString());
 
             bodyBuilder.HtmlBody = mybody;
 

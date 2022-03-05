@@ -21,6 +21,9 @@ namespace Opentag.Data
         }
         public DbSet<Contact> Contact { get; set; }
 
+        public DbSet<Order> Order { get; set; }
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //optionsBuilder.UseSqlServer("Server=185.192.112.82;Database=DB01Opentag;User Id=fagboys;Password=OPENpass123");
