@@ -26,6 +26,11 @@ section.section-style-blue
   z-index: 1;
 }
 
+section.section-style-about {
+    height: auto !important;
+    z-index: 1;
+}
+
 section.section-style-main
 {
   background-size: cover;
@@ -190,6 +195,12 @@ a.menu-text-style:hover
   text-align: justify;
   color: white;
   line-height: 5vh;
+}
+
+.aboutPage-paragraph-style {
+    font-size: 2.3vh;
+    text-align: justify;
+    line-height: 5vh;
 }
 
 .contact-image-style
