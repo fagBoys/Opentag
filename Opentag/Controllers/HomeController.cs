@@ -30,9 +30,9 @@ namespace Opentag.Controllers
         
 
         /*public HomeController(ILogger<HomeController> logger)
-        {
-            
+        { 
         }*/
+
         [HttpGet]
         public IActionResult Index()
         {

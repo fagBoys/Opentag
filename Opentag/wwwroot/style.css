@@ -177,10 +177,30 @@ a.menu-text-style:hover
   background-position: 40%;
 }
 
-.about-content-style
+.about-page-image-style
 {
-  margin: auto;
-  width: 70%;
+    height: 60vh;
+    background-image: url("../images/about/About02.jpg");
+    background-size: cover;
+    
+}
+
+.Services-page-image-style {
+    
+    background-image: url("../images/arrow-right-short.svg");
+    background-size: cover;
+}
+
+.Services-page-footer-image-style {
+    background-image: url("../images/18824957 [Converted].png");
+    height: 80vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about-content-style {
+    margin: auto;
+    width: 70%;
 }
 
 .about-text-style

@@ -707,3 +707,4 @@ E:\Amir\developer\GitHub\Opentag\Opentag\obj\Debug\netcoreapp3.1\Opentag.genrunt
 C:\Users\zack\Documents\GitHub\Opentag\Opentag\bin\Debug\netcoreapp3.1\MailKit.dll
 C:\Users\zack\Documents\GitHub\Opentag\Opentag\bin\Debug\netcoreapp3.1\MimeKit.dll
 C:\Users\zack\Documents\GitHub\Opentag\Opentag\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\zack\Documents\GitHub\Opentag\Opentag\obj\Debug\netcoreapp3.1\Razor\Views\Home\Services.cshtml.g.cs
