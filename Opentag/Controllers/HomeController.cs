@@ -19,20 +19,20 @@ namespace Opentag.Controllers
     {
 
         private IWebHostEnvironment _environment;
-
-
-        public HomeController(IWebHostEnvironment environment)
-        {
-            _environment = environment;
-
-
-        }
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+
+        public HomeController(IWebHostEnvironment environment, ILogger<HomeController> logger)
         {
+            _environment = environment;
             _logger = logger;
         }
+        
+
+        /*public HomeController(ILogger<HomeController> logger)
+        {
+            
+        }*/
         [HttpGet]
         public IActionResult Index()
         {

@@ -704,3 +704,6 @@ E:\Amir\developer\GitHub\Opentag\Opentag\obj\Debug\netcoreapp3.1\Opentag.csproj.
 E:\Amir\developer\GitHub\Opentag\Opentag\obj\Debug\netcoreapp3.1\Opentag.dll
 E:\Amir\developer\GitHub\Opentag\Opentag\obj\Debug\netcoreapp3.1\Opentag.pdb
 E:\Amir\developer\GitHub\Opentag\Opentag\obj\Debug\netcoreapp3.1\Opentag.genruntimeconfig.cache
+C:\Users\zack\Documents\GitHub\Opentag\Opentag\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\zack\Documents\GitHub\Opentag\Opentag\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Users\zack\Documents\GitHub\Opentag\Opentag\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
