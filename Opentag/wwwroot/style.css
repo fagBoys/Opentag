@@ -177,6 +177,14 @@ a.menu-text-style:hover
   background-position: 40%;
 }
 
+.about-page-image-style
+{
+    height: 60vh;
+    background-image: url("../images/about/About02.jpg");
+    background-size: cover;
+    
+}
+
 .about-content-style
 {
   margin: auto;
