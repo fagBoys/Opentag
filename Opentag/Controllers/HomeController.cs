@@ -86,11 +86,18 @@ namespace Opentag.Controllers
             return View();
         }
         
+        [HttpGet]
         public IActionResult Order()
         {
             return View();
         }
         
+        [HttpGet]
+        public IActionResult AddOrder()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult AddOrder(Order AddOrder)
         {            
