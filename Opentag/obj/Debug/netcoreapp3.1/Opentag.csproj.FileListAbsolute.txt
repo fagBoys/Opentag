@@ -708,3 +708,5 @@ C:\Users\zack\Documents\GitHub\Opentag\Opentag\bin\Debug\netcoreapp3.1\MailKit.d
 C:\Users\zack\Documents\GitHub\Opentag\Opentag\bin\Debug\netcoreapp3.1\MimeKit.dll
 C:\Users\zack\Documents\GitHub\Opentag\Opentag\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 C:\Users\zack\Documents\GitHub\Opentag\Opentag\obj\Debug\netcoreapp3.1\Razor\Views\Home\Services.cshtml.g.cs
+C:\Users\zack\Documents\GitHub\Opentag\Opentag\obj\Debug\netcoreapp3.1\Razor\Views\Home\AddOrder.cshtml.g.cs
+C:\Users\zack\Documents\GitHub\Opentag\Opentag\obj\Debug\netcoreapp3.1\Razor\Views\Home\Order.cshtml.g.cs
