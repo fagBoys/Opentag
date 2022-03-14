@@ -4,34 +4,28 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Opentag.Models
+namespace Opentag.ViewModels
 {
-    public class Order
+    public class ContactViewModel
     {
-        [Key]
-        public int OrderId { get; set; }
-
-
-        [Required]
-        [MaxLength(100)]
-        public string FullName { get; set; }
-
-        [Required]
-        [MaxLength(20)]
-        [Display(Name = "Phone Number: ")]
-        [DataType(DataType.PhoneNumber)]
-        public string PhoneNumber { get; set; }
-
         [Required]
         [MaxLength(50)]
+        public string FullName { get; set; }
+
+
+        [Required]
+        [EmailAddress]
         public string EmailAddress { get; set; }
+
+        [Required]
+        public string PhoneNumber { get; set; }
 
         [Required]
         [MaxLength(50)]
         public string Subject { get; set; }
 
         [Required]
-        [MaxLength(200)]
-        public string Discription { get; set; }
+        [MaxLength(500)]
+        public string Message { get; set; }
     }
 }

@@ -4,13 +4,10 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Opentag.Models
+namespace Opentag.ViewModels
 {
-    public class Order
+    public class AddOrderViewModel
     {
-        [Key]
-        public int OrderId { get; set; }
-
 
         [Required]
         [MaxLength(100)]
@@ -33,5 +30,6 @@ namespace Opentag.Models
         [Required]
         [MaxLength(200)]
         public string Discription { get; set; }
+
     }
 }
