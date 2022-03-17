@@ -18,7 +18,7 @@ namespace Opentag.Models
 
         [Required]
         [MaxLength(20)]
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
 
         [Required]
         [MaxLength(50)]
