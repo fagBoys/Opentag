@@ -18,9 +18,7 @@ namespace Opentag.Models
 
         [Required]
         [MaxLength(20)]
-        [Display(Name = "Phone Number: ")]
-        [DataType(DataType.PhoneNumber)]
-        public string PhoneNumber { get; set; }
+        public int PhoneNumber { get; set; }
 
         [Required]
         [MaxLength(50)]
