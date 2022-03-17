@@ -12,6 +12,7 @@ using MimeKit;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using MimeKit.Utils;
+using Opentag.ViewModels;
 
 namespace Opentag.Controllers
 {
@@ -98,14 +99,15 @@ namespace Opentag.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddOrder(Order AddOrder)
+        public IActionResult AddOrder(AddOrderViewModel AddOrder)
         {            
             
             //EF core code
 
             ApplicationDbContext context = new ApplicationDbContext();
-
-            context.Order.Add(AddOrder);
+            Order order = new Order() 
+            {FullName = AddOrder.FullName , Discription = AddOrder.Discription, EmailAddress=AddOrder.EmailAddress,PhoneNumber = AddOrder.PhoneNumber , Subject = AddOrder.Subject    };
+            context.Order.Add(order);
 
             context.SaveChanges();
 
@@ -115,10 +117,10 @@ namespace Opentag.Controllers
             ///////    Send Email     ///////
             MimeMessage message = new MimeMessage();
 
-            MailboxAddress from = new MailboxAddress("vira.co", "viradeveloper.co@gmail.com");
+            MailboxAddress from = new MailboxAddress("Crest Couriers", "crestcouriers@gmail.com");
             message.From.Add(from);
 
-            MailboxAddress to = new MailboxAddress("vira.co", "viradeveloper.co@gmail.com");
+            MailboxAddress to = new MailboxAddress("Crest Couriers", "mjn220@gmail.com");
             message.To.Add(to);
 
             message.Subject = "New order";
@@ -148,7 +150,7 @@ namespace Opentag.Controllers
 
             SmtpClient client = new SmtpClient();
             client.Connect("smtp.gmail.com", 465, true);
-            client.Authenticate("viradeveloper.co@gmail.com", "Vira2020");
+            client.Authenticate("crestcouriers@gmail.com", "CRESTpassword123");
             client.Send(message);
             ///////    Send Email     ///////
 

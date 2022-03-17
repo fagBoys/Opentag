@@ -4,13 +4,14 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Opentag.Models
+namespace Opentag.ViewModels
 {
     public class ContactViewModel
     {
         [Required]
         [MaxLength(50)]
         public string FullName { get; set; }
+
 
         [Required]
         [EmailAddress]
