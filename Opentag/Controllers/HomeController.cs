@@ -71,7 +71,7 @@ namespace Opentag.Controllers
             context.Add(contact);
             context.SaveChanges();
 
-            return View();
+            return new RedirectResult("/Home/Contact");
         }
 
         [HttpGet]
