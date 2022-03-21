@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Opentag</title>
+    <title>Vira</title>
     <link rel="stylesheet" href="~/style.css">
     <link rel="stylesheet" href="~/css/bootstrap.css">
     <link rel="stylesheet" href="~/css/bootstrap.min.css">
@@ -39,7 +39,7 @@
 
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-                <li class="nav-item menu-item"><h5><a href="#" class="menu-text-style">Home</a></h5></li>
+                <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Index" class="menu-text-style">Home</a></h5></li>
                 <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Services" class="menu-text-style">Services</a></h5></li>
                 <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="About" class="menu-text-style">About</a></h5></li>
                 <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Contact" class="menu-text-style">Contact</a></h5></li>
@@ -322,11 +322,11 @@
                         <h4 class="footer-title-style">site map</h4>
                     </div>
                     <div class="footer-content-sitemap-style">
-                        <p><a href="#" style="color:#468fb3; text-align:justify; text-justify: inter-word;">Opentag news - inside development</a></p>
-                        <p><a href="#" style="color:#468fb3">Checkout our services and features</a></p>
-                        <p><a href="#" style="color:#468fb3">Our work samples and products</a></p>
-                        <p><a href="#" style="color:#468fb3">About - read our history</a></p>
-                        <p><a href="#" style="color:#468fb3">Contact - keep in touch with us</a></p>
+                        <p><a asp-controller="Home" asp-action="About" style="color:#468fb3; text-align:justify; text-justify: inter-word;">Vira news - inside development</a></p>
+                        <p><a asp-controller="Home" asp-action="Services" style="color:#468fb3">Checkout our services and features</a></p>
+                        <p><a asp-controller="Home" asp-action="Services" style="color:#468fb3">Our work samples and products</a></p>
+                        <p><a asp-controller="Home" asp-action="About" style="color:#468fb3">About - read our history</a></p>
+                        <p><a asp-controller="Home" asp-action="Contact" style="color:#468fb3">Contact - keep in touch with us</a></p>
                     </div>
                 </div>
                 <div class="col-lg-4 footer-box-style">

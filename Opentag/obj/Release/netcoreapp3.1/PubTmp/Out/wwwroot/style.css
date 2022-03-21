@@ -26,6 +26,11 @@ section.section-style-blue
   z-index: 1;
 }
 
+section.section-style-about {
+    height: auto !important;
+    z-index: 1;
+}
+
 section.section-style-main
 {
   background-size: cover;
@@ -63,7 +68,7 @@ section.section-style-main
   font-size:2vh;
 }
 
-.menu
+.menup
 {
   position: absolute;
 
@@ -159,7 +164,7 @@ a.menu-text-style:hover
 .technologies-text-style
 {
   margin: auto;
-  width: 75%;
+  width: 90%;
   text-align: justify;
   padding: 10px;
 }
@@ -172,10 +177,30 @@ a.menu-text-style:hover
   background-position: 40%;
 }
 
-.about-content-style
+.about-page-image-style
 {
-  margin: auto;
-  width: 70%;
+    height: 60vh;
+    background-image: url("../images/about/About02.jpg");
+    background-size: cover;
+    
+}
+
+.Services-page-image-style {
+    
+    background-image: url("../images/arrow-right-short.svg");
+    background-size: cover;
+}
+
+.Services-page-footer-image-style {
+    background-image: url("../images/services/services-banner.png");
+    height: 80vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about-content-style {
+    margin: auto;
+    width: 70%;
 }
 
 .about-text-style
@@ -190,6 +215,12 @@ a.menu-text-style:hover
   text-align: justify;
   color: white;
   line-height: 5vh;
+}
+
+.aboutPage-paragraph-style {
+    font-size: 2.3vh;
+    text-align: justify;
+    line-height: 5vh;
 }
 
 .contact-image-style
@@ -219,6 +250,7 @@ a.menu-text-style:hover
 {
   margin: auto;
   padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .contact-input-style
@@ -277,15 +309,9 @@ a.menu-text-style:hover
 
 .contact-button-style
 {
-  margin: 0 auto;
   margin-top: 3vh;
-  width: 30%;
+  width: 100px;
   background-color: black;
-  color: #ffffff;
-  outline-style: none;
-  border: none;
-  border-radius: 3px;
-  height: 5vh;
 }
 
 
@@ -452,3 +478,14 @@ padding-bottom: 15px;
   color:white;
   font-size:2vh;
 }
+
+
+/* Order page styles started*/
+
+.order-card-style
+{
+
+    height:400px;
+}
+
+/* Order page styles ended*/
