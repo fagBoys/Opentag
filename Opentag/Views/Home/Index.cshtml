@@ -197,11 +197,11 @@
                             </div>
                             <div class="row">
 
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 mt-4">
                                     <input asp-for="PhoneNumber" placeholder="Phone number" class="contact-input-style" />
                                     <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 mt-4">
                                     <input asp-for="Subject" placeholder="Subject" class="contact-input-style" />
                                     <span asp-validation-for="Subject" class="text-danger"></span>
                                 </div>
@@ -210,7 +210,7 @@
                             <div class="row">
 
                                 <div class="col-lg-12">
-                                    <textarea asp-for="Message" type="text" placeholder="Message" class="contact-textarea-style"></textarea>
+                                    <textarea asp-for="Message" type="text" placeholder="Message" class="contact-textarea-style mt-4"></textarea>
                                     <span asp-validation-for="Message" class="text-danger"></span>
                                 </div>
 
@@ -238,26 +238,68 @@
 
 
     <section class="section-style-blue">
-        <div class="container">
+        <div class="container pb-5">
+
             <div class="row">
-
-
-
-
-                <div class="col-lg-12"><h1 class="heading-style" style="color: white;">Services</h1></div>
-
-
-
-                <div class="row services-row-style" style="text-align: center">
-
-                    <div class="col-lg-4 services-box-style"><div class="services-title-style"><h4>Support</h4></div><div><p class="services-paragraph-style">This is a sample text for this technology,it's abou it's benefits or how it works.This kind of article shoul be larger then technologies article and also articles image in these kind of article.We should add a read more link to another page,for display more information about the article</p><p class="services-paragraph-style"><a href="#" style="color:#468fb3">Read more</a></p></div></div>
-
-                    <div class="col-lg-4 services-box-style"><div class="services-title-style"><h4>Free consultation</h4></div><div><p class="services-paragraph-style">This is a sample text for this technology,it's abou it's benefits or how it works.This kind of article shoul be larger then technologies article and also articles image in these kind of article.We should add a read more link to another page,for display more information about the article</p><p class="services-paragraph-style"><a href="#" style="color:#468fb3">Read more</a></p></div></div>
-
-                    <div class="col-lg-4 services-box-style"><div class="services-title-style"><h4>Security</h4></div><div><p class="services-paragraph-style">This is a sample text for this technology,it's abou it's benefits or how it works.This kind of article shoul be larger then technologies article and also articles image in these kind of article.We should add a read more link to another page,for display more information about the article</p><p class="services-paragraph-style"><a href="#" style="color:#468fb3;">Read more</a></p></div></div>
-
+                <div class="col-lg-12">
+                    <h1 class="heading-style" style="color: white;">Services</h1>
                 </div>
             </div>
+
+
+            <div class="row services-row-style" style="text-align: center">
+
+                <div class="col-lg-4 services-box-style">
+                    <div class="services-title-style">
+                        <h4>Support</h4>
+                    </div>
+                    <div>
+                        <p class="services-paragraph-style text-justify">It is our responsibility to provide support for products, we developed.</p>
+                        <p class="services-paragraph-style text-justify">We will support our products which produced by our team.</p>
+                        <p class="services-paragraph-style text-justify">Depend on product you have, there is 6 months to 1 year of problem solution support for each plan of web apps designing.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 services-box-style">
+                    <div class="services-title-style">
+                        <h4>Free consultation</h4>
+                    </div>
+                    <div>
+                        <p class="services-paragraph-style text-justify">Different development plans of web applications will be provided to client’s depends on their requirements and purposes.</p>
+                        <p class="services-paragraph-style text-justify">Due to importance of user experiences deigning of apps, there is a Free consultation of your required goal features to products you need.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 services-box-style">
+                    <div class="services-title-style">
+                        <h4>Security</h4>
+                    </div>
+                    <div>
+                        <p class="services-paragraph-style text-justify">We take care of your information through components dedicated to securing applications products are protected by anti-fishing components of Asp.net core framework.</p>
+                        <p class="services-paragraph-style text-justify">In addition, there is a secure authentication for web apps which are produced by Microsoft Identity.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row services-row-style" style="text-align: center">
+
+                <div class="col-lg-4 services-box-style">
+                    <div>
+                        <p class="services-paragraph-style text-justify"><a href="#" style="color:#468fb3">Read more</a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 services-box-style">
+                    <p class="services-paragraph-style text-justify"><a href="#" style="color:#468fb3">Read more</a></p>
+                </div>
+
+                <div class="col-lg-4 services-box-style">
+                    <p class="services-paragraph-style text-justify"><a href="#" style="color:#468fb3">Read more</a></p>
+                </div>
+
+            </div>
+
         </div>
     </section>
     <!--End of Section 5-->

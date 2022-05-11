@@ -249,8 +249,6 @@ a.menu-text-style:hover
 .contact-form-style
 {
   margin: auto;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
 }
 
 .contact-input-style
@@ -259,7 +257,6 @@ a.menu-text-style:hover
   width: 100%;
   height: 50px;
   padding: 10px;
-  margin-top: 3vh;
   border-width: 1px;
   border-radius: 3px;
   border-style: solid;
@@ -286,7 +283,6 @@ a.menu-text-style:hover
   width: 100%;
   height: 200px;
   padding: 10px;
-  margin-top: 3vh;
   border-width: 1px;
   border-radius: 3px;
   border-style: solid;
@@ -325,15 +321,12 @@ a.menu-text-style:hover
     color: white;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 80px;
 }
 
 .services-box-style
 {
-  margin: 0 auto;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 50px;
-
 }
 
 .services-title-style
@@ -345,7 +338,6 @@ a.menu-text-style:hover
 }
 .services-paragraph-style
 {
-    text-align: justify;
     width: 80%;
     margin: 0 auto;
 }
