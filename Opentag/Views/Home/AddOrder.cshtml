@@ -1,13 +1,13 @@
 ﻿@model Opentag.ViewModels.AddOrderViewModel
 
 @{
-    ViewData["Title"] = "AddOrder";
+    ViewData["Title"] = "Add Order";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>AddOrder</h1>
 
-<h4>Order</h4>
+<h4>Fill the form to create a new order</h4>
 <hr />
 
 <form asp-action="AddOrder">
@@ -15,14 +15,14 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label asp-for="FullName" class="control-label"></label>
+                    <label asp-for="FullName" class="control-label">Full Name</label>
                     <input asp-for="FullName" class="form-control" />
                     <span asp-validation-for="FullName" class="text-danger"></span>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label asp-for="PhoneNumber" class="control-label"></label>
+                    <label asp-for="PhoneNumber" class="control-label">Phone Number</label>
                     <input asp-for="PhoneNumber" class="form-control" />
                     <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                 </div>
@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label asp-for="EmailAddress" class="control-label"></label>
+                    <label asp-for="EmailAddress" class="control-label">Email Address</label>
                     <input asp-for="EmailAddress" class="form-control" />
                     <span asp-validation-for="EmailAddress" class="text-danger"></span>
                 </div>

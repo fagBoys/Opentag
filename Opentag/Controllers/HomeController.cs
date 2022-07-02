@@ -150,7 +150,7 @@ namespace Opentag.Controllers
 
             SmtpClient client = new SmtpClient();
             client.Connect("smtp.gmail.com", 465, true);
-            client.Authenticate("crestcouriers@gmail.com", "CRESTpassword123");
+            client.Authenticate("crestcouriers@gmail.com", "jkqocclafqidqtyr");
             client.Send(message);
             ///////    Send Email     ///////
 
