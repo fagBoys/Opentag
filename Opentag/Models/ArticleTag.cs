@@ -15,7 +15,9 @@ namespace Opentag.Models
 
         public Article Article { get; set; }
 
-       
+        public Tag Tags { get; set; }
+
+
 
     }
 }
