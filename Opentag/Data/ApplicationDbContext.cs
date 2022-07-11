@@ -23,6 +23,11 @@ namespace Opentag.Data
 
         public DbSet<Order> Order { get; set; }
 
+        public DbSet<Article> Article { get; set; }
+        public DbSet<Tag> Tag { get; set; }
+        public DbSet<ArticleTag> ArticleTag { get; set; }
+
+        public DbSet<Image> Image { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

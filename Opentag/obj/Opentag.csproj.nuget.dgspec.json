@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Amir\\developer\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {}
+    "C:\\Users\\a\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {}
   },
   "projects": {
-    "E:\\Amir\\developer\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {
+    "C:\\Users\\a\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Amir\\developer\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
+        "projectUniqueName": "C:\\Users\\a\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
         "projectName": "Opentag",
-        "projectPath": "E:\\Amir\\developer\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
-        "packagesPath": "C:\\Users\\AmirHossein\\.nuget\\packages\\",
-        "outputPath": "E:\\Amir\\developer\\GitHub\\Opentag\\Opentag\\obj\\",
+        "projectPath": "C:\\Users\\a\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
+        "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\a\\Documents\\GitHub\\Opentag\\Opentag\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\AmirHossein\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,6 +88,10 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [
@@ -105,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
