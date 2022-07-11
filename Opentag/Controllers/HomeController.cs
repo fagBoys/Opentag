@@ -28,7 +28,7 @@ namespace Opentag.Controllers
             _environment = environment;
             _logger = logger;
         }
-        
+
 
         /*public HomeController(ILogger<HomeController> logger)
         { 
@@ -43,8 +43,8 @@ namespace Opentag.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Index(Contact contact)
         {
-            if(ModelState.IsValid)
-            { 
+            if (ModelState.IsValid)
+            {
                 ApplicationDbContext Context = new ApplicationDbContext();
                 Context.Contact.Add(contact);
                 await Context.SaveChangesAsync();
@@ -86,12 +86,12 @@ namespace Opentag.Controllers
         {
             return View();
         }
-        
+
         public IActionResult Order()
         {
             return View();
         }
-        
+
         [HttpGet]
         public IActionResult AddOrder()
         {
@@ -100,13 +100,13 @@ namespace Opentag.Controllers
 
         [HttpPost]
         public IActionResult AddOrder(AddOrderViewModel AddOrder)
-        {            
-            
+        {
+
             //EF core code
 
             ApplicationDbContext context = new ApplicationDbContext();
-            Order order = new Order() 
-            {FullName = AddOrder.FullName , Discription = AddOrder.Discription, EmailAddress=AddOrder.EmailAddress,PhoneNumber = AddOrder.PhoneNumber , Subject = AddOrder.Subject    };
+            Order order = new Order()
+            { FullName = AddOrder.FullName, Discription = AddOrder.Discription, EmailAddress = AddOrder.EmailAddress, PhoneNumber = AddOrder.PhoneNumber, Subject = AddOrder.Subject };
             context.Order.Add(order);
 
             context.SaveChanges();
@@ -157,6 +157,10 @@ namespace Opentag.Controllers
             return View();
         }
 
+        public IActionResult Blog()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
