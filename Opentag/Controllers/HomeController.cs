@@ -161,9 +161,22 @@ namespace Opentag.Controllers
             return View();
         }
 
-        public IActionResult Blog()
+
+
+        [HttpGet]
+        //[Route("Blog")]
+        public async Task<IActionResult> Blog(int? pageNumber)
         {
-            return View();
+      //EF core start
+
+            ApplicationDbContext context = new ApplicationDbContext();
+            IEnumerable<Article> articles = context.Article.Include(A => A.Images).OrderByDescending(A => A.ArticleId);
+
+            PaginatedList<Article> ArticleList = await PaginatedList<Article>.CreateAsunc((IQueryable<Article>)articles, pageNumber ?? 1, 4);
+
+
+            //EF core end
+            return View(ArticleList);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -176,18 +189,15 @@ namespace Opentag.Controllers
 
         //*********************************
         [HttpGet]
-        public async Task<IActionResult> Articles(int? pageNumber)
+        public async Task<IActionResult> Article(int ArticleId)
         {
-            //EF core start
-
-            ApplicationDbContext context = new ApplicationDbContext();
-            IEnumerable<Article> articles = context.Article.Include(A => A.Images).OrderByDescending(A => A.ArticleId);
-
-            PaginatedList<Article> ArticleList = await PaginatedList<Article>.CreateAsunc((IQueryable<Article>)articles, pageNumber ?? 1, 4);
-
-
-            //EF core end
-            return View(ArticleList);
+            //DetailsViewModel DVM = new DetailsViewModel();
+            //ApplicationDbContext context = new ApplicationDbContext();
+            //DVM.article = context.Article.Include(A => A.Images).Where(B => B.ArticleId == ArticleId).SingleOrDefault();
+            //DVM.articlesList = context.Article.Include(A => A.Images).OrderByDescending(A => A.ArticleId).ToList().Take(4);
+            //ViewData["ArticleId"] = ArticleId;
+            return View(/*DVM*/);
+            
         }
 
 
