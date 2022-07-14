@@ -1,4 +1,4 @@
-﻿@model Opentag.Models.Article
+﻿@model Opentag.ViewModels.DetailsViewModel
 
 @{
     ViewData["Title"] = "Article";
@@ -7,9 +7,9 @@
 
 <div class="h3">Article</div>
 @{
-    if (Model.Title != null)
+    if (Model.article != null)
     {
-        <div class="h4">@Model.Title</div>
+        <div class="h4">@Model.article.Title</div>
     }
     else
     {
@@ -29,15 +29,26 @@
         </p>
         <div class="m-0 p-0">
             <img class="w-100 m-0 p-0 shadow" style="border-radius: 25px;" src="~/images/services/defualt-blog-pic.jpg" />
+            <div class="car-preview-crousel">
+                <div class="single-car-preview">
+                    <img src="~/img/detail/@Model.article.Images.Where(I => I.Primary == false).Select(I => I.ImageName).FirstOrDefault()" alt="@Model.article.Title.ToString()">
+                </div>
+                <div class="single-car-preview">
+                    <img src="~/img/detail/@Model.article.Images.Where(I => I.Primary == false).Skip(1).Select(I => I.ImageName).First()" alt="@Model.article.Title.ToString()">
+                </div>
+                <div class="single-car-preview">
+                    <img src="~/img/detail/@Model.article.Images.Where(I => I.Primary == false).Skip(2).Select(I => I.ImageName).First()" alt="@Model.article.Title.ToString()">
+                </div>
+            </div>
         </div>
         <div class="">
             @*ArticleText*@
         @{
-            if (Model.Title != null)
+            if (Model.article.Title != null)
             {
-                <p class="text-left text-justify pt-3 pb-3">
-                @Model.Body
-                </p>
+                    <p class="text-left text-justify pt-3 pb-3">
+                        @Html.Raw(Model.article.Body)
+                    </p>
             
             }
             else
@@ -56,10 +67,10 @@
 
         @*Author name*@
         @{
-            if (Model.Title != null)
+            if (Model.article.Title != null)
             {
                 <div class="font-weight-bold font-italic pb-2">
-                    @Model.AuthorAccount
+                    @Model.article.AuthorAccount
                 </div>
             }
             else

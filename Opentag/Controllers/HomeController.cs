@@ -191,12 +191,12 @@ namespace Opentag.Controllers
         [HttpGet]
         public async Task<IActionResult> Article(int ArticleId)
         {
-            //DetailsViewModel DVM = new DetailsViewModel();
-            //ApplicationDbContext context = new ApplicationDbContext();
-            //DVM.article = context.Article.Include(A => A.Images).Where(B => B.ArticleId == ArticleId).SingleOrDefault();
-            //DVM.articlesList = context.Article.Include(A => A.Images).OrderByDescending(A => A.ArticleId).ToList().Take(4);
-            //ViewData["ArticleId"] = ArticleId;
-            return View(/*DVM*/);
+            DetailsViewModel DVM = new DetailsViewModel();
+            ApplicationDbContext context = new ApplicationDbContext();
+            DVM.article = context.Article.Include(A => A.Images).Where(B => B.ArticleId == ArticleId).SingleOrDefault();
+            DVM.articlesList = context.Article.Include(A => A.Images).OrderByDescending(A => A.ArticleId).ToList().Take(4);
+            ViewData["ArticleId"] = ArticleId;
+            return View(DVM);
             
         }
 
