@@ -29,7 +29,7 @@
         </p>
         <div class="m-0 p-0">
             <img class="w-100 m-0 p-0 shadow" style="border-radius: 25px;" src="~/images/services/defualt-blog-pic.jpg" />
-            <div class="car-preview-crousel">
+@*            <div class="car-preview-crousel">
                 <div class="single-car-preview">
                     <img src="~/img/detail/@Model.article.Images.Where(I => I.Primary == false).Select(I => I.ImageName).FirstOrDefault()" alt="@Model.article.Title.ToString()">
                 </div>
@@ -39,12 +39,12 @@
                 <div class="single-car-preview">
                     <img src="~/img/detail/@Model.article.Images.Where(I => I.Primary == false).Skip(2).Select(I => I.ImageName).First()" alt="@Model.article.Title.ToString()">
                 </div>
-            </div>
+*@            </div>
         </div>
         <div class="">
             @*ArticleText*@
         @{
-            if (Model.article.Title != null)
+            if (Model.article != null || Model.article.Title != null)
             {
                     <p class="text-left text-justify pt-3 pb-3">
                         @Html.Raw(Model.article.Body)
@@ -67,7 +67,7 @@
 
         @*Author name*@
         @{
-            if (Model.article.Title != null)
+            if (Model.article != null)
             {
                 <div class="font-weight-bold font-italic pb-2">
                     @Model.article.AuthorAccount
