@@ -480,3 +480,8 @@ padding-bottom: 15px;
 }
 
 /* Order page styles ended*/
+
+.myFarsiClass 
+{
+    direction: rtl;
+}
