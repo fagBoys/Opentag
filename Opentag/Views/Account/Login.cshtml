@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="col-md-4 offset-md-4" col-12>
+    <div class="card shadow">
+        <div class="card-body">
+            <h3 class="text-center">Vira</h3>
+            <h6 class="text-center m-0">Development</h6>
+            <h6 class="text-center mb-5">Group</h6>
+            <form class="form-group" asp-controller="AccountController" asp-action="Login" method="post">
+                <div class="form-group">
+                    <input class="form-control" placeholder="Username" />
+                </div>
+                <div class="form-group mb-5">
+                    <input class="form-control" placeholder="Password" />
+                </div>
+                <div class="form-group text-center pt-5">
+                    <p class="small">Don't remember your password?<a href="#">Resset password</a></p>
+                    <button class="btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
