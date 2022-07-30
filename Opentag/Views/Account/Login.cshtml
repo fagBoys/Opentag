@@ -1,16 +1,14 @@
 ﻿
 @{
     ViewData["Title"] = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_AdminPanelLayout.cshtml";
 }
 
 
-<div class="col-md-4 offset-md-4" col-12>
-    <div class="card shadow">
-        <div class="card-body">
-            <h3 class="text-center">Vira</h3>
-            <h6 class="text-center m-0">Development</h6>
-            <h6 class="text-center mb-5">Group</h6>
+<div class="col-md-4 offset-md-4 col-12 align-middle justify-content-center mx-auto">
+    <div class="card shadow justify-content-center mx-auto">
+        <div class="card-body justify-content-center mx-auto">
+            <img class="w-50 h-50  mx-auto d-block" src="~/images/viralogo.png"/>
             <form class="form-group" asp-controller="AccountController" asp-action="Login" method="post">
                 <div class="form-group">
                     <input class="form-control" placeholder="Username" />
