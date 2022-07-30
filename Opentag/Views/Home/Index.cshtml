@@ -51,10 +51,10 @@
                         <img src="~/images/technologies/gear.png" alt="">
                     </div>
                     <div class="technologies-title-style">
-                        <h6 style="font-weight:bold;">Entity Framework Core</h6>
+                        <h6 style="font-weight:bold;" >Entity Framework Core</h6>
                     </div>
                     <div class="technologies-text-style">
-                        <p>Is a technology to support server side codes and bring a powerful secure environment for your web apps.</p>
+                        <p class="EntityFrameworkBody">Is a technology to support server side codes and bring a powerful secure environment for your web apps.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 technologies-box-style">
@@ -64,8 +64,8 @@
                     <div class="technologies-title-style">
                         <h6 style="font-weight:bold;">ASP.NET Core</h6>
                     </div>
-                    <div class="technologies-text-style">
-                        <p>Opentag workspace use DotNet Core framework to build and develop cross platform applications over Microsoft technologies.</p>
+                    <div class="technologies-text-style ">
+                        <p class="ASPCore">Opentag workspace use DotNet Core framework to build and develop cross platform applications over Microsoft technologies.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 technologies-box-style">
@@ -73,10 +73,10 @@
                         <img src="~/images/technologies/pie-chart.png" alt="">
                     </div>
                     <div class="technologies-title-style">
-                        <h6 style="font-weight:bold;">MVC Design pattern</h6>
+                        <h6 style="font-weight:bold;" class="MVCDesignpatternHeader">MVC Design pattern</h6>
                     </div>
                     <div class="technologies-text-style">
-                        <p>Our projects is devided in three separated smart sections, which are related to eachother and make programming easier.</p>
+                        <p class="MVCDesignpatternBody">Our projects is devided in three separated smart sections, which are related to eachother and make programming easier.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 technologies-box-style">
@@ -84,10 +84,10 @@
                         <img src="~/images/technologies/puzzle-pieces.png" alt="">
                     </div>
                     <div class="technologies-title-style">
-                        <h6 style="font-weight:bold;">Bootstrap framework</h6>
+                        <h6 style="font-weight:bold;" class = "BootstrapFrameworkHeader">Bootstrap framework</h6>
                     </div>
                     <div class="technologies-text-style">
-                        <p>Frontend developers in Opentag team setup views based on Bootstrap framework and many selfmade libraries.</p>
+                        <p class="BootstrapFramework">Frontend developers in Opentag team setup views based on Bootstrap framework and many selfmade libraries.</p>
                     </div>
                 </div>
             </div>
@@ -104,12 +104,12 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content-style">
-                        <h1 class="heading-style" style="color:white;">About</h1>
+                        <h1 class="heading-style AboutSection" style="color:white;">About</h1>
                         <div class="about-text-style">
-                            <p class="about-paragraph-style">Our team is interested about building web apps, mobile apps and game developing over Microsoft practical and useful frameworks.</p>
-                            <p class="about-paragraph-style">If you like to help or support programming communities, please follow us to make world a better place.</p>
-                            <p class="about-paragraph-style">This is our duty to refer different services to our customers. This will show how much we care about people who care about us.</p>
-                            <p class="about-paragraph-style"><a href="#" style="color:#468fb3">Read more</a></p>
+                            <p class="about-paragraph-style AboutSection1">Our team is interested about building web apps, mobile apps and game developing over Microsoft practical and useful frameworks.</p>
+                            <p class="about-paragraph-style AboutSection2">If you like to help or support programming communities, please follow us to make world a better place.</p>
+                            <p class="about-paragraph-style AboutSection3">This is our duty to refer different services to our customers. This will show how much we care about people who care about us.</p>
+                            <p class="about-paragraph-style "><a href="#" style="color:#468fb3" class="AboutSection4">Read more</a></p>
                         </div>
                     </div>
                 </div>
@@ -123,8 +123,8 @@
                 <div class="col-lg-6">
 
                     <div class="contact-content-style">
-                        <h1 class="heading-style">Contact</h1>
-                        <p class="contact-paragraph-style">Send us your reviews. It'll help us in development.</p>
+                        <h1 class="heading-style ContactSection">Contact</h1>
+                        <p class="contact-paragraph-style ContactSectionBody">Send us your reviews. It'll help us in development.</p>
                         @*<form asp-action="Index" asp-controller="Home" method="post">
                             <input asp-for="FullName" />
                             <input asp-for="EmailAddress" />
@@ -139,11 +139,11 @@
                             <div class="row">
 
                                 <div class="col-lg-6 mt-3">
-                                    <input asp-for="FullName" placeholder="Full name" class="contact-input-style" />
+                                    <input asp-for="FullName" placeholder="Full name" class="contact-input-style ContactFormName" />
                                     <span asp-validation-for="FullName" class="text-danger"></span>
                                 </div>
                                 <div class="col-lg-6 mt-3">
-                                    <input asp-for="EmailAddress" placeholder="Email address" class="contact-input-style" />
+                                    <input asp-for="EmailAddress" placeholder="Email address" class="contact-input-style ContactFormEmail" />
                                     <span asp-validation-for="EmailAddress" class="text-danger"></span>
                                 </div>
 
@@ -151,11 +151,11 @@
                             <div class="row">
 
                                 <div class="col-lg-6 mt-3">
-                                    <input asp-for="PhoneNumber" placeholder="Phone number" class="contact-input-style" />
+                                    <input asp-for="PhoneNumber" placeholder="Phone number" class="contact-input-style ContactFormPhone" />
                                     <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                                 </div>
                                 <div class="col-lg-6 mt-3">
-                                    <input asp-for="Subject" placeholder="Subject" class="contact-input-style" />
+                                    <input asp-for="Subject" placeholder="Subject" class="contact-input-style ContactFormSubject" />
                                     <span asp-validation-for="Subject" class="text-danger"></span>
                                 </div>
 
@@ -163,14 +163,14 @@
                             <div class="row">
 
                                 <div class="col-lg-12 mt-3">
-                                    <textarea asp-for="Message" type="text" placeholder="Message" class="contact-textarea-style"></textarea>
+                                    <textarea asp-for="Message" type="text" placeholder="Message" class="contact-textarea-style ContactFormMessage"></textarea>
                                     <span asp-validation-for="Message" class="text-danger"></span>
                                 </div>
 
                             </div>
                             <div class="row">   
                                 <div class="col-lg-12 mb-3" style="text-align: center;">
-                                    <button type="submit" class="btn btn-dark contact-button-style">Send</button>
+                                    <button type="submit" class="btn btn-dark contact-button-style ContactFormBtn">Send</button>
                                 </div>
                             </div>
                         </form>
