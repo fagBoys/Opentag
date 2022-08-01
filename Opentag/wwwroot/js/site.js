@@ -56,6 +56,33 @@ const ContactFormBtn = document.querySelector('.ContactFormBtn');
 
 
 
+
+//Services
+const ServicesHeader = document.querySelector('.ServicesHeader');
+const ServicesSupportHeader = document.querySelector('.ServicesSupportHeader');
+const ServicesSupporBodyText01 = document.querySelector('.ServicesSupporBodyText01');
+const ServicesSupporBodyText02 = document.querySelector('.ServicesSupporBodyText02');
+const ServicesSupporBodyText03 = document.querySelector('.ServicesSupporBodyText03');
+
+const ServicesConsultationHeader = document.querySelector('.ServicesConsultationHeader');
+const ServicesConsultationBodyText01 = document.querySelector('.ServicesConsultationBodyText01');
+const ServicesConsultationBodyText02 = document.querySelector('.ServicesConsultationBodyText02');
+
+const ServicesSecurityHeader = document.querySelector('.ServicesSecurityHeader');
+const ServicesSecurityBodyText01 = document.querySelector('.ServicesSecurityBodyText01');
+const ServicesSecurityBodyText02 = document.querySelector('.ServicesSecurityBodyText02');
+const ServicesMore01 = document.querySelector('.ServicesMore01');
+const ServicesMore02 = document.querySelector('.ServicesMore02');
+const ServicesMore03 = document.querySelector('.ServicesMore03');
+
+const MembersHeader = document.querySelector('.MembersHeader');
+const Member01 = document.querySelector('.Member01');
+const Member02 = document.querySelector('.Member02');
+const Member03 = document.querySelector('.Member03');
+const Member04 = document.querySelector('.Member04');
+
+
+
 //mainLyout
 mainLayout.classList.remove('myFarsiClass');
 mainLayout.classList.add('myFarsiClass');
@@ -137,42 +164,82 @@ AboutSection4.textContent = "Read more";
 AboutSection4.textContent = "بیشتر...";
 
 //ContactSection
-//EN
-ContactSection.textContent = "Contact";
-ContactSectionBody.textContent = "Send us your reviews. It'll help us in development.";
-ContactSectionBody.setAttribute("style", "text-Align: left!important;");
-ContactFormName.setAttribute("placeholder", "Full name");
-ContactFormEmail.setAttribute("placeholder", "Email address");
-ContactFormPhone.setAttribute("placeholder", "Phone number");
-ContactFormSubject.setAttribute("placeholder", "Subject");
-ContactFormMessage.setAttribute("placeholder", "Message");
-ContactFormBtn.textContent = "Send";
-
-
-
-
-
+    //EN
+    ContactSection.textContent = "Contact";
+    ContactSectionBody.textContent = "Send us your reviews. It'll help us in development.";
+    ContactSectionBody.setAttribute("style", "text-Align: left!important;");
+    ContactFormName.setAttribute("placeholder", "Full name");
+    ContactFormEmail.setAttribute("placeholder", "Email address");
+    ContactFormPhone.setAttribute("placeholder", "Phone number");
+    ContactFormSubject.setAttribute("placeholder", "Subject");
+    ContactFormMessage.setAttribute("placeholder", "Message");
+    ContactFormBtn.textContent = "Send";
 
     
+    //FA
+    ContactSection.textContent = "تماس با ما";
+    ContactSectionBody.textContent = "نظرات خود را برای ما ارسال کنید این به ما در توسعه کمک خواهد کرد.";
+    ContactSectionBody.setAttribute("style", "text-Align: right!important;");
+    ContactFormName.setAttribute("placeholder", "نام خانوادگی");
+    ContactFormEmail.setAttribute("placeholder", "پست الکترونیک");
+    ContactFormPhone.setAttribute("placeholder", "شماره تلفن");
+    ContactFormSubject.setAttribute("placeholder", "موضوع");
+    ContactFormMessage.setAttribute("placeholder", "متن");
+    ContactFormBtn.textContent = "ارسال";
+
+//Services
+//EN
+ServicesHeader.textContent = "Services";
+ServicesSupportHeader.textContent = "Support";
+ServicesSupporBodyText01.textContent = "It is our responsibility to provide support for products, we developed.";
+ServicesSupporBodyText02.textContent = "We will support our products which produced by our team.";
+ServicesSupporBodyText03.textContent = "Depend on product you have, there is 6 months to 1 year of problem solution support for each plan of web apps designing.";
+ServicesConsultationHeader.textContent = "Free consultation";
+ServicesConsultationBodyText01.textContent = "Different development plans of web applications will be provided to client’s depends on their requirements and purposes.";
+ServicesConsultationBodyText02.textContent = "Due to importance of user experiences deigning of apps, there is a Free consultation of your required goal features to products you need.";
+
+ServicesSecurityHeader.textContent = "Security";
+ServicesSecurityBodyText01.textContent = "We take care of your information through components dedicated to securing applications products are protected by anti-fishing components of Asp.net core framework.";
+ServicesSecurityBodyText02.textContent = "In addition, there is a secure authentication for web apps which are produced by Microsoft Identity.";
+
+ServicesMore01.textContent = "Read more";
+ServicesMore02.textContent = "Read more";
+ServicesMore03.textContent = "Read more";
+
+MembersHeader.textContent = "Members";
+Member01.textContent = "Mohammad javad Najafi";
+Member02.textContent = "Amir hossein Khazaeli";
+Member03.textContent = "Amir hossein sahifi";
+Member04.textContent = "Mohammad javad Zackerian";
+
+
+
+
 //FA
-ContactSection.textContent = "تماس با ما";
-ContactSectionBody.textContent = "نظرات خود را برای ما ارسال کنید این به ما در توسعه کمک خواهد کرد.";
-ContactSectionBody.setAttribute("style", "text-Align: right!important;");
-ContactFormName.setAttribute("placeholder", "نام خانوادگی");
-ContactFormEmail.setAttribute("placeholder", "پست الکترونیک");
-ContactFormPhone.setAttribute("placeholder", "شماره تلفن");
-ContactFormSubject.setAttribute("placeholder", "موضوع");
-ContactFormMessage.setAttribute("placeholder", "متن");
-ContactFormBtn.textContent = "ارسال";
+ServicesHeader.textContent = "سرویس ها";
+ServicesSupportHeader.textContent = "پشتیبانی";
+ServicesSupporBodyText01.textContent = "این مسئولیت ما است که برای محصولاتی که توسعه داده ایم، پشتیبانی ارائه دهیم.";
+ServicesSupporBodyText02.textContent = "ما از محصولات خود که توسط تیم ما تولید می شود حمایت خواهیم کرد.";
+ServicesSupporBodyText03.textContent = "بسته به محصولی که دارید، 6 ماه تا 1 سال پشتیبانی حل مشکل برای هر طرح طراحی اپلیکیشن های وب وجود دارد.";
+ServicesConsultationHeader.textContent = "مشاوره رایگان";
+ServicesConsultationBodyText01.textContent = "برنامه های مختلف توسعه برنامه های کاربردی تحت وب بسته به نیازها و اهداف آنها به مشتریان ارائه می شود.";
+ServicesConsultationBodyText02.textContent = "با توجه به اهمیت تجربه کاربری در طراحی اپلیکیشن ها، مشاوره رایگان از ویژگی های هدف مورد نیاز شما برای محصولات مورد نیاز شما وجود دارد.";
+
+ServicesSecurityHeader.textContent = "امنیت";
+ServicesSecurityBodyText01.textContent = "ما از اطلاعات شما از طریق اجزای اختصاص داده شده برای ایمن سازی برنامه ها مراقبت می کنیم. محصولات با اجزای ضد ماهیگیری چارچوب اصلی Asp.net محافظت می شوند.";
+ServicesSecurityBodyText02.textContent = "علاوه بر این، یک احراز هویت امن برای برنامه های وب که توسط Microsoft Identity تولید می شوند وجود دارد.";
+
+ServicesMore01.textContent = "بیشتر...";
+ServicesMore02.textContent = "بیشتر...";
+ServicesMore03.textContent = "بیشتر...";
 
 
 
-
-
-
-
-
-
+MembersHeader.textContent = "اعضا";
+Member01.textContent = "محمد جواد نجفی";
+Member02.textContent = "امیرحسین خزائلی پور";
+Member03.textContent = "امیرحسین صحیفی";
+Member04.textContent = "محمد جواد ذاکریان";
 
 
                     

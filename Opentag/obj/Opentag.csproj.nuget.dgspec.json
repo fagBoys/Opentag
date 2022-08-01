@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {}
+    "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {
+    "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
+        "projectUniqueName": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
         "projectName": "Opentag",
-        "projectPath": "C:\\Users\\a\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
-        "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a\\Documents\\GitHub\\Opentag\\Opentag\\obj\\",
+        "projectPath": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
+        "packagesPath": "C:\\Users\\zack\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Opentag\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,7 +113,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
