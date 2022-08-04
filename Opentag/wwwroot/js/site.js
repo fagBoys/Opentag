@@ -6,6 +6,7 @@ console.log('Loged hello');
 
 // Layout FA/EN
 const mainLayout = document.querySelector('.mainLayout');
+const LangButton = document.querySelector('.LangButton');
 
 //Get Nav Header
 const navIndex = document.querySelector('.navIndex');
@@ -84,18 +85,21 @@ const Member04 = document.querySelector('.Member04');
 
 
 //mainLyout
-mainLayout.classList.remove('myFarsiClass');
+mainLayout.classList.remove('myFarsiClass');    
 mainLayout.classList.add('myFarsiClass');
 
 
 //NavHeader
-    //EN
+//EN
+    LangButton.textContent = "FA";
     navIndex.textContent = 'Home';
     navServices.textContent = 'Service';
     navOrder.textContent = 'Order';
     navAbout.textContent = 'About';
     navContact.textContent = 'Contact';
+
     //FA
+    LangButton.textContent = "EN";
     navIndex.textContent = 'خانه';
     navServices.textContent = 'سرویس ها';
     navOrder.textContent = 'سفارش';
