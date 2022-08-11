@@ -4,6 +4,9 @@
 // Write your JavaScript code.
 console.log('Loged hello');
 
+localStorage.setItem('DefaultLanguage', 'FA');
+var CurrentLang = localStorage.getItem('DefaultLanguage');
+
 
 let SetLang = false;
 
@@ -136,6 +139,8 @@ switch (CurrenPage.textContent) {
 
 
 
+UpdateLayoutFunc();
+UpdateLangFunc();
 
 
 
@@ -152,7 +157,7 @@ switch (CurrenPage.textContent) {
 
 function UpdateLayoutFunc()
 {
-    if (LangButtonText.textContent == "FA") {
+    if (CurrentLang == "EN") {
 
         //EN
         //mainLayout
@@ -165,7 +170,7 @@ function UpdateLayoutFunc()
         navAbout.textContent = 'About';
         navContact.textContent = 'Contact';
     }
-    else if (LangButtonText.textContent == "EN") {
+    else if (CurrentLang == "FA") {
         //FA
         //mainLayout
         mainLayout.classList.add('myFarsiClass');
@@ -189,7 +194,7 @@ function UpdateLayoutFunc()
 
     
 function UpdateLangFunc() {
-    if (LangButtonText.textContent == "FA"  ) {
+    if (CurrentLang == "EN"  ) {
         //EN
         //NavFooter
         footerSiteMap.textContent = 'Site Map';
@@ -294,7 +299,7 @@ function UpdateLangFunc() {
         }
 
     }
-    else if (LangButtonText.textContent == "EN" ) {
+    else if (CurrentLang == "FA" ) {
         //FA
         //NavFooter
         footerSiteMap.textContent = 'نقشه سایت';
@@ -411,17 +416,20 @@ LangButton.addEventListener
                 //Change to farsi
                 /*alert('EN');*/
                 LangButtonText.textContent = "EN";
+                localStorage.setItem('DefaultLanguage', 'FA');
+                 CurrentLang = localStorage.getItem('DefaultLanguage');
                 UpdateLayoutFunc();
-
                 UpdateLangFunc();
             }
             else if (LangButtonText.textContent == "EN") {
                 //Change to english
                 /*alert('FA');*/
                 LangButtonText.textContent = "FA";
+                localStorage.setItem('DefaultLanguage', 'EN');
+                 CurrentLang = localStorage.getItem('DefaultLanguage');
                 UpdateLayoutFunc();
-
                 UpdateLangFunc();
+
 
             }
         }
