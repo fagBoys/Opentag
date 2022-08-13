@@ -4,8 +4,26 @@
 // Write your JavaScript code.
 console.log('Loged hello');
 
-localStorage.setItem('DefaultLanguage', 'FA');
+
+
+GetLang();
+
+function GetLang() {
+    try {
+        var CurrentLang = localStorage.getItem('DefaultLanguage');
+        if (CurrentLang == "") throw "Empty";
+        if (CurrentLang == null) throw "Empty2";
+        alert(" ok");
+    }
+    catch (err) {
+        alert(err);
+        localStorage.setItem('DefaultLanguage', 'FA');
+    }
+    
+}
 var CurrentLang = localStorage.getItem('DefaultLanguage');
+
+
 
 
 let SetLang = false;
