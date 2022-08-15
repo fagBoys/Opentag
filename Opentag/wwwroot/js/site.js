@@ -134,6 +134,67 @@ switch (CurrenPage.textContent) {
     case "3":
         //Oreder pafe
         alert("3");
+        var OrderCol = document.querySelector(".OrderCol")
+        var OrderHeader = document.querySelector(".OrderHeader")
+        var OrderHeader2 = document.querySelector(".OrderHeader2")
+        var OrderDscription = document.querySelector(".OrderDscription")
+        var PlantHeaderStandard = document.querySelector(".PlantHeaderStandard")
+        var PlantPriceStandard = document.querySelector(".PlantPriceStandard")
+        var PlantText1Standard = document.querySelector(".PlantText1Standard")
+        var PlantText2Standard = document.querySelector(".PlantText2Standard")
+        var PlantText3Standard = document.querySelector(".PlantText3Standard")
+        var PlantText4Standard = document.querySelector(".PlantText4Standard")
+
+        var PlantHeaderPremium = document.querySelector(".PlantHeaderPremium")
+        var PlantPricePremium = document.querySelector(".PlantPricePremium")
+        var PlantText1Premium = document.querySelector(".PlantText1Premium")
+        var PlantText2Premium = document.querySelector(".PlantText2Premium")
+        var PlantText3Premium = document.querySelector(".PlantText3Premium")
+        var PlantText4Premium = document.querySelector(".PlantText4Premium")
+        var PlantText5Premium = document.querySelector(".PlantText5Premium")
+        var PlantText6Premium = document.querySelector(".PlantText6Premium")
+
+        var PlantHeaderGold = document.querySelector(".PlantHeaderGold")
+        var PlantPriceGold = document.querySelector(".PlantPriceGold")
+        var PlantText1Gold = document.querySelector(".PlantText1Gold")
+        var PlantText2Gold = document.querySelector(".PlantText2Gold")
+        var PlantText3Gold = document.querySelector(".PlantText3Gold")
+        var PlantText4Gold = document.querySelector(".PlantText4Gold")
+
+        var Plan1 = document.querySelector(".Plan1")
+        var Plan2 = document.querySelector(".Plan2")
+        var Plan3 = document.querySelector(".Plan3")
+
+        var Plan1Text1 = document.querySelector(".Plan1Text1")
+        var Plan2Text1 = document.querySelector(".Plan2Text1")
+        var Plan3Text1 = document.querySelector(".Plan3Text1")
+
+        var Plan1Text2 = document.querySelector(".Plan1Text2")
+        var Plan2Text2 = document.querySelector(".Plan2Text2")
+        var Plan3Text2 = document.querySelector(".Plan3Text2")
+
+        var Plan1Text3 = document.querySelector(".Plan1Text3")
+        var Plan2Text3 = document.querySelector(".Plan2Text3")
+        var Plan3Text3 = document.querySelector(".Plan3Text3")
+
+
+        var Plan1Text4 = document.querySelector(".Plan1Text4")
+        var Plan2Text4 = document.querySelector(".Plan2Text4")
+        var Plan3Text4 = document.querySelector(".Plan3Text4")
+
+        var Plan1Text5 = document.querySelector(".Plan1Text5")
+        var Plan2Text5 = document.querySelector(".Plan2Text5")
+        var Plan3Text5 = document.querySelector(".Plan3Text5")
+
+        var Plan1Text6 = document.querySelector(".Plan1Text6")
+        var Plan2Text6 = document.querySelector(".Plan2Text6")
+        var Plan3Text6 = document.querySelector(".Plan3Text6")
+
+
+
+
+
+
         break;
     case "4":
         //About page
@@ -310,8 +371,63 @@ function UpdateLangFunc() {
 
                 break;
             case "3":
-                //Oreder pafe
+                //Oreder page
                 alert("EN 3");
+                OrderCol.setAttribute("style", "text-align: left !important; margin-top: 150px;");
+                OrderHeader.textContent = "Order";
+                OrderHeader2.textContent = "Contact us through this form";
+                OrderDscription.textContent = "We will provide different order plan for your business. It's our reponsibility to make our customers satisfied. At the time we have two order plans:";
+                PlantHeaderStandard.textContent = "Standard";
+                PlantPriceStandard.textContent = "599$";
+                PlantText1Standard.textContent = "6 month support";
+                PlantText2Standard.textContent = "UI/UX design";
+                PlantText3Standard.textContent = "Logo designing";
+                PlantText4Standard.textContent = "Administrator panel";
+
+                PlantHeaderPremium.textContent = "Premium";
+                PlantPricePremium.textContent = "999$";
+                PlantText1Premium.textContent = "1 year support";
+                PlantText2Premium.textContent = "UI/UX design (3 samples)";
+                PlantText3Premium.textContent = "Logo designing";
+                PlantText4Premium.textContent = "Administrator panel";
+                PlantText5Premium.textContent = "Host & domain";
+                PlantText6Premium.textContent = "Premium images";
+
+                PlantHeaderGold.textContent = "GOLD";
+                PlantPriceGold.textContent = "1499$";
+                PlantText1Gold.textContent = "6 month support";
+                PlantText2Gold.textContent = "UI/UX design";
+                PlantText3Gold.textContent = "Logo designing";
+                PlantText4Gold.textContent = "Administrator panel";
+
+                Plan1.textContent = "Standard";
+                Plan2.textContent = "Premium";
+                Plan3.textContent = "GOLD";
+
+                Plan1Text1.textContent = " 6 month support ";
+                Plan2Text1.textContent = " 1 year support ";
+                Plan3Text1.textContent = "1 year support";
+
+                Plan1Text2.textContent = " UI/UX design	";
+                Plan2Text2.textContent = "UI/UX design (3 samples)";
+                Plan3Text2.textContent = "UI/UX design (3 samples)";
+
+                Plan1Text3.textContent = " Logo designing ";
+                Plan2Text3.textContent = " Logo designing ";
+                Plan3Text3.textContent = " Logo designing ";
+
+                Plan1Text4.textContent = "  Administrator panel  ";
+                Plan2Text4.textContent = "  Administrator panel  ";
+                Plan3Text4.textContent = "  Administrator panel  ";
+
+                Plan1Text5.textContent = " Host & domain ";
+                Plan2Text5.textContent = " Host & domain ";
+                Plan3Text5.textContent = " Host & domain ";
+
+                Plan1Text6.textContent = " Premium images ";
+                Plan2Text6.textContent = " Premium images ";
+                Plan3Text6.textContent = " Premium images ";
+
                 break;
             case "4":
                 //About page
@@ -427,8 +543,64 @@ function UpdateLangFunc() {
 
                 break;
             case "3":
-                //Oreder pafe
+                //Oreder page
                 alert("FA 3");
+                OrderCol.setAttribute("style", "text-align: right !important; margin-top: 150px;");
+                OrderHeader.textContent = "سفارش";
+                OrderHeader2.textContent = "از طریق این فرم با ما تماس بگیرید";
+                OrderDscription.textContent = "ما طرح سفارش متفاوتی را برای کسب و کار شما ارائه خواهیم کرد. این وظیفه ماست که مشتریان خود را راضی کنیم. در حال حاضر ما دو برنامه سفارش داریم:";
+                PlantHeaderStandard.textContent = "استاندارد";
+                PlantPriceStandard.textContent = "4,900,000 تومان"; 
+                PlantText1Standard.textContent = "پشتیبانی 6 ماهه";
+                PlantText2Standard.textContent = "طراحی UI/UX";
+                PlantText3Standard.textContent = "طراحی لوگو";
+                PlantText4Standard.textContent = "پنل مدیریت";
+
+                PlantHeaderPremium.textContent = "نقره ای";
+                PlantPricePremium.textContent = "7,900,000 تومان";
+                PlantText1Premium.textContent = "پشتیبانی 1 ساله";
+                PlantText2Premium.textContent = "طراحی UI/UX (3 نمونه)";
+                PlantText3Premium.textContent = "طراحی لوگو";
+                PlantText4Premium.textContent = "پنل مدیریت";
+                PlantText5Premium.textContent = "هاست و دامنه";
+                PlantText6Premium.textContent = "استفاده از عکس های اختصاصی";
+
+                PlantHeaderGold.textContent = "طلایی";
+                PlantPriceGold.textContent = "39,900,000 تومان";
+                PlantText1Gold.textContent = "پشتیبانی 6 ماهه";
+                PlantText2Gold.textContent = "طراحی UI/UX";
+                PlantText3Gold.textContent = "طراحی لوگو";
+                PlantText4Gold.textContent = "پنل مدیریت";
+
+                Plan1.textContent = "استاندارد";
+                Plan2.textContent = "نقره ای";
+                Plan3.textContent = "طلایی";
+
+                Plan1Text1.textContent = " پشتیبانی 6 ماهه ";
+                Plan2Text1.textContent = " پشتیبانی 1 ساله ";
+                Plan3Text1.textContent = "پشتیبانی 1 ساله";
+
+                Plan1Text2.textContent = " طراحی UI/UX	";
+                Plan2Text2.textContent = "طراحی UI/UX (3 نمونه)";
+                Plan3Text2.textContent = "طراحی UI/UX (3 نمونه)";
+
+                Plan1Text3.textContent = "طراحی لوگو";
+                Plan2Text3.textContent = "طراحی لوگو";
+                Plan3Text3.textContent = "طراحی لوگو";
+
+                Plan1Text4.textContent = "  پنل مدریت  ";
+                Plan2Text4.textContent = "  پنل مدریت   ";
+                Plan3Text4.textContent = "  پنل مدریت   ";
+
+                Plan1Text5.textContent = " هاست و دامنه ";
+                Plan2Text5.textContent = " هاست و دامنه ";
+                Plan3Text5.textContent = " هاست و دامنه ";
+
+                Plan1Text6.textContent = "تصاویر ممتاز";
+                Plan2Text6.textContent = "تصاویر ممتاز";
+                Plan3Text6.textContent = "تصاویر ممتاز";
+
+
                 break;
             case "4":
                 //About page
