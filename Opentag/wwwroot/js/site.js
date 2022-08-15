@@ -117,6 +117,17 @@ switch (CurrenPage.textContent) {
     case "2":
         //Services page
         alert("2");
+        var textall = document.querySelector(".textall")
+        var Header = document.querySelector(".Header")
+        var Slog = document.querySelector(".Slog")
+        var Description = document.querySelector(".Description")
+        var ConsultationHeader = document.querySelector(".ConsultationHeader")
+        var ConsultationText = document.querySelector(".ConsultationText")
+        var SupportHeader = document.querySelector(".SupportHeader")
+        var SupportText = document.querySelector(".SupportText")
+        var SecurityHeader = document.querySelector(".SecurityHeader")
+        var SecurityText = document.querySelector(".SecurityText")
+
 
 
         break;
@@ -284,7 +295,18 @@ function UpdateLangFunc() {
             case "2":
                 //Services page
                 alert("EN 2");
-
+                textall.setAttribute("style", "text-align: left !important;")
+                Header.classList.add('myFarsiClass');
+                Header.setAttribute("style", "direction:ltr !important;");
+                Header.textContent ="Services";
+                Slog.textContent = "Checkout our Services";
+                Description.textContent = " Our team is interested about building web apps, mobile apps and game developing over Microsoft practical and useful frameworks.If you like to help or support programming communities, please follow us to make world a better place.This is our duty to refer different services to our customers.This will show how much we care about people who care about us.";
+                ConsultationHeader.textContent = "Services";
+                ConsultationText.textContent = "This is a sample text for this technology,it's abou it's benefits or how it works.This kind of article shoul be larger then technologies article and also articles image in these kind of article.We should add a read more link to another page,for display more information about the article";
+                SupportHeader.textContent = "Support";
+                SupportText.textContent = "This is a sample text for this technology,it's abou it's benefits or how it works.This kind of article shoul be larger then technologies article and also articles image in these kind of article.We should add a read more link to another page,for display more information about the article";
+                SecurityHeader.textContent = "Free consultation";
+                SecurityText.textContent = "This is a sample text for this technology,it's abou it's benefits or how it works.This kind of article shoul be larger then technologies article and also articles image in these kind of article.We should add a read more link to another page,for display more information about the article";
 
                 break;
             case "3":
@@ -389,6 +411,20 @@ function UpdateLangFunc() {
             case "2":
                 //Services page
                 alert("FA 2");
+                alert("EN 2");
+                textall.setAttribute("style", "text-align: right !important;")
+                Header.classList.remove('myFarsiClass');
+                Header.setAttribute("style", "direction:rtl !important;");
+                Header.textContent = "خدمات";
+                Slog.textContent = "خدمات ما را بررسی کنید";
+                Description.textContent = " تیم ما علاقه مند به ساخت برنامه های وب، برنامه های تلفن همراه و توسعه بازی در چارچوب های کاربردی و مفید مایکروسافت است.اگر دوست دارید به جوامع برنامه نویسی کمک کنید یا از آنها حمایت کنید، لطفا ما را دنبال کنید تا دنیا را به مکانی بهتر تبدیل کنیم.این وظیفه ماست که خدمات مختلف را به مشتریان خود ارجاع دهیم.این نشان می دهد که چقدر به افرادی که به ما اهمیت می دهند اهمیت می دهیم.";
+                ConsultationHeader.textContent = "خدمات";
+                ConsultationText.textContent = "این یک متن نمونه برای این فناوری است، در مورد مزایا یا نحوه عملکرد آن است. این نوع مقاله باید بزرگتر از مقاله فناوری و همچنین تصویر مقاله در این نوع مقاله باشد. ما باید یک پیوند خواندن بیشتر به صفحه دیگری اضافه کنیم. نمایش اطلاعات بیشتر در مورد مقاله";
+                SupportHeader.textContent = "پشتیبانی";
+                SupportText.textContent = "این یک متن نمونه برای این فناوری است، در مورد مزایا یا نحوه عملکرد آن است. این نوع مقاله باید بزرگتر از مقاله فناوری و همچنین تصویر مقاله در این نوع مقاله باشد. ما باید یک پیوند خواندن بیشتر به صفحه دیگری اضافه کنیم. نمایش اطلاعات بیشتر در مورد مقاله";
+                SecurityHeader.textContent = "مشاوره رایگان";
+                SecurityText.textContent = "این یک متن نمونه برای این فناوری است، در مورد مزایا یا نحوه عملکرد آن است. این نوع مقاله باید بزرگتر از مقاله فناوری و همچنین تصویر مقاله در این نوع مقاله باشد. ما باید یک پیوند خواندن بیشتر به صفحه دیگری اضافه کنیم. نمایش اطلاعات بیشتر در مورد مقاله";
+
                 break;
             case "3":
                 //Oreder pafe
