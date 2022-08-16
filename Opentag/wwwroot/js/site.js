@@ -113,7 +113,6 @@ switch (CurrenPage.textContent) {
         var Member03 = document.querySelector('.Member03');
         var Member04 = document.querySelector('.Member04');
         break;
-
     case "2":
         //Services page
         alert("2");
@@ -352,7 +351,6 @@ function UpdateLangFunc() {
                 Member03.textContent = "Amir hossein sahifi";
                 Member04.textContent = "Mohammad javad Zackerian";
                 break;
-
             case "2":
                 //Services page
                 alert("EN 2");
@@ -362,12 +360,12 @@ function UpdateLangFunc() {
                 Header.textContent ="Services";
                 Slog.textContent = "Checkout our Services";
                 Description.textContent = " Our team is interested about building web apps, mobile apps and game developing over Microsoft practical and useful frameworks.If you like to help or support programming communities, please follow us to make world a better place.This is our duty to refer different services to our customers.This will show how much we care about people who care about us.";
-                ConsultationHeader.textContent = "Services";
-                ConsultationText.textContent = "This is a sample text for this technology,it's abou it's benefits or how it works.This kind of article shoul be larger then technologies article and also articles image in these kind of article.We should add a read more link to another page,for display more information about the article";
+                ConsultationHeader.textContent = "Security";
+                ConsultationText.textContent = "Another important task to implementation of web and mobile apps is providing the modern security services in order of system secure management. Imagination on the contrary, many companies failure to comply with the principles of development. However, our team with the interest of programming knowledge and using modern tools in system security field, provide a powerful software platform for your product.";
                 SupportHeader.textContent = "Support";
-                SupportText.textContent = "This is a sample text for this technology,it's abou it's benefits or how it works.This kind of article shoul be larger then technologies article and also articles image in these kind of article.We should add a read more link to another page,for display more information about the article";
+                SupportText.textContent = "One of the most important services in the matter of production and development of software which should considered is the support services. Services such as support helps providing high product quality by developers  team. On the other side, lack of  software observation services during users interaction will be caused to bugs or problems on final product.";
                 SecurityHeader.textContent = "Free consultation";
-                SecurityText.textContent = "This is a sample text for this technology,it's abou it's benefits or how it works.This kind of article shoul be larger then technologies article and also articles image in these kind of article.We should add a read more link to another page,for display more information about the article";
+                SecurityText.textContent = "According to employers demands difference, free consultation services helps to better issue understanding and also offering proper suggestion according to required needs of employer and order easy decision making. Vira consultation services with offering suggested proposal, exclusive user interface designing, introducing development and production tools and system analysis tries to eliminating ambiguity of suggested product.";
 
                 break;
             case "3":
@@ -480,7 +478,6 @@ function UpdateLangFunc() {
                 EntityFrameworkBody.textContent = 'یک فناوری برای پشتیبانی از کدهای سمت سرور و ایجاد یک محیط امن قدرتمند برای برنامه های وب شما است.';
                 ASPCore.textContent = 'فضای کاری Vira از چارچوب DotNet Core برای ساخت و توسعه برنامه های کاربردی متقابل پلتفرم بر روی فناوری های مایکروسافت استفاده می کند.';
                 MVCDesignpatternHeader.textContent = 'الگوی طراحی MVC';
-
                 MVCDesignpatternBody.textContent = "پروژه های ما به سه بخش هوشمند مجزا تقسیم می شوند که به یکدیگر مرتبط هستند و برنامه نویسی را آسان می کنند.";
                 BootstrapHeader.textContent = "فریم ورک Bootstrap";
                 BootstrapFramework.textContent = "توسعه دهندگان فرانت اند در تیم Vira نماها را بر اساس چارچوب بوت استرپ و بسیاری از کتابخانه های خودساخته تنظیم می کنند.";
@@ -509,11 +506,9 @@ function UpdateLangFunc() {
                 ServicesConsultationHeader.textContent = "مشاوره رایگان";
                 ServicesConsultationBodyText01.textContent = "برنامه های مختلف توسعه برنامه های کاربردی تحت وب بسته به نیازها و اهداف آنها به مشتریان ارائه می شود.";
                 ServicesConsultationBodyText02.textContent = "با توجه به اهمیت تجربه کاربری در طراحی اپلیکیشن ها، مشاوره رایگان از ویژگی های هدف مورد نیاز شما برای محصولات مورد نیاز شما وجود دارد.";
-
                 ServicesSecurityHeader.textContent = "امنیت";
                 ServicesSecurityBodyText01.textContent = "ما از اطلاعات شما از طریق اجزای اختصاص داده شده برای ایمن سازی برنامه ها مراقبت می کنیم. محصولات با اجزای ضد ماهیگیری چارچوب اصلی Asp.net محافظت می شوند.";
                 ServicesSecurityBodyText02.textContent = "علاوه بر این، یک احراز هویت امن برای برنامه های وب که توسط Microsoft Identity تولید می شوند وجود دارد.";
-
                 ServicesMore01.textContent = "بیشتر...";
                 ServicesMore02.textContent = "بیشتر...";
                 ServicesMore03.textContent = "بیشتر...";
@@ -523,7 +518,6 @@ function UpdateLangFunc() {
                 Member03.textContent = "امیرحسین صحیفی";
                 Member04.textContent = "محمد جواد ذاکریان";
                 break;
-
             case "2":
                 //Services page
                 alert("FA 2");
@@ -534,12 +528,12 @@ function UpdateLangFunc() {
                 Header.textContent = "خدمات";
                 Slog.textContent = "خدمات ما را بررسی کنید";
                 Description.textContent = " تیم ما علاقه مند به ساخت برنامه های وب، برنامه های تلفن همراه و توسعه بازی در چارچوب های کاربردی و مفید مایکروسافت است.اگر دوست دارید به جوامع برنامه نویسی کمک کنید یا از آنها حمایت کنید، لطفا ما را دنبال کنید تا دنیا را به مکانی بهتر تبدیل کنیم.این وظیفه ماست که خدمات مختلف را به مشتریان خود ارجاع دهیم.این نشان می دهد که چقدر به افرادی که به ما اهمیت می دهند اهمیت می دهیم.";
-                ConsultationHeader.textContent = "خدمات";
-                ConsultationText.textContent = "این یک متن نمونه برای این فناوری است، در مورد مزایا یا نحوه عملکرد آن است. این نوع مقاله باید بزرگتر از مقاله فناوری و همچنین تصویر مقاله در این نوع مقاله باشد. ما باید یک پیوند خواندن بیشتر به صفحه دیگری اضافه کنیم. نمایش اطلاعات بیشتر در مورد مقاله";
+                ConsultationHeader.textContent = "امنیت";
+                ConsultationText.textContent = "یکی دیگر از وظایف مهم پیاده سازی اپلیکیشن های تحت وب و موبایل، ارائه خدمات امنیتی مدرن به منظور مدیریت ایمن سیستم است. بر خلاف تصور، بسیاری از شرکت ها در رعایت این اصول شکست می خورند. اما تیم ما با علاقه به دانش برنامه نویسی و استفاده از ابزارهای مدرن در زمینه امنیت سیستم، بستر نرم افزاری قدرتمندی را برای محصول شما فراهم می کند.";
                 SupportHeader.textContent = "پشتیبانی";
-                SupportText.textContent = "این یک متن نمونه برای این فناوری است، در مورد مزایا یا نحوه عملکرد آن است. این نوع مقاله باید بزرگتر از مقاله فناوری و همچنین تصویر مقاله در این نوع مقاله باشد. ما باید یک پیوند خواندن بیشتر به صفحه دیگری اضافه کنیم. نمایش اطلاعات بیشتر در مورد مقاله";
+                SupportText.textContent = "یکی از مهمترین خدمات در امر تولید و توسعه نرم افزار که باید مورد توجه قرار گیرد خدمات پشتیبانی می باشد. خدماتی مانند پشتیبانی به ارائه کیفیت بالای محصول توسط تیم توسعه دهندگان کمک می کند. از سوی دیگر، عدم وجود سرویس‌های مشاهده نرم‌افزاری در هنگام تعامل با کاربران، باعث ایجاد باگ یا مشکلاتی در محصول نهایی می‌شود.";
                 SecurityHeader.textContent = "مشاوره رایگان";
-                SecurityText.textContent = "این یک متن نمونه برای این فناوری است، در مورد مزایا یا نحوه عملکرد آن است. این نوع مقاله باید بزرگتر از مقاله فناوری و همچنین تصویر مقاله در این نوع مقاله باشد. ما باید یک پیوند خواندن بیشتر به صفحه دیگری اضافه کنیم. نمایش اطلاعات بیشتر در مورد مقاله";
+                SecurityText.textContent = "با توجه به تفاوت خواسته های کارفرمایان، خدمات مشاوره رایگان به درک بهتر موضوع و همچنین ارائه پیشنهاد مناسب با توجه به نیازهای مورد نیاز کارفرما و سفارش آسان تصمیم گیری کمک می کند. خدمات مشاوره ویرا با ارائه پروپوزال پیشنهادی، طراحی رابط کاربری انحصاری، معرفی ابزارهای توسعه و تولید و تحلیل سیستم سعی در رفع ابهام محصول پیشنهادی دارد.";
 
                 break;
             case "3":
