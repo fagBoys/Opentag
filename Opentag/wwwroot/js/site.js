@@ -198,6 +198,37 @@ switch (CurrenPage.textContent) {
     case "4":
         //About page
         alert("4");
+        var AboutAll1 = document.querySelector(".AboutAll1");
+        var AboutHeader = document.querySelector(".AboutHeader");
+        var AboutDescription = document.querySelector(".AboutDescription");
+        var AboutText1 = document.querySelector(".AboutText1");
+        var AboutText2 = document.querySelector(".AboutText2");
+        var AboutText3 = document.querySelector(".AboutText3");
+        var AboutText4 = document.querySelector(".AboutText4");
+
+        var AboutText51 = document.querySelector(".AboutText51");
+        var AboutText52 = document.querySelector(".AboutText52");
+        var AboutText53 = document.querySelector(".AboutText53");
+
+
+        var AboutText61 = document.querySelector(".AboutText61");
+        var AboutText62 = document.querySelector(".AboutText62");
+        var AboutText63 = document.querySelector(".AboutText63");
+
+        var AboutMember = document.querySelector(".AboutMember");
+        var AboutMember1 = document.querySelector(".AboutMember1");
+        var AboutMember2 = document.querySelector(".AboutMember2");
+        var AboutMember3 = document.querySelector(".AboutMember3");
+        var AboutMember4 = document.querySelector(".AboutMember4");
+
+
+
+
+
+
+        
+
+
         break;
     case "5":
         //Contact page
@@ -430,6 +461,32 @@ function UpdateLangFunc() {
             case "4":
                 //About page
                 alert("EN 4");
+                AboutAll1.setAttribute("style", "text-align: left !important; ");
+
+                AboutHeader.textContent = "About";
+                AboutDescription.textContent = "About our company";
+                AboutText1.textContent = "Our team is interested about building web apps, mobile apps and game developing over Microsoft practical and useful frameworks.";
+                AboutText2.textContent = "If you like to help or support programming communities, please follow us to make world a better place.";
+                AboutText3.textContent = "This is our duty to refer different services to our customers. This will show how much we care about people who care about us.";
+                AboutText4.textContent = "Read more";
+
+                AboutText51.textContent = "For read more about our";
+                AboutText52.textContent = "Services";
+                AboutText53.textContent = "press this link.";
+
+
+                AboutText61.textContent = "For more Information";
+                AboutText62.textContent = " contact us";
+                AboutText63.textContent = "and we will response soon.";
+
+                AboutMember.textContent = "Members";
+                AboutMember1.textContent = "Mohammad javad Najafi";
+                AboutMember2.textContent = "Amir hossein Khazaeli";
+                AboutMember3.textContent = "Amir hossein sahifi";
+                AboutMember4.textContent = "Mohammad javad Zackerian";
+
+
+
                 break;
             case "5":
                 //Contact page
@@ -599,6 +656,30 @@ function UpdateLangFunc() {
             case "4":
                 //About page
                 alert("FA 4");
+
+                AboutAll1.setAttribute("style", "text-align: right !important; ");
+                AboutHeader.textContent = "در باره ما";
+                AboutDescription.textContent = "درباره شرکت ما";
+                AboutText1.textContent = "تیم ما علاقه مند به ساخت برنامه های وب، برنامه های موبایل و توسعه بازی در چارچوب های کاربردی و مفید مایکروسافت است.";
+                AboutText2.textContent = "اگر دوست دارید به جوامع برنامه نویسی کمک کنید یا از آنها حمایت کنید، لطفا ما را دنبال کنید تا دنیا را به مکانی بهتر تبدیل کنیم.";
+                AboutText3.textContent = "این وظیفه ماست که خدمات مختلف را به مشتریان خود ارجاع دهیم. این نشان می دهد که چقدر به افرادی که به ما اهمیت می دهند اهمیت می دهیم.";
+                AboutText4.textContent = "ادامه مطلب";
+
+                AboutText51.textContent = "برای اطلاعات بیشتر در مورد ما";
+                AboutText52.textContent = "خدمات";
+                AboutText53.textContent = "این لینک را فشار دهید.";
+
+
+                AboutText61.textContent = "برای اطلاعات بیشتر";
+                AboutText62.textContent = " با ما تماس بگیرید";
+                AboutText63.textContent = "و به زودی پاسخ خواهیم داد.";
+
+                AboutMember.textContent = "اعضا";
+                AboutMember1.textContent = "محمد جواد نجفی";
+                AboutMember2.textContent = "امیرحسین خزائلی";
+                AboutMember3.textContent = "امیرحسین صحیفی";
+                AboutMember4.textContent = "محمد جواد ذاکریان";
+
                 break;
             case "5":
                 //Contact page
