@@ -2,8 +2,7 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
-console.log('Loged hello');
-
+/*console.log('Loged hello');*/
 
 
 GetLang();
@@ -13,10 +12,10 @@ function GetLang() {
         var CurrentLang = localStorage.getItem('DefaultLanguage');
         if (CurrentLang == "") throw "Empty";
         if (CurrentLang == null) throw "Empty2";
-        alert(" ok");
+        /*alert(" ok");*/
     }
     catch (err) {
-        alert(err);
+        /*alert(err);*/
         localStorage.setItem('DefaultLanguage', 'FA');
     }
     
@@ -65,7 +64,7 @@ let CurrenPage = document.querySelector('.CurrenPageTitle');
 
 switch (CurrenPage.textContent) {
     case "1":
-        alert("MainPage");
+        /*alert("MainPage");*/
         //Technologies
         var techHeader = document.querySelector('.techHeader');
         var EntityFrameworkBody = document.querySelector('.EntityFrameworkBody');
@@ -115,7 +114,7 @@ switch (CurrenPage.textContent) {
         break;
     case "2":
         //Services page
-        alert("2");
+        /*alert("2");*/
         var textall = document.querySelector(".textall")
         var Header = document.querySelector(".Header")
         var Slog = document.querySelector(".Slog")
@@ -132,7 +131,7 @@ switch (CurrenPage.textContent) {
         break;
     case "3":
         //Oreder pafe
-        alert("3");
+        /*alert("3");*/
         var OrderCol = document.querySelector(".OrderCol")
         var OrderHeader = document.querySelector(".OrderHeader")
         var OrderHeader2 = document.querySelector(".OrderHeader2")
@@ -197,7 +196,7 @@ switch (CurrenPage.textContent) {
         break;
     case "4":
         //About page
-        alert("4");
+        /*alert("4");*/
         var AboutAll1 = document.querySelector(".AboutAll1");
         var AboutHeader = document.querySelector(".AboutHeader");
         var AboutDescription = document.querySelector(".AboutDescription");
@@ -232,22 +231,41 @@ switch (CurrenPage.textContent) {
         break;
     case "5":
         //Contact page
-        alert("5");
+        /*alert("5");*/
+        var ContactAll = document.querySelector('.ContactAll');
+        var ContactHeader = document.querySelector('.ContactHeader');
+        var ContactDescription = document.querySelector('.ContactDescription');
+        var InputName = document.querySelector('.InputName');
+        var InputEmail = document.querySelector('.InputEmail');
+        var InputPhone = document.querySelector('.InputPhone');
+        var InputSubject = document.querySelector('.InputSubject');
+        var InputMessage = document.querySelector('.InputMessage');
+        var BtnSubmit = document.querySelector('.BtnSubmit');
         break;
     case "6":
-        //Oreder pafe
-        alert("6");
+        //add Order page
+        /*alert("6");*/
+        var AddOrderAll = document.querySelector('.AddOrderAll');
+        var AddOrderHeader = document.querySelector('.AddOrderHeader');
+        var AddOrderDescription = document.querySelector('.AddOrderDescription');
+        var InputFullName = document.querySelector('.InputFullName');
+        var InputPhoneNumber = document.querySelector('.InputPhoneNumber');
+        var InputEmail = document.querySelector('.InputEmail');
+        var InputSubject = document.querySelector('.InputSubject');
+        var InputDiscription = document.querySelector('.InputDiscription');
+        var InputAddOrder = document.querySelector('.InputAddOrder');
+        var InputAddOrderBack = document.querySelector('.InputAddOrderBack');
         break;
     case "7":
         //Oreder pafe
-        alert("7");
+        a/*lert("7");*/
         break;
     case "8":
         //Oreder pafe
-        alert("8");
+        /*alert("8");*/
         break;
     default:
-        alert("Default");
+        /*alert("Default");*/
 
 }
 
@@ -332,7 +350,7 @@ function UpdateLangFunc() {
 
         switch (CurrenPage.textContent) {
             case "1":
-                alert("EN MainPage");
+                /*alert("EN MainPage");*/
                 //Technologies
                 techHeader.textContent = 'Technologies';
                 EntityFrameworkBody.textContent = 'Is a technology to support server side codes and bring a powerful secure environment for your web apps.';
@@ -384,7 +402,7 @@ function UpdateLangFunc() {
                 break;
             case "2":
                 //Services page
-                alert("EN 2");
+                /*alert("EN 2");*/
                 textall.setAttribute("style", "text-align: left !important;")
                 Header.classList.add('myFarsiClass');
                 Header.setAttribute("style", "direction:ltr !important;");
@@ -401,7 +419,7 @@ function UpdateLangFunc() {
                 break;
             case "3":
                 //Oreder page
-                alert("EN 3");
+                /*alert("EN 3");*/
                 OrderCol.setAttribute("style", "text-align: left !important; margin-top: 150px;");
                 OrderHeader.textContent = "Order";
                 OrderHeader2.textContent = "Contact us through this form";
@@ -460,7 +478,7 @@ function UpdateLangFunc() {
                 break;
             case "4":
                 //About page
-                alert("EN 4");
+                /*alert("EN 4");*/
                 AboutAll1.setAttribute("style", "text-align: left !important; ");
 
                 AboutHeader.textContent = "About";
@@ -490,22 +508,44 @@ function UpdateLangFunc() {
                 break;
             case "5":
                 //Contact page
-                alert("EN 5");
+                /*alert("EN 5");*/
+                ContactAll.setAttribute("style", "margin-top: 150px; text-align: left !important; ");
+                ContactHeader.textContent = "Contact";
+                ContactDescription.textContent = "Contact us through this form";
+                InputName.setAttribute("placeholder", "Full name");
+                InputEmail.setAttribute("placeholder", "Email address");
+                InputPhone.setAttribute("placeholder", "Phone number");
+                InputSubject.setAttribute("placeholder", "Subject");
+                InputMessage.setAttribute("placeholder", "Message");
+                BtnSubmit.setAttribute("value", "submit");
+                
+
                 break;
             case "6":
-                //Oreder pafe
-                alert("EN 6");
+                //Oreder page
+                /*alert("EN 6");*/
+                AddOrderAll.setAttribute("style", "margin-top: 150px; text-align: left !important; ");
+                AddOrderHeader.textContent = "Order register ";
+                AddOrderDescription.textContent = "Fill out the form to create a new order";
+                InputFullName.textContent = "full name";
+                InputPhoneNumber.textContent = "Phone number";
+                InputEmail.textContent = "Email";
+                InputSubject.textContent = "Subject";
+                InputDiscription.textContent = "Description";
+                InputAddOrder.setAttribute("value", "Submit");
+                InputAddOrderBack.textContent = "Back to List";
+
                 break;
             case "7":
-                //Oreder pafe
-                alert("EN 7");
+                //
+                /*alert("EN 7");*/
                 break;
             case "8":
-                //Oreder pafe
-                alert("EN 8");
+                //
+                /*alert("EN 8");*/
                 break;
             default:
-                alert("EN Default");
+                /*alert("EN Default");*/
 
         }
 
@@ -529,7 +569,7 @@ function UpdateLangFunc() {
 
         switch (CurrenPage.textContent) {
             case "1":
-                alert("FA MainPage");
+                /*alert("FA MainPage");*/
                 //Technologies
                 techHeader.textContent = 'تکنولوژی';
                 EntityFrameworkBody.textContent = 'یک فناوری برای پشتیبانی از کدهای سمت سرور و ایجاد یک محیط امن قدرتمند برای برنامه های وب شما است.';
@@ -577,8 +617,7 @@ function UpdateLangFunc() {
                 break;
             case "2":
                 //Services page
-                alert("FA 2");
-                alert("EN 2");
+                /*alert("FA 2");*/
                 textall.setAttribute("style", "text-align: right !important;")
                 Header.classList.remove('myFarsiClass');
                 Header.setAttribute("style", "direction:rtl !important;");
@@ -595,7 +634,7 @@ function UpdateLangFunc() {
                 break;
             case "3":
                 //Oreder page
-                alert("FA 3");
+                /*alert("FA 3");*/
                 OrderCol.setAttribute("style", "text-align: right !important; margin-top: 150px;");
                 OrderHeader.textContent = "سفارش";
                 OrderHeader2.textContent = "از طریق این فرم با ما تماس بگیرید";
@@ -655,7 +694,7 @@ function UpdateLangFunc() {
                 break;
             case "4":
                 //About page
-                alert("FA 4");
+                /*alert("FA 4");*/
 
                 AboutAll1.setAttribute("style", "text-align: right !important; ");
                 AboutHeader.textContent = "در باره ما";
@@ -683,22 +722,42 @@ function UpdateLangFunc() {
                 break;
             case "5":
                 //Contact page
-                alert("FA 5");
+                /*alert("FA 5");*/
+                ContactAll.setAttribute("style", "margin-top: 150px; text-align: right !important; ");
+                ContactHeader.textContent = "ارتباط با ما";
+                ContactDescription.textContent = "از طریق این فرم با ما تماس بگیرید";
+                InputName.setAttribute("placeholder", "نام و نام خانوادگی");
+                InputEmail.setAttribute("placeholder", "آدرس ایمیل");
+                InputPhone.setAttribute("placeholder", "شماره تلفن");
+                InputSubject.setAttribute("placeholder", "موضوع");
+                InputMessage.setAttribute("placeholder", "پیام");
+                BtnSubmit.setAttribute("value", "ثبت");
                 break;
             case "6":
                 //Oreder pafe
-                alert("FA 6");
+               /* alert("FA 6");*/
+                AddOrderAll.setAttribute("style", "margin-top: 150px; text-align: right !important; ");
+                AddOrderHeader.textContent = "ثبت سفارش";
+                AddOrderDescription.textContent = "برای ایجاد سفارش جدید فرم را پر کنید";
+                InputFullName.textContent = "نام و نام خانوادگی";
+                InputPhoneNumber.textContent = "شماره تماس";
+                InputEmail.textContent = "ایمیل";
+                InputSubject.textContent = "موضوع";
+                InputDiscription.textContent = "توضیحات";
+                InputAddOrder.setAttribute("value", "ثبت");
+                InputAddOrderBack.textContent = "بازگشت به لیست";
+
                 break;
             case "7":
                 //Oreder pafe
-                alert("FA 7");
+                /*alert("FA 7");*/
                 break;
             case "8":
                 //Oreder pafe
-                alert("FA 8");
+                /*alert("FA 8");*/
                 break;
             default:
-                alert("FA Default");
+                /*alert("FA Default");*/
         }
 
     }
