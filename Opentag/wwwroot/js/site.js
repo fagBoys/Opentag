@@ -56,6 +56,13 @@ let CurrenPage = document.querySelector('.CurrenPageTitle');
     const FooterAboutUsMid1 = document.querySelector('.FooterAboutUsMid1');
     const FooterAboutUsMid2 = document.querySelector('.FooterAboutUsMid2');
 
+    const LayViraNews = document.querySelector('.LayViraNews');
+    const LayViraServices = document.querySelector('.LayViraServices');
+    const LayVirasamples = document.querySelector('.LayVirasamples');
+    const LayViraAbout = document.querySelector('.LayViraAbout');
+    const LayViraContact = document.querySelector('.LayViraContact');
+
+
 
 
 
@@ -187,6 +194,8 @@ switch (CurrenPage.textContent) {
         var Plan1Text6 = document.querySelector(".Plan1Text6")
         var Plan2Text6 = document.querySelector(".Plan2Text6")
         var Plan3Text6 = document.querySelector(".Plan3Text6")
+
+        var OrderNowBtn = document.querySelector(".OrderNowBtn")
 
 
 
@@ -347,6 +356,11 @@ function UpdateLangFunc() {
         FooterAboutUsMid1.textContent = "Our team is interested about builing web apps, mobile apps and game developing over Microsoft practical and usefull Frawmeworks.";
         FooterAboutUsMid2.textContent = "If you are going to help or support programming communities, please follow us.";
 
+        LayViraNews.textContent = "Vira news - inside development";
+        LayViraServices.textContent = "Checkout our services and features";
+        LayVirasamples.textContent = "Our work samples and products";
+        LayViraAbout.textContent = "About - read our history";
+        LayViraContact.textContent = "Contact - keep in touch with us";
 
         switch (CurrenPage.textContent) {
             case "1":
@@ -474,6 +488,7 @@ function UpdateLangFunc() {
                 Plan1Text6.textContent = " Premium images ";
                 Plan2Text6.textContent = " Premium images ";
                 Plan3Text6.textContent = " Premium images ";
+                OrderNowBtn.textContent = "Order now";
 
                 break;
             case "4":
@@ -563,6 +578,11 @@ function UpdateLangFunc() {
         footerAddress.innerHTML = `<a> آدرس :</a></br><a> ایران</a></br><a> قم</a></br><a> خیابان شهدا</a></br><a>مجتمع تجاری گنجینه</a>`;
         FooterAboutUsMid1.textContent = "تیم ما علاقه مند به ساخت برنامه های وب، برنامه های تلفن همراه و توسعه بازی از طریق فریم ورک های کاربردی و مفید مایکروسافت است.";
         FooterAboutUsMid2.textContent = "اگر قصد کمک یا حمایت از جوامع برنامه نویسی را دارید، لطفاً ما را دنبال کنید.";
+        LayViraNews.textContent = "اخبار ویرا - توسعه داخلی";
+        LayViraServices.textContent = "خدمات و سرویس های ما را بررسی کنید";
+        LayVirasamples.textContent = "نمونه های کار و محصولات ما";
+        LayViraAbout.textContent = "درباره ما - تاریخ شرکت ما را بخوانید";
+        LayViraContact.textContent = "تماس با ما - با ما در تماس باشید";
 
 
 
@@ -689,7 +709,7 @@ function UpdateLangFunc() {
                 Plan1Text6.textContent = "تصاویر ممتاز";
                 Plan2Text6.textContent = "تصاویر ممتاز";
                 Plan3Text6.textContent = "تصاویر ممتاز";
-
+                OrderNowBtn.textContent = "سفارش";
 
                 break;
             case "4":

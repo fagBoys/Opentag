@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "About";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -32,7 +31,7 @@
                             <span class="AboutText51">
                                 For read more about our 
                             </span>
-                            <a href="#" style="color:#468fb3" class="AboutText52">Services</a>
+                            <a  style="color:#468fb3" class="AboutText52" asp-controller="Home"  asp-action="Services">Services</a>
                             <span class="AboutText53">
                                 press this link.
                             </span>
@@ -40,7 +39,7 @@
 
                         <p class="aboutPage-paragraph-style ">
                             <span class="AboutText61">For more Information</span>
-                            <a href="#" style="color:#468fb3" class="AboutText62">contact us</a>
+                            <a  style="color:#468fb3" class="AboutText62" asp-controller="Home"  asp-action="Contact">contact us</a>
                             <span class="AboutText63">and we will response soon.</span>
                         </p>
                     </div>
