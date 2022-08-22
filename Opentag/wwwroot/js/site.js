@@ -350,8 +350,8 @@ function UpdateLangFunc() {
         //Footer Header Constent
         footerEmail.textContent = 'Email: info@Vira_DevGroup.ir';
         footerAddress.innerHTML = "Address:<br />Iran<br />Qom<br />Shohada St<br />Commercial Complex Ganjine";
-        footerPhoneAtag.textContent = ": Phone";
-        /*footerPhone.setAttribute("style", "direction:rtl !important;");*/
+        footerPhoneAtag.textContent = "Phone : + 9 8 - 2 5 - 3 7 7 3 2 8 3 2";
+        footerPhone.setAttribute("style", " text-align: left !important; direction:ltr !important;");
         footerEmail.textContent = 'Email : info@Vira_DevGroup.ir';
         FooterAboutUsMid1.textContent = "Our team is interested about builing web apps, mobile apps and game developing over Microsoft practical and usefull Frawmeworks.";
         FooterAboutUsMid2.textContent = "If you are going to help or support programming communities, please follow us.";
@@ -572,8 +572,8 @@ function UpdateLangFunc() {
         footerAbout.textContent = 'درباره ما';
         footerContacts.textContent = 'ارتباط با ما';
         //Footer Header Constent
-        footerPhoneAtag.textContent = ": شماره تماس";
-        footerPhone.setAttribute("style", "direction:ltr !important;");
+        footerPhoneAtag.textContent = "+ 9 8 - 2 5 - 3 7 7 3 2 8 3 2 : شماره تماس";
+        footerPhone.setAttribute("style", "text-align: right !important; direction:ltr !important;");
         footerEmail.textContent = ' پست الکترونیک  : info@Vira_DevGroup.ir ';
         footerAddress.innerHTML = `<a> آدرس :</a></br><a> ایران</a></br><a> قم</a></br><a> خیابان شهدا</a></br><a>مجتمع تجاری گنجینه</a>`;
         FooterAboutUsMid1.textContent = "تیم ما علاقه مند به ساخت برنامه های وب، برنامه های تلفن همراه و توسعه بازی از طریق فریم ورک های کاربردی و مفید مایکروسافت است.";
