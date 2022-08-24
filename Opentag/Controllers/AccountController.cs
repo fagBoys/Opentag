@@ -22,5 +22,16 @@ namespace Opentag.Controllers
             return View();
 
         }
+
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
+
+        public IActionResult Articles()
+        {
+            return View();
+        }
+
     }
 }
