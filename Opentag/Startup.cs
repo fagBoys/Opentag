@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.EntityFrameworkCore;
-using Opentag.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
+using Opentag.Data;
+using Microsoft.EntityFrameworkCore;
 using Opentag.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
+
 
 namespace Opentag
 {
@@ -28,11 +30,27 @@ namespace Opentag
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
-            //services.AddIdentity<Account, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
             services.AddControllersWithViews();
-            services.AddRazorPages();
+
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+            services.AddRazorPages().AddRazorRuntimeCompilation();
+
+            services.AddDbContext<ApplicationDbContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddIdentity<Account, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+
+            services.AddAuthorization(Options =>
+            {
+
+                Options.AddPolicy("User",
+                    policy => policy.RequireClaim("User", "User"));
+
+            });
+            var serviceProvider = services.BuildServiceProvider();
+            var logger = serviceProvider.GetService<ILogger<Account>>();
+            services.AddSingleton(typeof(ILogger), logger);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,7 +59,7 @@ namespace Opentag
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
+                //app.UseDatabaseErrorPage();
             }
             else
             {
@@ -54,10 +72,9 @@ namespace Opentag
 
             app.UseRouting();
 
-
+            app.UseAuthorization();
 
             app.UseAuthentication();
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {}
+    "E:\\Amir\\developer\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {
+    "E:\\Amir\\developer\\GitHub\\Opentag\\Opentag\\Opentag.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
+        "projectUniqueName": "E:\\Amir\\developer\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
         "projectName": "Opentag",
-        "projectPath": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
-        "packagesPath": "C:\\Users\\zack\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Opentag\\obj\\",
+        "projectPath": "E:\\Amir\\developer\\GitHub\\Opentag\\Opentag\\Opentag.csproj",
+        "packagesPath": "C:\\Users\\AmirHossein\\.nuget\\packages\\",
+        "outputPath": "E:\\Amir\\developer\\GitHub\\Opentag\\Opentag\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zack\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\AmirHossein\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,9 +64,9 @@
               "target": "Package",
               "version": "[3.1.8, )"
             },
-            "Microsoft.AspNetCore.Identity.UI": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[3.1.18, )"
+              "version": "[3.1.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -113,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }

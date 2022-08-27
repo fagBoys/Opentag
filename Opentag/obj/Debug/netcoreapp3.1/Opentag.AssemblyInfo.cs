@@ -11,7 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Opentag-65E16841-7ED7-4CF8-B986-6E139EB10729")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Opentag")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
