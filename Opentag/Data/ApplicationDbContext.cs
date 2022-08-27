@@ -22,6 +22,7 @@ namespace Opentag.Data
         public DbSet<Contact> Contact { get; set; }
 
         public DbSet<Order> Order { get; set; }
+        public DbSet<Account> Account { get; set; }
 
         public DbSet<Article> Article { get; set; }
         public DbSet<Tag> Tag { get; set; }
