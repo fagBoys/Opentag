@@ -72,10 +72,10 @@
 
 <form>
     <div class="row">
-        <div class="col-md-3 text-left mb-3">
-            <button asp-action="AddArticle" class="btn btn-primary">Create New</button>
+        <div class="col-md-3 col-4 order-md-1 order-1 text-left mb-3">
+            <button asp-action="AddArticle" class="btn btn-primary">New</button>
         </div>
-        <div class="col-md-6 align-self-center text-center">
+        <div class="col-md-6 order-md-2 order-3 align-self-center text-center">
             <nav aria-label="Page navigation example align-self-end">
                 <ul class="pagination justify-content-center">
                     <li class="page-item disabled">
@@ -90,8 +90,8 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-md-3 text-right mb-3">
-            <button asp-controller="Account" asp-action="Dashboard" class="btn btn-primary">Back to dashboard</button>
+        <div class="col-md-3 col-8 order-md-3 order-2 text-right mb-3">
+            <button asp-controller="Account" asp-action="Dashboard" class="btn btn-primary">dashboard</button>
         </div>
     </div>
 </form>
