@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Opentag.Data;
 using Opentag.Models;
+using Opentag.ViewModels.Article;
 using Opentag.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -96,7 +97,7 @@ namespace Opentag.Controllers
 
                 ApplicationDbContext ArticleImageContext = new ApplicationDbContext();
                 Image articleImage = new Image();
-                articleImage.ImageName = NewArticle.ArticleImage.FileName;
+                articleImage.ImageName = NewArticle.PostImage.FileName;
                 articleImage.ArticleId = article.ArticleId;
                 articleImage.Primary = true;
                 ArticleImageContext.Image.Add(articleImage);
@@ -108,16 +109,16 @@ namespace Opentag.Controllers
                 }
 
 
-                if (NewArticle.ArticleImage == null || NewArticle.ArticleImage.Length == 0)
+                if (NewArticle.PostImage.FileName == null || NewArticle.PostImage.FileName.Length == 0)
                 {
                     await Response.WriteAsync("Error");
                 }
 
-                var filePath = Path.Combine(uploadsRootFolder, NewArticle.ArticleImage.FileName);
+                var filePath = Path.Combine(uploadsRootFolder, NewArticle.PostImage.FileName);
 
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
-                    await NewArticle.ArticleImage.CopyToAsync(fileStream).ConfigureAwait(false);
+                    await NewArticle.PostImage.CopyToAsync(fileStream).ConfigureAwait(false);
                 }
 
                 ArticleImageContext.SaveChanges();
@@ -128,7 +129,7 @@ namespace Opentag.Controllers
                 //  Upload Slides started
                 #region Slides
 
-                foreach (var slide in NewArticle.Slides)
+                foreach (var slide in NewArticle.Album)
                 {
                     ApplicationDbContext SlideContext = new ApplicationDbContext();
                     Image newSlide = new Image();
@@ -230,8 +231,8 @@ namespace Opentag.Controllers
             EditArticleViewModel EVM = new EditArticleViewModel();
             var TargetArticle = GetArticle.Article.Include(A => A.ArticleTags).ThenInclude(A => A.Tags).Include(A => A.Images).Where(A => A.ArticleId == article.ArticleId).FirstOrDefault();
             var SlideImages = GetArticle.Image.Where(A => A.ArticleId == article.ArticleId).Where(A => A.Primary == false).ToList();
-            EVM.ForEditArticle = TargetArticle;
-            EVM.ForEditSlideImages = SlideImages;
+            //EVM.ForEditArticle = TargetArticle;
+            //EVM.ForEditSlideImages = SlideImages;
             return View(EVM);
         }
 

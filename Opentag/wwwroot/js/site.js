@@ -267,7 +267,7 @@ switch (CurrenPage.textContent) {
         break;
     case "7":
         //Oreder pafe
-        a/*lert("7");*/
+        /*lert("7");*/
         break;
     case "8":
         //Oreder pafe

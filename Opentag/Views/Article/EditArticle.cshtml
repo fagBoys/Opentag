@@ -1,4 +1,4 @@
-﻿@model Opentag.Models.Article
+﻿@model Opentag.ViewModels.Article.EditArticleViewModel
 @{
     ViewData["Title"] = "EditArticle";
     Layout = "~/Views/Shared/_AdminPanelLayout.cshtml";
@@ -20,9 +20,9 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label asp-for="AuthorAccount" class="control-label"></label>
-                <input asp-for="AuthorAccount" class="form-control" />
-                <span asp-validation-for="AuthorAccount" class="text-danger"></span>
+                <label asp-for="AuthorId" class="control-label"></label>
+                <input asp-for="AuthorId" class="form-control" />
+                <span asp-validation-for="AuthorId" class="text-danger"></span>
             </div>
         </div>
     </div>
@@ -77,8 +77,8 @@
     </div>
     <div class="row">
         <div class="col-md-3 input-group mt-3">
-            <input asp-for="ArticleTags" placeholder="New Tag" class="form-control h-100" />
-            <span asp-validation-for="ArticleTags" class="text-danger"></span>
+            <input asp-for="Tags" placeholder="New Tag" class="form-control h-100" />
+            <span asp-validation-for="Tags" class="text-danger"></span>
             <div class="input-group-append">
                 <button class="btn btn-primary">Add</button>
             </div>

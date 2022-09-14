@@ -24,9 +24,9 @@ namespace Opentag.ViewModels
             }).ToList();
         }
 
-        public Article article { get; set; }
+        public Models.Article article { get; set; }
 
-        public IEnumerable<Article> articlesList { get; set; }
+        public IEnumerable<Models.Article> articlesList { get; set; }
 
         public IEnumerable<IndexArticlesViewModel> Articles { get; set; }
 

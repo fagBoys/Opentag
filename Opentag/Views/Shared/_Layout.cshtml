@@ -26,24 +26,24 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between " id="collapsibleNavbar">
                 <ul class="navbar-nav nav-justified">
-                    <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Index" class="menu-text-style navIndex" >Home</a></h5></li>
+                    <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Index" class="menu-text-style navIndex">Home</a></h5></li>
                     <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Services" class="menu-text-style navServices">Services</a></h5></li>
                     <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Order" class="menu-text-style navOrder">Order</a></h5></li>
                     <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="About" class="menu-text-style navAbout">About</a></h5></li>
                     <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Contact" class="menu-text-style navContact">Contact</a></h5></li>
                 </ul>
                 <ul class="navbar-nav nav-justified">
-                    <li class="nav-item menu-item  " style="border:solid; border-width:2px;border-color:black!important;border-radius: 5px;"><h5 style="color:black!important;" class="LangButton"><a class=" menu-text-style  LangButtonText" >EN</a></h5></li>
+                    <li class="nav-item menu-item  " style="border:solid; border-width:2px;border-color:black!important;border-radius: 5px;"><h5 style="color:black!important;" class="LangButton"><a class=" menu-text-style  LangButtonText">EN</a></h5></li>
                 </ul>
             </div>
-                
-        </nav>  
 
-        
+        </nav>
+
+
         <div class="">
             @*<main role="main" class="pb-3" style="margin: 150px 0px 100px 0px;">*@
-            <main role="main" >
-        
+            <main role="main">
+
                 @RenderBody()
             </main>
         </div>
@@ -100,7 +100,7 @@
                 </div>
             </div>
         </div>
-
+        <script src="~/js/site.js"></script>
     </body>
-    <script src="~/js/site.js"></script>
 </html>
+
