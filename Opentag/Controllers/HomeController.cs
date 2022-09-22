@@ -16,7 +16,6 @@ using Opentag.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 using System.IO;
-using Opentag.Views;
 
 namespace Opentag.Controllers
 {

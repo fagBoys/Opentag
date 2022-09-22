@@ -34,6 +34,5 @@ namespace Opentag.ViewModels.Article
 
         public IEnumerable<string> Tags { get; set; }
 
-        public bool CloseComment { get; set; }
     }
 }

@@ -47,7 +47,7 @@ addTag.addEventListener('click', e => {
     button.setAttribute('data-dismiss', 'toast');
     button.setAttribute('aria-label', 'Close');
     button.classList.add('mx-2');
-    button.classList.add('mb-2');
+    button.classList.add('mx-2');
     button.classList.add('close');
 
     button.addEventListener('click', e => {

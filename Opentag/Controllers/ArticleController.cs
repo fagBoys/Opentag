@@ -225,12 +225,12 @@ namespace Opentag.Controllers
         }
 
         [HttpPost]
-        public IActionResult EditArticle(Article article)
+        public IActionResult EditArticle(EditArticleViewModel article, int ArticleId)
         {
             ApplicationDbContext GetArticle = new ApplicationDbContext();
             EditArticleViewModel EVM = new EditArticleViewModel();
-            var TargetArticle = GetArticle.Article.Include(A => A.ArticleTags).ThenInclude(A => A.Tags).Include(A => A.Images).Where(A => A.ArticleId == article.ArticleId).FirstOrDefault();
-            var SlideImages = GetArticle.Image.Where(A => A.ArticleId == article.ArticleId).Where(A => A.Primary == false).ToList();
+            var TargetArticle = GetArticle.Article.Include(A => A.ArticleTags).ThenInclude(A => A.Tags).Include(A => A.Images).Where(A => A.ArticleId == ArticleId).FirstOrDefault();
+            var SlideImages = GetArticle.Image.Where(A => A.ArticleId == ArticleId).Where(A => A.Primary == false).ToList();
             //EVM.ForEditArticle = TargetArticle;
             //EVM.ForEditSlideImages = SlideImages;
             return View(EVM);

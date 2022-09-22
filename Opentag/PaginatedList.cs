@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Opentag.Views
+namespace Opentag
 {
     public class PaginatedList<T> : List<T>
     {

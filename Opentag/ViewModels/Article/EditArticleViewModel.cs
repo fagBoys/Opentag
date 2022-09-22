@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Opentag.Models;
-
+using Microsoft.AspNetCore.Http;
 
 namespace Opentag.ViewModels.Article
 {
@@ -17,11 +17,11 @@ namespace Opentag.ViewModels.Article
         public string Title { get; set; }
 
         [Required]
-        public string AuthorId { get; set; }
+        public string AuthorName { get; set; }
 
-        public Image PostImage { get; set; }
+        public IFormFile PostImage { get; set; }
 
-        public IEnumerable<Image> Album { get; set; }
+        public IEnumerable<IFormFile> Album { get; set; }
 
         [Required]
         [MaxLength(200)]
@@ -33,6 +33,6 @@ namespace Opentag.ViewModels.Article
 
         public IEnumerable<string> Tags { get; set; }
 
-        public bool CloseComment { get; set; }
+        public Order TargetOrder { get; set; }
     }
 }

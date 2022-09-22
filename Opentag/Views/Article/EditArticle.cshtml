@@ -4,14 +4,14 @@
     Layout = "~/Views/Shared/_AdminPanelLayout.cshtml";
 }
 
-<h1>EditArticle</h1>
+<h1>AddArticle</h1>
 
-<form>
+<form asp-controller="Article" asp-action="EditArticle" enctype="multipart/form-data" method="post">
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
                 <label asp-for="Title" class="control-label"></label>
-                <input asp-for="Title" class="form-control" />
+                <input name="NewArticle.Title" value="@Model.TargetOrder.Subject" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -20,15 +20,15 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label asp-for="AuthorId" class="control-label"></label>
-                <input asp-for="AuthorId" class="form-control" />
-                <span asp-validation-for="AuthorId" class="text-danger"></span>
+                <label asp-for="AuthorName" class="control-label"></label>
+                <input name="NewArticle.AuthorName" value="@Model.TargetOrder" class="form-control" />
+                <span asp-validation-for="AuthorName" class="text-danger"></span>
             </div>
         </div>
     </div>
     <div class="row media d-flex">
         <div class="col-lg-4">
-            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="img-thumbnail float-left h-100" alt="" />
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" src="~/images/blog/@Model.PostImage.FileName" class="img-thumbnail float-left h-100" />
         </div>
         <div class="col-md-8">
             <div class="media-body">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="row d-flex align-self-end">
                     <div class="col-12 d-flex align-items-end justify-content-end">
-                        <input type="button" value="Browse" class="btn btn-primary d-flex" />
+                        <input name="NewArticle.PostImage" type="file" class="btn btn-primary d-flex" />
                     </div>
                 </div>
             </div>
@@ -52,141 +52,83 @@
     </div>
     <div class="row">
         <div class="col-md-4 mt-3">
-            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="img-thumbnail float-left h-100" alt="" />
+            <label for="article-file1" class="card">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="img-thumbnail float-left h-100" alt="" />
+                <input name="NewArticle.Album" type="file" class="w-100" id="article-file1" style="display:none;" />
+                <span asp-validation-for="Album" class="text-danger"></span>
+            </label>
         </div>
         <div class="col-md-4 mt-3">
-            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="img-thumbnail float-left h-100" alt="" />
+            <label for="article-file2" class="card">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="img-thumbnail float-left h-100" alt="" />
+                <input name="NewArticle.Album" type="file" class="w-100" id="article-file2" style="display:none;" />
+                <span asp-validation-for="Album" class="text-danger"></span>
+            </label>
         </div>
         <div class="col-md-4 mt-3">
-            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="img-thumbnail float-left h-100" alt="" />
+            <label for="article-file3" class="card">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="img-thumbnail float-left h-100" alt="" />
+                <input name="NewArticle.Album" type="file" class="w-100" id="article-file3" style="display:none;" />
+                <span asp-validation-for="Album" class="text-danger"></span>
+            </label>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12 form-group mt-3">
             <label asp-for="ShortBody" class="control-label"></label>
-            <input asp-for="ShortBody" class="form-control" />
+            <input name="NewArticle.ShortBody" value="@Model.TargetOrder" class="form-control" />
             <span asp-validation-for="ShortBody" class="text-danger"></span>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12 form-group mt-3">
             <label asp-for="Body" class="control-label"></label>
-            <textarea asp-for="Body" class="form-control" rows="10"></textarea>
+            <textarea name="NewArticle.Body" value="@Model.TargetOrder" class="form-control" rows="10"></textarea>
             <span asp-validation-for="Body" class="text-danger"></span>
         </div>
     </div>
-    <div class="row">
+    <div class="row tagsRow">
         <div class="col-md-3 input-group mt-3">
-            <input asp-for="Tags" placeholder="New Tag" class="form-control h-100" />
-            <span asp-validation-for="Tags" class="text-danger"></span>
+            <input type="text" placeholder="New Tag" class="form-control h-100 tagInput" />
+            <span class="text-danger"></span>
             <div class="input-group-append">
-                <button class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-primary addTag">Add</button>
             </div>
         </div>
-        <div class="col-md-3 mt-3 d-flex justify-content-between" id="tag1">
-            <div class="toast align-items-center text-bg-primary border-0 w-100 fade show" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                    <div class="toast-body w-100">
-                        Hello
+        @foreach(var item in Model.Tags)
+        {
+            <div class="col-md-3 mt-3 d-flex justify-content-between">
+                <div class="toast align-items-center text-bg-primary border-0 w-100 fade show m-0" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-body p-2 w-100">
+                        
                     </div>
-                    <button type="button" class="mx-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <button class="mx-2 mx-2 close" type="button" data-dismiss="toast" aria-label="Close"></button>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3 mt-3 d-flex justify-content-between" id="tag2">
-            <div class="toast align-items-center text-bg-primary border-0 w-100 fade show" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                    <div class="toast-body w-100">
-                        Hello
-                    </div>
-                    <button type="button" class="mx-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3 d-flex justify-content-between" id="tag3">
-            <div class="toast align-items-center text-bg-primary border-0 w-100 fade show" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                    <div class="toast-body w-100">
-                        Hello
-                    </div>
-                    <button type="button" class="mx-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3 d-flex justify-content-between" id="tag4">
-            <div class="toast align-items-center text-bg-primary border-0 w-100 fade show" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                    <div class="toast-body w-100">
-                        Hello
-                    </div>
-                    <button type="button" class="mx-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3 d-flex justify-content-between" id="tag5">
-            <div class="toast align-items-center text-bg-primary border-0 w-100 fade show" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                    <div class="toast-body w-100">
-                        Hello
-                    </div>
-                    <button type="button" class="mx-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3 d-flex justify-content-between" id="tag6">
-            <div class="toast align-items-center text-bg-primary border-0 w-100 fade show" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                    <div class="toast-body w-100">
-                        Hello
-                    </div>
-                    <button type="button" class="mx-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3 d-flex justify-content-between" id="tag7">
-            <div class="toast align-items-center text-bg-primary border-0 w-100 fade show" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                    <div class="toast-body w-100">
-                        Hello
-                    </div>
-                    <button type="button" class="mx-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
+        }
     </div>
-    <div class="row">
+@*    <div class="row">
         <div class="col-12 mt-3">
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" placeholder="Close comments" asp-for="CloseComment" /> @Html.DisplayNameFor(model => model.CloseComment)
+                    <input asp-for="CloseComment" type="checkbox" value="CloseComment" class="form-check-input" placeholder="Close comments" /> 
+                    Close Comment
                 </label>
             </div>
         </div>
-    </div>
+    </div>*@
     <div class="row justify-content-between">
-        <div class="col-2">
+        <div class="col-2 mt-3">
             <div class="form-group">
-                <input type="submit" value="Update" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </div>
-        <div class="col-2">
+        <div class="col-2 mt-3">
             <div class="form-group float-right">
-                <input asp-action="Articles" type="submit" value="Back to list" class="btn btn-primary" />
+                <input asp-controller="Article" asp-action="Articles" type="button" value="Back to list" class="btn btn-primary" />
             </div>
         </div>
     </div>
 </form>
+
+<script src="~/js/tag.js"></script>

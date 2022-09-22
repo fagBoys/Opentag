@@ -1,4 +1,4 @@
-﻿@model Opentag.ViewModels.Article.ArticlesViewModel
+﻿@model Opentag.PaginatedList<Opentag.ViewModels.Article.ArticlesViewModel>
 @{
     ViewData["Title"] = "Articles";
     Layout = "~/Views/Shared/_AdminPanelLayout.cshtml";
@@ -6,48 +6,29 @@
 
 <h2>Articles</h2>
 <form>
-    <div class="card mb-4">
-        <div class="card-body">
-            <div class="row media">
-                <div class="col-lg-4">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="img-thumbnail float-left h-100" alt="" />
-                </div>
-                <div class="media-body col-lg-8">
-                    <strong>Title of the post</strong>
-                    <p class="text-justify">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                    <div class="d-inline-flex align-self-end align-items-center justify-content-between w-100 mt-3">
-                        <div>
-                            <small class="mr-5">03/23</small>
-                            <small>By Zack</small>
+    @foreach (var item in Model)
+    {
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row media">
+                    <div class="col-lg-4">
+                        <img src="@item.PostImage" class="img-thumbnail float-left h-100" alt="" />
+                    </div>
+                    <div class="media-body col-lg-8">
+                        <strong>@item.Title</strong>
+                        <p class="text-justify">@item.ShortBody</p>
+                        <div class="d-inline-flex align-self-end align-items-center justify-content-between w-100 mt-3">
+                            <div>
+                                <small class="mr-5">@item.Date</small>
+                                <small>By @item.AuthorName</small>
+                            </div>
+                            <button asp-action="EditArticle" class="btn btn-primary d-flex">Details</button>
                         </div>
-                        <button asp-action="EditArticle" class="btn btn-primary d-flex">Details</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="card mb-4">
-        <div class="card-body">
-            <div class="row media">
-                <div class="col-lg-4">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="img-thumbnail float-left h-100" alt="" />
-                </div>
-                <div class="media-body col-lg-8">
-                    <strong>Title of the post</strong>
-                    <p class="text-justify">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                    <div class="d-inline-flex align-self-end align-items-center justify-content-between w-100 mt-3">
-                        <div>
-                            <small class="mr-5">03/23</small>
-                            <small>By Zack</small>
-                        </div>
-                        <button asp-action="EditArticle" class="btn btn-primary d-flex">Details</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    }
     <div class="card mb-4">
         <div class="card-body">
             <div class="row media">
@@ -70,6 +51,11 @@
     </div>
 </form>
 
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "PagingColor";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "PagingColor";
+}
+
 <form>
     <div class="row">
         <div class="col-md-3 col-4 order-md-1 order-1 text-left mb-3">
@@ -78,15 +64,129 @@
         <div class="col-md-6 order-md-2 order-3 align-self-center text-center">
             <nav aria-label="Page navigation example align-self-end">
                 <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Previous</a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
+                    @{
+                        <li class="page-item @prevDisabled">
+                            <a class="page-link @prevDisabled" asp-action="Articles" asp-route-pageNumber="@(Model.PageIndex-1)" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        string activepage = "";
+                        if (Model.TotalPage < 5)
+                        {
+                            for (var pagecount = 1; pagecount <= Model.TotalPage; pagecount++)
+                            {
+                                activepage = "";
+                                if (pagecount == Model.PageIndex)
+                                {
+                                    activepage = "active";
+                                }
+                                <li class="page-item active">
+                                    <a class="page-link @activepage" asp-action="Articles" asp-route-pageNumber="@pagecount">
+                                        @pagecount
+                                    </a>
+                                </li>
+
+                            }
+                        }
+                        else
+                        {
+                            if (Model.PageIndex == 1)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link active">
+                                        @Model.PageIndex
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" asp-action="Articles" asp-route-pageNumber="@(Model.PageIndex+1)">
+                                        @(Model.PageIndex + 1)
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link active">
+                                        ...
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" asp-action="Articles" asp-route-pageNumber="@Model.TotalPage">
+                                        @Model.TotalPage
+                                    </a>
+                                </li>
+                            }
+                            else if (Model.PageIndex == Model.TotalPage)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" asp-action="Articles" asp-route-pageNumber="1">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link">
+                                        ...
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" asp-action="Articles" asp-route-pageNumber="@(Model.TotalPage-1)">
+                                        @(Model.TotalPage - 1)
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link active">
+                                        @Model.TotalPage
+                                    </a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" asp-action="Articles" asp-route-pageNumber="1">
+                                        1
+                                    </a>
+                                </li>
+
+                                @if (Model.PageIndex - 1 != 1)
+                                {
+                                    <li class="page-item">
+                                        <a class="page-link">
+                                            ...
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" asp-action="Articles" asp-route-pageNumber="@(Model.PageIndex - 1)">
+                                            @(Model.PageIndex - 1)
+                                        </a>
+                                    </li>
+                                }
+                                <li class="page-item">
+                                    <a class="page-link active">
+                                        @(Model.PageIndex)
+                                    </a>
+                                </li>
+                                @if (Model.PageIndex + 1 != Model.TotalPage)
+                                {
+                                    <li class="page-item">
+                                        <a class="page-link" asp-action="Articles" asp-route-pageNumber="@(Model.PageIndex + 1)">
+                                            @(Model.PageIndex + 1)
+                                        </a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a class="page-link">
+                                            ...
+                                        </a>
+                                    </li>
+                                }
+
+                                <li class="page-item " aria-current="page">
+                                    <a class="page-link" asp-action="Articles" asp-route-pageNumber="@(Model.TotalPage)">
+                                        @Model.TotalPage
+                                    </a>
+                                </li>
+                            }
+                            <li class="page-item @nextDisabled">
+                                <a asp-action="Articles" asp-route-pageNumber="@(Model.PageIndex+1)" class="page-link @nextDisabled">Next</a>
+                            </li>
+                        }
+
+                    }
+
                 </ul>
             </nav>
         </div>
