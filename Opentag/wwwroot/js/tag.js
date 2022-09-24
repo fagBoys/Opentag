@@ -68,53 +68,12 @@ addTag.addEventListener('click', e => {
     button.append(span);
     toastBody.append(button);
     toast.append(toastBody);
-    //toast.append(button);
     tag.append(toast);
     tag.append(input);
     tagsRow.append(tag);
 
+    tagInput.value = ''; //clearing input
+
     tagCounter++;
-    //GetLang()
 
 });
-
-//let closeBtn = document.querySelectorAll('button');
-
-//closeBtn.forEach.addEventListener('click', e => {
-//    if (e.target.classList.Contains('close'))
-//    {
-//        e.target.parentElement.parentElement.remove();
-//    }
-//});
-
-function GetLang() {
-    try {
-        let closeBtn = document.querySelector('.close');
-        alert(" ok");
-        closeBtn.addEventListener('click', e => {
-            console.log(e.target);
-            alert('hello');
-            const m = e.target.parentElement;
-            m.remove();
-        });
-    }
-    catch (err) {
-        alert(err);
-    }
-
-}
-
-
-
-
-
-
-
-
-//closeBtn.addEventListener('click', e => {
-//    console.log(e.target);
-//    if (e.target == '.close')
-//    {
-//        e.ParentElement.ParentElement.remove();
-//    }
-//});
