@@ -221,7 +221,13 @@ namespace Opentag.Controllers
         [HttpGet]
         public IActionResult EditArticle(int id)
         {
-            return View();
+            ApplicationDbContext GetArticle = new ApplicationDbContext();
+            EditArticleViewModel EVM = new EditArticleViewModel();
+            var TargetArticle = GetArticle.Article.Include(A => A.ArticleTags).ThenInclude(A => A.Tags).Include(A => A.Images).Where(A => A.ArticleId == id).FirstOrDefault();
+            var SlideImages = GetArticle.Image.Where(A => A.ArticleId == id).Where(A => A.Primary == false).ToList();
+            EVM.TargetArticle = TargetArticle;
+            EVM.TargetAlbum = SlideImages;
+            return View(EVM);
         }
 
         [HttpPost]

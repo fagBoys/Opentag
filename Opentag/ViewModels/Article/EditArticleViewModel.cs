@@ -33,6 +33,8 @@ namespace Opentag.ViewModels.Article
 
         public IEnumerable<string> Tags { get; set; }
 
-        public Order TargetOrder { get; set; }
+        public Models.Article TargetArticle { get; set; }
+
+        public List<Image> TargetAlbum { get; set; }
     }
 }
