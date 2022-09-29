@@ -12,7 +12,7 @@
             <div class="card-body">
                 <div class="row media">
                     <div class="col-lg-4">
-                        <img src="@item.PostImage" class="img-thumbnail float-left h-100" alt="" />
+                        <img src="/img/article/@item.PostImage" class="img-thumbnail float-left h-100" alt="" />
                     </div>
                     <div class="media-body col-lg-8">
                         <strong>@item.Title</strong>
@@ -29,26 +29,6 @@
             </div>
         </div>
     }
-    <div class="card mb-4">
-        <div class="card-body">
-            <div class="row media">
-                <div class="col-lg-4">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="img-thumbnail float-left h-100" alt="" />
-                </div>
-                <div class="media-body col-lg-8">
-                    <strong>Title of the post</strong>
-                    <p class="text-justify">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                    <div class="d-inline-flex align-self-end align-items-center justify-content-between w-100 mt-3">
-                        <div>
-                            <small class="mr-5">03/23</small>
-                            <small>By Zack</small>
-                        </div>
-                        <button asp-action="EditArticle" class="btn btn-primary d-flex">Details</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </form>
 
 @{
@@ -66,7 +46,7 @@
                 <ul class="pagination justify-content-center">
                     @{
                         <li class="page-item @prevDisabled">
-                            <a class="page-link @prevDisabled" asp-action="Articles" asp-route-pageNumber="@(Model.PageIndex-1)" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            <a class="page-link @prevDisabled" asp-action="Articles" asp-route-pageNumber="@(Model.PageIndex-1)" tabindex="-1" aria-disabled="true">Previous</a>
                         </li>
                         string activepage = "";
                         if (Model.TotalPage < 5)

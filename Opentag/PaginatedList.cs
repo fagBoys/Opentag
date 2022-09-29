@@ -52,7 +52,7 @@ namespace Opentag
             }
         }
 
-        public static async Task<PaginatedList<T>> CreateAsunc(IQueryable<T> source, int PageIndex, int PageSize)
+        public static async Task<PaginatedList<T>> CreateAsync(IQueryable<T> source, int PageIndex, int PageSize)
         {
             var count = await source.CountAsync();
             var items = await source.Skip((PageIndex - 1) * PageSize).Take(PageSize).ToListAsync();

@@ -44,9 +44,22 @@ namespace Opentag.Controllers
         }
 
 
-        public async Task<IActionResult> Articles()
+        public async Task<IActionResult> Articles(int? PageNumber)
         {
-            return View();
+
+            ApplicationDbContext context = new ApplicationDbContext();
+            IQueryable<ArticlesViewModel> ArticleList = from A in context.Article
+                                                        .Include(C => C.Images)
+                                                        select new ArticlesViewModel
+                                                        {
+                                                            PostImage = A.Images.Select(I => I.ImageName).FirstOrDefault(),
+                                                            Title = A.Title,
+                                                            ShortBody = A.ShortBody,
+                                                            AuthorName = A.AuthorAccount,
+                                                            Date = A.Date
+                                                        };
+            PaginatedList<ArticlesViewModel> AVM = await PaginatedList<ArticlesViewModel>.CreateAsync(ArticleList, PageNumber ?? 1, 3);
+            return View(AVM);
         }
 
         [HttpGet]

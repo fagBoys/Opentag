@@ -12,7 +12,7 @@ namespace Opentag.ViewModels.Article
     public class AddArticleViewModel
     {
         [Required]
-        [MinLength(10)]
+        [MinLength(5)]
         [MaxLength(100)]
         public string Title { get; set; }
 

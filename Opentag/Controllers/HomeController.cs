@@ -171,7 +171,7 @@ namespace Opentag.Controllers
             ApplicationDbContext context = new ApplicationDbContext();
             IEnumerable<Article> articles = context.Article.Include(A => A.Images).OrderByDescending(A => A.ArticleId);
 
-            PaginatedList<Article> ArticleList = await PaginatedList<Article>.CreateAsunc((IQueryable<Article>)articles, pageNumber ?? 1, 4);
+            PaginatedList<Article> ArticleList = await PaginatedList<Article>.CreateAsync((IQueryable<Article>)articles, pageNumber ?? 1, 4);
 
 
             //EF core end
