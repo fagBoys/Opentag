@@ -224,7 +224,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.2, )"
+              "version": "[6.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -250,23 +250,23 @@
             },
             "System.ServiceModel.Duplex": {
               "target": "Package",
-              "version": "[4.8.1, )"
+              "version": "[4.8.*, )"
             },
             "System.ServiceModel.Federation": {
               "target": "Package",
-              "version": "[4.8.1, )"
+              "version": "[4.8.*, )"
             },
             "System.ServiceModel.Http": {
               "target": "Package",
-              "version": "[4.8.1, )"
+              "version": "[4.8.*, )"
             },
             "System.ServiceModel.NetTcp": {
               "target": "Package",
-              "version": "[4.8.1, )"
+              "version": "[4.8.*, )"
             },
             "System.ServiceModel.Security": {
               "target": "Package",
-              "version": "[4.8.1, )"
+              "version": "[4.8.*, )"
             },
             "Zarinpal": {
               "target": "Package",

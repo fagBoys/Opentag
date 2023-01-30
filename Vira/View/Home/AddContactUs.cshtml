@@ -1,0 +1,147 @@
+﻿@*@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@{
+    Layout = "_MainLayout";
+}*@
+
+<style>
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    html {
+
+        background-color: white !important;
+    }
+
+    /* Reset default */
+    dl,
+    ol,
+    ul {
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+
+    .pagination {
+        --bs-pagination-color: black;
+        --bs-pagination-border-color: white;
+        --bs-pagination-focus-color: white;
+        --bs-pagination-focus-bg: deeppink;
+        --bs-pagination-hover-color: white;
+        --bs-pagination-hover-bg: deeppink;
+        --bs-pagination-hover-border-color: deeppink;
+        --bs-pagination-active-color: white;
+        --bs-pagination-active-bg: deeppink;
+        --bs-pagination-active-border-color: deeppink;
+    }
+
+    .MyShadow {
+        -webkit-box-shadow: 0px 0px 8px 0px rgba(237, 237, 237, 0.77);
+        box-shadow: 0px 0px 8px 0px rgba(237, 237, 237, 0.77);
+    }
+</style>
+
+<div class="container-fluid bg-light text-end" lang="fa">
+    <div class="container p-2">
+        <div class="row">
+            <h4 class="text-secondary d-block">
+                ارتباط با ما
+            </h4>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-end">
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="AddContactUs" class="link-secondary">ارتباط با ما</a></li>
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" class="link-secondary">صفحه اصلی</a></li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div id="" style="background-color: white" dir="rtl">
+    <div class="container text-end " style="font-size: 12px">
+        <div class="row">
+            <div class="col-12 col-md-5 p-4 pt-5 pb-5 fs-5 h-100" style="height:auto;">
+                <div class="col-12 fs-3 bold">
+                    اطلاعات تماس
+                </div>
+                <div class="col-12 pt-4 ">
+                    شماره تماس : ۰۹۳۳۶۶۷۳۱۲۵
+                </div>
+                <div class="col-12 pt-4 pb-4">
+                    آدرس فروشگاه : قم ، پردیسان ، میدان شهرداری ، پاساژ تندیس ، طبقه همکف ، پلاک ۴
+                </div>
+                <div class="col-12">
+                    خدمات پس از فروش :
+
+                </div>
+                <div>
+                    لطفا کالای مرجوعی خود را پس از ثبت در سایت و تایید نهایی توسط پشتیبان ، به این آدرس ارسال نمایید : قم ، پردیسان ، میدان شهرداری ، پاساژ تندیس ، طبقه همکف ، پلاک ۴.
+                </div>
+                <div>
+                    تلفن تماس : ۰۲۵۳۲۴۲۴۱۹۰
+                </div>
+            </div>
+            <div class="col-12 col-md-7 w-auto h-100 rounded-3">
+                <iframe class="rounded-5" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d506.48480717491486!2d50.818919700908495!3d34.54345357954177!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1671881340783!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container text-center p-3" dir="rtl">
+    <div class="row">
+        <div class="col text-center MyShadow border rounded-3 m-5" style="background-color: #f2f2f2;">
+            <form asp-controller="Home" asp-action="AddContactUs" class="pt-5" method="post" enctype="multipart/form-data">
+                @if (ViewBag.ContactUs != null)
+                {
+                    <div class="container text-center" dir="rtl">
+                        <div class="row bg-info bg-gradient p-3">
+                            پیام شما با موفقت برای ادمین ارسال شد.
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    //پیام با موفقیت ارسال شده
+                }
+                <div class="row text-center d-flex justify-content-center h4 pb-2">فرم تماس</div>
+                <div class="row text-center d-flex justify-content-center fw-semibold  pb-4" style="font-size: 13px!important">
+                    کاربران گرامی، شما می توانید از طریق فرم زیر تمامی نقطه نظرات انتقادات و پیشنهادات خود را برای ما ارسال کنید
+                </div>
+                <div class="input-group mb-3">
+                    <input name="Name" id="Name" type="text" class="form-control" placeholder="نام و نام خانوادگی" aria-label="نام و نام خانوادگی" aria-describedby="basic-addon2">
+                </div>
+                <div class="input-group mb-3">
+                    <input id="Email" name="Email" type="email" class="form-control" placeholder="پست الکترونیک" aria-label="پست الکترونیک" aria-describedby="basic-addon2">
+                </div>
+                <div class="input-group mb-3">
+                    <select name="unit" id="unit" class="form-select" aria-label="Default select example" placeholder="واحد مربوطه">
+                        <option value="پشتیبانی">پشتیبانی</option>
+                        <option value="مدریت">مدریت</option>
+                        <option value="فروش">فروش</option>
+                        <option value="گارانتی">گارانتی</option>
+                        <option value="بازاریابی و تبلیغات">بازاریابی و تبلیغات</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <input name="PhoneNumber" id="PhoneNumber" type="text" class="form-control" placeholder="شماره تماس" aria-label="شماره تماس" aria-describedby="basic-addon2">
+                </div>
+                <div class="input-group mb-3">
+                    <textarea name="Message" id="Message" class="form-control" placeholder="پیام خود را برای ما بنویسید" rows="3"></textarea>
+                </div>
+                <div class="input-group mb-3 text-center d-flex justify-content-center">
+                    <button type="submit" class="btn btn-outline-info p-2 pe-4 ps-4">ارسال</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>

@@ -15,3 +15,27 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = D:\Amir\developer\GitHub\Opentag\Vira
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/Amir/developer/GitHub/Opentag/Vira/View/Home/AddContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld1xIb21lXEFkZENvbnRhY3RVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Amir/developer/GitHub/Opentag/Vira/View/Home/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld1xIb21lXEVycm9yNDA0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Amir/developer/GitHub/Opentag/Vira/View/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Amir/developer/GitHub/Opentag/Vira/View/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld1xIb21lXFByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Amir/developer/GitHub/Opentag/Vira/View/Shared/_MainLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld1xTaGFyZWRcX01haW5MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Amir/developer/GitHub/Opentag/Vira/View/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-0bbjdyzj7j
