@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.DTOs.Cart;
-using Berlance.DataLayer.Entities.Cart;
-using Berlance.DataLayer.Migrations;
+using Vira.Core.DTOs.Cart;
+using Vira.DataLayer.Entities.Cart;
+using Vira.DataLayer.Migrations;
 using Microsoft.EntityFrameworkCore.Query.Internal;
 
-namespace Berlance.Core.Services.Interfaces
+namespace Vira.Core.Services.Interfaces
 {
     public interface ICartService
     {

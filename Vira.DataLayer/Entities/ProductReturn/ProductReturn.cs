@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Entities.Order;
+using Vira.DataLayer.Entities.Order;
 
-namespace Berlance.DataLayer.Entities.ProductReturn
+namespace Vira.DataLayer.Entities.ProductReturn
 {
     public class ProductReturn
     {

@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Berlance.Core.Services.Interfaces;
-using Berlance.DataLayer.Context;
-using Berlance.DataLayer.Entities.permissions;
-using Berlance.DataLayer.Entities.User;
+using Vira.Core.Services.Interfaces;
+using Vira.DataLayer.Context;
+using Vira.DataLayer.Entities.permissions;
+using Vira.DataLayer.Entities.User;
 
-namespace Berlance.Core.Services
+namespace Vira.Core.Services
 {
     public class PermissionService : IPermissionService
     {
-        private BerLanceContext _context;
+        private ViraContext _context;
 
-        public PermissionService(BerLanceContext context)
+        public PermissionService(ViraContext context)
         {
             _context = context;
         }

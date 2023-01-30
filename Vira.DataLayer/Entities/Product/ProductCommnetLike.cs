@@ -5,9 +5,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Entities.Article;
+using Vira.DataLayer.Entities.Article;
 
-namespace Berlance.DataLayer.Entities.Product
+namespace Vira.DataLayer.Entities.Product
 {
     public class ProductCommnetLike
     {

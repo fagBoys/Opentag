@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
-using Berlance.DataLayer.Entities.Article;
-using Berlance.DataLayer.Entities.Product;
-using Berlance.DataLayer.Entities.Support;
+using Vira.DataLayer.Entities.Article;
+using Vira.DataLayer.Entities.Product;
+using Vira.DataLayer.Entities.Support;
 
-//using Berlance.DataLayer.Entities.Product;
+//using Vira.DataLayer.Entities.Product;
 
-namespace Berlance.DataLayer.Entities.User
+namespace Vira.DataLayer.Entities.User
 {
     public class User
     {

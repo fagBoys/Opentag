@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.Core.Services.Interfaces
+namespace Vira.Core.Services.Interfaces
 {
     public interface IMessengerSupport
     {

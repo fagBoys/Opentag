@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Entities.Slider;
+using Vira.DataLayer.Entities.Slider;
 
-namespace Berlance.Core.Services.Interfaces
+namespace Vira.Core.Services.Interfaces
 {
     public interface ISliderService
     {

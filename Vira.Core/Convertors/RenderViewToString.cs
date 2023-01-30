@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Routing;
 
-namespace Berlance.Core.Convertors
+namespace Vira.Core.Convertors
 {
     public interface IViewRenderService
     {

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
-using Berlance.DataLayer.Entities.User;
+using Vira.DataLayer.Entities.User;
 
-namespace Berlance.DataLayer.Entities.permissions
+namespace Vira.DataLayer.Entities.permissions
 {
     public class RolePermission
     {

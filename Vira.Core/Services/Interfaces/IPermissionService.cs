@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Berlance.DataLayer.Entities.permissions;
-using Berlance.DataLayer.Entities.User;
+using Vira.DataLayer.Entities.permissions;
+using Vira.DataLayer.Entities.User;
 
-namespace Berlance.Core.Services.Interfaces
+namespace Vira.Core.Services.Interfaces
 {
     public interface IPermissionService
     {

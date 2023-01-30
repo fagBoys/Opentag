@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Entities.ProductReturn;
+using Vira.DataLayer.Entities.ProductReturn;
 using Microsoft.AspNetCore.Http;
 
-namespace Berlance.Core.Services.Interfaces
+namespace Vira.Core.Services.Interfaces
 {
     public interface IProductReturnService
     {

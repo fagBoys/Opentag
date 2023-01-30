@@ -2,28 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Berlance.DataLayer.Entities.Article;
-using Berlance.DataLayer.Entities.Order;
+using Vira.DataLayer.Entities.Article;
+using Vira.DataLayer.Entities.Order;
 using Microsoft.EntityFrameworkCore;
-using Berlance.DataLayer.Entities.User;
-using Berlance.DataLayer.Entities.permissions;
-using Berlance.DataLayer.Entities.Product;
-using Berlance.DataLayer.Entities.Storage;
-using Berlance.DataLayer.Entities.Cart;
-using Berlance.DataLayer.Entities.Notification;
-using Berlance.DataLayer.Entities.payment;
-using Berlance.DataLayer.Entities.ProductReturn;
-using Berlance.DataLayer.Entities.Slider;
-using Berlance.DataLayer.Entities.Support;
+using Vira.DataLayer.Entities.User;
+using Vira.DataLayer.Entities.permissions;
+using Vira.DataLayer.Entities.Product;
+using Vira.DataLayer.Entities.Storage;
+using Vira.DataLayer.Entities.Cart;
+using Vira.DataLayer.Entities.Notification;
+using Vira.DataLayer.Entities.payment;
+using Vira.DataLayer.Entities.ProductReturn;
+using Vira.DataLayer.Entities.Slider;
+using Vira.DataLayer.Entities.Support;
 
 
 
-namespace Berlance.DataLayer.Context
+namespace Vira.DataLayer.Context
 {
-    public class BerLanceContext : DbContext
+    public class ViraContext : DbContext
     {
 
-        public BerLanceContext(DbContextOptions<BerLanceContext> options) : base(options)
+        public ViraContext(DbContextOptions<ViraContext> options) : base(options)
         {
 
         }

@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.Convertors;
-using Berlance.Core.Generator;
-using Berlance.Core.Security;
-using Berlance.Core.Services.Interfaces;
-using Berlance.DataLayer.Context;
-using Berlance.DataLayer.Entities.Slider;
+using Vira.Core.Convertors;
+using Vira.Core.Generator;
+using Vira.Core.Security;
+using Vira.Core.Services.Interfaces;
+using Vira.DataLayer.Context;
+using Vira.DataLayer.Entities.Slider;
 using Microsoft.AspNetCore.Http;
 
-namespace Berlance.Core.Services
+namespace Vira.Core.Services
 {
     public class SliderService : ISliderService
     {
-        private BerLanceContext _context;
+        private ViraContext _context;
 
-        public SliderService(BerLanceContext context)
+        public SliderService(ViraContext context)
         {
             _context = context;
         }

@@ -3,27 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.DTOs.Admin;
-using Berlance.Core.DTOs.Cart;
-using Berlance.Core.DTOs.Payment;
-using Berlance.Core.DTOs.Product;
-using Berlance.Core.Services.Interfaces;
-using Berlance.DataLayer.Context;
-using Berlance.DataLayer.Entities.Cart;
-using Berlance.DataLayer.Entities.Order;
-using Berlance.DataLayer.Entities.Product;
-using Berlance.DataLayer.Entities.Storage;
-using Berlance.DataLayer.Entities.User;
+using Vira.Core.DTOs.Admin;
+using Vira.Core.DTOs.Cart;
+using Vira.Core.DTOs.Payment;
+using Vira.Core.DTOs.Product;
+using Vira.Core.Services.Interfaces;
+using Vira.DataLayer.Context;
+using Vira.DataLayer.Entities.Cart;
+using Vira.DataLayer.Entities.Order;
+using Vira.DataLayer.Entities.Product;
+using Vira.DataLayer.Entities.Storage;
+using Vira.DataLayer.Entities.User;
 using Microsoft.EntityFrameworkCore;
 
-namespace Berlance.Core.Services
+namespace Vira.Core.Services
 {
     public class OrderService : IOrderService
     {
-        private BerLanceContext _context;
+        private ViraContext _context;
         private IUserService _userService;
 
-        public OrderService(BerLanceContext context, IUserService userService)
+        public OrderService(ViraContext context, IUserService userService)
         {
             _context = context;
             _userService = userService;

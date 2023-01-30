@@ -1,0 +1,14 @@
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\obj\Debug\net6.0\Vira.DataLayer.csproj.AssemblyReference.cache
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\obj\Debug\net6.0\Vira.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\obj\Debug\net6.0\Vira.DataLayer.AssemblyInfoInputs.cache
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\obj\Debug\net6.0\Vira.DataLayer.AssemblyInfo.cs
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\obj\Debug\net6.0\Vira.DataLayer.csproj.CoreCompileInputs.cache
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\bin\Debug\net6.0\Vira.DataLayer.deps.json
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\bin\Debug\net6.0\Vira.DataLayer.runtimeconfig.json
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\bin\Debug\net6.0\Vira.DataLayer.dll
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\bin\Debug\net6.0\Vira.DataLayer.pdb
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\obj\Debug\net6.0\Vira.DataLayer.dll
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\obj\Debug\net6.0\refint\Vira.DataLayer.dll
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\obj\Debug\net6.0\Vira.DataLayer.pdb
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\obj\Debug\net6.0\Vira.DataLayer.genruntimeconfig.cache
+D:\Amir\developer\GitHub\Opentag\Vira.DataLayer\obj\Debug\net6.0\ref\Vira.DataLayer.dll

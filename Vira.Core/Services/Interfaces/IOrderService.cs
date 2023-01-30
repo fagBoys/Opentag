@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.DTOs.Admin;
-using Berlance.Core.DTOs.Cart;
-using Berlance.Core.DTOs.Payment;
-using Berlance.DataLayer.Entities.Order;
+using Vira.Core.DTOs.Admin;
+using Vira.Core.DTOs.Cart;
+using Vira.Core.DTOs.Payment;
+using Vira.DataLayer.Entities.Order;
 
-namespace Berlance.Core.Services.Interfaces
+namespace Vira.Core.Services.Interfaces
 {
     public interface IOrderService
     {

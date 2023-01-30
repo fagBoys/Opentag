@@ -3,32 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.Convertors;
-using Berlance.Core.DTOs.Comment;
-using Berlance.Core.DTOs.Product;
-using Berlance.Core.Generator;
-using Berlance.Core.Services.Interfaces;
-using Berlance.DataLayer.Context;
-using Berlance.DataLayer.Entities.Article;
-using Berlance.DataLayer.Entities.Notification;
-using Berlance.DataLayer.Entities.Product;
-using Berlance.DataLayer.Entities.Storage;
-using Berlance.DataLayer.Entities.User;
-using Berlance.DataLayer.Migrations;
+using Vira.Core.Convertors;
+using Vira.Core.DTOs.Comment;
+using Vira.Core.DTOs.Product;
+using Vira.Core.Generator;
+using Vira.Core.Services.Interfaces;
+using Vira.DataLayer.Context;
+using Vira.DataLayer.Entities.Article;
+using Vira.DataLayer.Entities.Notification;
+using Vira.DataLayer.Entities.Product;
+using Vira.DataLayer.Entities.Storage;
+using Vira.DataLayer.Entities.User;
+using Vira.DataLayer.Migrations;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
-namespace Berlance.Core.Services
+namespace Vira.Core.Services
 {
     public class ProductService : IProductService
     {
-        private BerLanceContext _context;
+        private ViraContext _context;
         private IUserService _userService;
 
-        public ProductService(BerLanceContext context, IUserService userService)
+        public ProductService(ViraContext context, IUserService userService)
         {
             _context = context;
             _userService = userService;

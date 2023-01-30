@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Entities.Product;
+using Vira.DataLayer.Entities.Product;
 
-namespace Berlance.Core.DTOs.Comment
+namespace Vira.Core.DTOs.Comment
 {
     public class ShowComment
     {

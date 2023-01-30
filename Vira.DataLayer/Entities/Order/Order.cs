@@ -6,10 +6,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Entities.payment;
-using Berlance.DataLayer.Entities.User;
+using Vira.DataLayer.Entities.payment;
+using Vira.DataLayer.Entities.User;
 
-namespace Berlance.DataLayer.Entities.Order
+namespace Vira.DataLayer.Entities.Order
 {
     public class Order
     {

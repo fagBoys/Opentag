@@ -1,8 +1,8 @@
-﻿using Berlance.Core.DTOs.Cart;
-using Berlance.Core.DTOs.Payment;
-using Berlance.DataLayer.Entities.payment;
+﻿using Vira.Core.DTOs.Cart;
+using Vira.Core.DTOs.Payment;
+using Vira.DataLayer.Entities.payment;
 
-namespace Berlance.Core.Services.Interfaces;
+namespace Vira.Core.Services.Interfaces;
 
 public interface IPaymentService
 {

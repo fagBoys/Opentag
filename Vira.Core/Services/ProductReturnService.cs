@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.Convertors;
-using Berlance.Core.Generator;
-using Berlance.Core.Security;
-using Berlance.Core.Senders;
-using Berlance.Core.Services.Interfaces;
-using Berlance.DataLayer.Context;
-using Berlance.DataLayer.Entities.Order;
-using Berlance.DataLayer.Entities.ProductReturn;
+using Vira.Core.Convertors;
+using Vira.Core.Generator;
+using Vira.Core.Security;
+using Vira.Core.Senders;
+using Vira.Core.Services.Interfaces;
+using Vira.DataLayer.Context;
+using Vira.DataLayer.Entities.Order;
+using Vira.DataLayer.Entities.ProductReturn;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
-namespace Berlance.Core.Services
+namespace Vira.Core.Services
 {
     public class ProductReturnService : IProductReturnService
     {
-        private BerLanceContext _context;
+        private ViraContext _context;
 
-        public ProductReturnService(BerLanceContext context)
+        public ProductReturnService(ViraContext context)
         {
             _context = context;
         }

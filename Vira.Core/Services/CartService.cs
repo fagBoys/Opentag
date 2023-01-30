@@ -1,29 +1,29 @@
-﻿using Berlance.Core.Services.Interfaces;
+﻿using Vira.Core.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.DTOs.Cart;
-using Berlance.DataLayer.Context;
-using Berlance.DataLayer.Entities.Cart;
-using Berlance.DataLayer.Entities.User;
-using Berlance.DataLayer.Migrations;
+using Vira.Core.DTOs.Cart;
+using Vira.DataLayer.Context;
+using Vira.DataLayer.Entities.Cart;
+using Vira.DataLayer.Entities.User;
+using Vira.DataLayer.Migrations;
 using Microsoft.EntityFrameworkCore;
-using Berlance.DataLayer.Entities.Product;
+using Vira.DataLayer.Entities.Product;
 using System.Collections;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.VisualBasic;
-using Berlance.DataLayer.Entities.Order;
+using Vira.DataLayer.Entities.Order;
 
-namespace Berlance.Core.Services
+namespace Vira.Core.Services
 {
     public class CartService : ICartService
     {
         private IUserService _userService;
-        private BerLanceContext _context;
+        private ViraContext _context;
 
-        public CartService(IUserService userService, BerLanceContext context)
+        public CartService(IUserService userService, ViraContext context)
         {
             _userService = userService;
             _context = context;

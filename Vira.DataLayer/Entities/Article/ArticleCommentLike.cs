@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace Berlance.DataLayer.Entities.Article
+namespace Vira.DataLayer.Entities.Article
 {
     public class ArticleCommentLike
     {

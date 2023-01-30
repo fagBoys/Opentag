@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.DTOs.Product;
-using Berlance.DataLayer.Entities;
-using Berlance.DataLayer.Entities.Slider;
-using Berlance.DataLayer.Entities.Support;
+using Vira.Core.DTOs.Product;
+using Vira.DataLayer.Entities;
+using Vira.DataLayer.Entities.Slider;
+using Vira.DataLayer.Entities.Support;
 
-namespace Berlance.Core.DTOs.Home
+namespace Vira.Core.DTOs.Home
 {
     public class IndexViewModel
     {

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Berlance.DataLayer.Entities.permissions
+namespace Vira.DataLayer.Entities.permissions
 {
     public class permission
     {

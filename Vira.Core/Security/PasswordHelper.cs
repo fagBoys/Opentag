@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace Berlance.Core.Security
+namespace Vira.Core.Security
 {
     public static class PasswordHelper
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.DataLayer.Entities.payment
+namespace Vira.DataLayer.Entities.payment
 {
     public class RequestPay
     {

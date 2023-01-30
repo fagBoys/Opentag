@@ -8,22 +8,22 @@ using System.Text;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
-using Berlance.Core.Convertors;
-using Berlance.Core.DTOs;
-using Berlance.Core.Generator;
-using Berlance.Core.Security;
-using Berlance.Core.Services.Interfaces;
-using Berlance.DataLayer.Context;
-using Berlance.DataLayer.Entities.User;
-//using Berlance.DataLayer.Entities.Wallet;
+using Vira.Core.Convertors;
+using Vira.Core.DTOs;
+using Vira.Core.Generator;
+using Vira.Core.Security;
+using Vira.Core.Services.Interfaces;
+using Vira.DataLayer.Context;
+using Vira.DataLayer.Entities.User;
+//using Vira.DataLayer.Entities.Wallet;
 
-namespace Berlance.Core.Services
+namespace Vira.Core.Services
 {
     public class UserService : IUserService
     {
-        private BerLanceContext _context;
+        private ViraContext _context;
 
-        public UserService(BerLanceContext context)
+        public UserService(ViraContext context)
         {
             _context = context;
         }

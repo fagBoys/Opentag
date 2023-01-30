@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.DataLayer.Entities.User
+namespace Vira.DataLayer.Entities.User
 {
     public class VisiteCount
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.Core.DTOs.Payment
+namespace Vira.Core.DTOs.Payment
 {
     public class RequestPayDto
     {

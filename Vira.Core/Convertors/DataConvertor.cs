@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace Berlance.Core.Convertors
+namespace Vira.Core.Convertors
 {
    public static class DataConvertor
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.DataLayer.Entities.Article
+namespace Vira.DataLayer.Entities.Article
 {
     public class ArticleAnswerComment
     {

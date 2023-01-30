@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.DataLayer.Entities.Cart
+namespace Vira.DataLayer.Entities.Cart
 {
     public class Cart
     {

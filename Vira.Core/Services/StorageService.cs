@@ -3,29 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.Convertors;
-using Berlance.Core.DTOs;
-using Berlance.Core.DTOs.Notification;
-using Berlance.Core.DTOs.Storage;
-using Berlance.Core.Generator;
-using Berlance.Core.Senders;
-using Berlance.Core.Services.Interfaces;
-using Berlance.DataLayer.Context;
-using Berlance.DataLayer.Entities.Product;
-using Berlance.DataLayer.Entities.Storage;
-using Berlance.DataLayer.Entities.User;
+using Vira.Core.Convertors;
+using Vira.Core.DTOs;
+using Vira.Core.DTOs.Notification;
+using Vira.Core.DTOs.Storage;
+using Vira.Core.Generator;
+using Vira.Core.Senders;
+using Vira.Core.Services.Interfaces;
+using Vira.DataLayer.Context;
+using Vira.DataLayer.Entities.Product;
+using Vira.DataLayer.Entities.Storage;
+using Vira.DataLayer.Entities.User;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
-namespace Berlance.Core.Services
+namespace Vira.Core.Services
 {
     public class StorageService : IStorageService
     {
-        private BerLanceContext _context;
+        private ViraContext _context;
         private IViewRenderService _viewRender;
 
-        public StorageService(BerLanceContext context, IViewRenderService viewRender)
+        public StorageService(ViraContext context, IViewRenderService viewRender)
         {
             _context = context;
             _viewRender = viewRender;

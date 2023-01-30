@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Entities.Order;
+using Vira.DataLayer.Entities.Order;
 
-namespace Berlance.Core.DTOs.Admin
+namespace Vira.Core.DTOs.Admin
 {
     public class OrderDto
     {

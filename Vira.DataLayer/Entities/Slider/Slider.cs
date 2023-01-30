@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.DataLayer.Entities.Slider
+namespace Vira.DataLayer.Entities.Slider
 {
     public class Slider
     {

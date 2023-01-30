@@ -5,11 +5,11 @@ using System.Text;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Berlance.Core.Services;
-using Berlance.Core.Services.Interfaces;
-using Berlance.DataLayer.Context;
+using Vira.Core.Services;
+using Vira.Core.Services.Interfaces;
+using Vira.DataLayer.Context;
 
-namespace Berlance.Core.Security
+namespace Vira.Core.Security
 {
     public class PermissionChekerAttribute : AuthorizeAttribute, IAuthorizationFilter
     {

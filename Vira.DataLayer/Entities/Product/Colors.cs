@@ -1,4 +1,4 @@
-﻿using Berlance.DataLayer.Entities.Storage;
+﻿using Vira.DataLayer.Entities.Storage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.DataLayer.Entities.Product
+namespace Vira.DataLayer.Entities.Product
 {
     public class Colors
     {

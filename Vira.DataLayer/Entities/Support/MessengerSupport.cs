@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.DataLayer.Entities.Support
+namespace Vira.DataLayer.Entities.Support
 {
     public class MessengerSupport
     {

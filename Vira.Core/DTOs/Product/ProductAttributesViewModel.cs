@@ -1,11 +1,11 @@
-﻿using Berlance.DataLayer.Entities.Product;
+﻿using Vira.DataLayer.Entities.Product;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.Core.DTOs.Product
+namespace Vira.Core.DTOs.Product
 {
     public class ProductAttributesViewModel
     {

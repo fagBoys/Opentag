@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Berlance.DataLayer.Entities.Product
+namespace Vira.DataLayer.Entities.Product
 {
     public class ProductGroup
     {

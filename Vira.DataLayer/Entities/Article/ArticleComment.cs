@@ -1,4 +1,4 @@
-﻿using Berlance.DataLayer.Entities.Product;
+﻿using Vira.DataLayer.Entities.Product;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.DataLayer.Entities.Article
+namespace Vira.DataLayer.Entities.Article
 {
     public class ArticleComment
     {

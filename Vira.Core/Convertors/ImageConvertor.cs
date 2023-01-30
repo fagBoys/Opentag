@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Berlance.Core.Convertors
+namespace Vira.Core.Convertors
 {
     public class ImageConvertor
     {

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Migrations;
+using Vira.DataLayer.Migrations;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Metadata;
 
-namespace Berlance.Core.DTOs.Cart
+namespace Vira.Core.DTOs.Cart
 {
     public class GetMyCart
     {

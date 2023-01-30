@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.DTOs;
-using Berlance.Core.DTOs.Storage;
-using Berlance.DataLayer.Entities.Storage;
-using Berlance.DataLayer.Entities.User;
+using Vira.Core.DTOs;
+using Vira.Core.DTOs.Storage;
+using Vira.DataLayer.Entities.Storage;
+using Vira.DataLayer.Entities.User;
 using Microsoft.AspNetCore.Http;
 
-namespace Berlance.Core.Services.Interfaces
+namespace Vira.Core.Services.Interfaces
 {
     public interface IStorageService
     {

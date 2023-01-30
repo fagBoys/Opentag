@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.Core.Convertors
+namespace Vira.Core.Convertors
 {
     public class EnumHelpers<T>
     {

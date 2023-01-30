@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.DTOs.Comment;
-using Berlance.DataLayer.Entities.Article;
+using Vira.Core.DTOs.Comment;
+using Vira.DataLayer.Entities.Article;
 using Microsoft.AspNetCore.Http;
 
-namespace Berlance.Core.Services.Interfaces
+namespace Vira.Core.Services.Interfaces
 {
     public interface IArticleService
     {

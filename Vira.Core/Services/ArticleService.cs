@@ -3,34 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.Convertors;
-using Berlance.Core.DTOs.Comment;
-using Berlance.Core.DTOs.Notification;
-using Berlance.Core.Generator;
-using Berlance.Core.Security;
-using Berlance.Core.Senders;
-using Berlance.Core.Services.Interfaces;
-using Berlance.DataLayer.Context;
-using Berlance.DataLayer.Entities.Article;
-using Berlance.DataLayer.Entities.Product;
-using Berlance.DataLayer.Entities.Storage;
-using Berlance.DataLayer.Entities.User;
-using Berlance.DataLayer.Migrations;
+using Vira.Core.Convertors;
+using Vira.Core.DTOs.Comment;
+using Vira.Core.DTOs.Notification;
+using Vira.Core.Generator;
+using Vira.Core.Security;
+using Vira.Core.Senders;
+using Vira.Core.Services.Interfaces;
+using Vira.DataLayer.Context;
+using Vira.DataLayer.Entities.Article;
+using Vira.DataLayer.Entities.Product;
+using Vira.DataLayer.Entities.Storage;
+using Vira.DataLayer.Entities.User;
+using Vira.DataLayer.Migrations;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Article = Berlance.DataLayer.Entities.Article.Article;
+using Article = Vira.DataLayer.Entities.Article.Article;
 
-namespace Berlance.Core.Services
+namespace Vira.Core.Services
 {
     public class ArticleService : IArticleService
     {
-        private BerLanceContext _context;
+        private ViraContext _context;
         private IViewRenderService _viewRender;
         private IUserService _userService;
 
 
-        public ArticleService(BerLanceContext context, IViewRenderService viewRender, IUserService userService)
+        public ArticleService(ViraContext context, IViewRenderService viewRender, IUserService userService)
         {
             _context = context;
             _viewRender = viewRender;

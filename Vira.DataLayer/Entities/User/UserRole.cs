@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Berlance.DataLayer.Entities.User
+namespace Vira.DataLayer.Entities.User
 {
     public class UserRole
     {

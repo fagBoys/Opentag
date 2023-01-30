@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 using Microsoft.AspNetCore.Http;
-using Berlance.Core.DTOs;
-using Berlance.DataLayer.Entities.User;
-//using Berlance.DataLayer.Entities.Wallet;
+using Vira.Core.DTOs;
+using Vira.DataLayer.Entities.User;
+//using Vira.DataLayer.Entities.Wallet;
 
-namespace Berlance.Core.Services.Interfaces
+namespace Vira.Core.Services.Interfaces
 {
     public interface IUserService
     {

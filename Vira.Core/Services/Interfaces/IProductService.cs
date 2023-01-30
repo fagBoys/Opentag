@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.DTOs.Comment;
-using Berlance.Core.DTOs.Product;
-using Berlance.DataLayer.Entities.Product;
+using Vira.Core.DTOs.Comment;
+using Vira.Core.DTOs.Product;
+using Vira.DataLayer.Entities.Product;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch.Internal;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Berlance.Core.DTOs.Product;
+using Vira.Core.DTOs.Product;
 
-namespace Berlance.Core.Services.Interfaces
+namespace Vira.Core.Services.Interfaces
 {
     public interface IProductService
     {

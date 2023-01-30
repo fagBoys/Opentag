@@ -1,0 +1,5 @@
+D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net6.0\Vira.Core.csproj.AssemblyReference.cache
+D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net6.0\Vira.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net6.0\Vira.Core.AssemblyInfoInputs.cache
+D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net6.0\Vira.Core.AssemblyInfo.cs
+D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net6.0\Vira.Core.csproj.CoreCompileInputs.cache

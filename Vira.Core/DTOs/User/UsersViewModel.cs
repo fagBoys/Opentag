@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Microsoft.AspNetCore.Http;
-using Berlance.DataLayer.Entities.User;
+using Vira.DataLayer.Entities.User;
 
-namespace Berlance.Core.DTOs
+namespace Vira.Core.DTOs
 {
     public class UserForAdminViewModel
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Http;
 
-namespace Berlance.Core.Security
+namespace Vira.Core.Security
 {
     public static class ImageValidator
     {

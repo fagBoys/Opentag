@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.Core.DTOs.Cart;
-using Berlance.Core.DTOs.Payment;
-using Berlance.Core.Services.Interfaces;
-using Berlance.DataLayer.Context;
-using Berlance.DataLayer.Entities.payment;
+using Vira.Core.DTOs.Cart;
+using Vira.Core.DTOs.Payment;
+using Vira.Core.Services.Interfaces;
+using Vira.DataLayer.Context;
+using Vira.DataLayer.Entities.payment;
 
-namespace Berlance.Core.Services
+namespace Vira.Core.Services
 {
     public class PaymentService:IPaymentService
     {
-        private BerLanceContext _context;
+        private ViraContext _context;
 
-        public PaymentService(BerLanceContext context)
+        public PaymentService(ViraContext context)
         {
             _context = context;
         }

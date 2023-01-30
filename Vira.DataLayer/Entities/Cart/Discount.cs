@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Entities.User;
+using Vira.DataLayer.Entities.User;
 
-namespace Berlance.DataLayer.Entities.Cart
+namespace Vira.DataLayer.Entities.Cart
 {
     public class Discount
     {

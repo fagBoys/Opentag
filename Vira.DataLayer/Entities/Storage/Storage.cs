@@ -5,10 +5,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Entities.Order;
-using Berlance.DataLayer.Entities.Product;
+using Vira.DataLayer.Entities.Order;
+using Vira.DataLayer.Entities.Product;
 
-namespace Berlance.DataLayer.Entities.Storage
+namespace Vira.DataLayer.Entities.Storage
 {
     public class Storage
     {

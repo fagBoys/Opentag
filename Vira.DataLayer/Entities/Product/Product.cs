@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace Berlance.DataLayer.Entities.Product
+namespace Vira.DataLayer.Entities.Product
 {
     public class Product
     {

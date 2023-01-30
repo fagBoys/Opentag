@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.DataLayer.Entities.Notification
+namespace Vira.DataLayer.Entities.Notification
 {
     public class Notification
     {

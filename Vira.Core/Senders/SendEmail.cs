@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net.Mail;
 using System.Web;
 
-namespace Berlance.Core.Senders
+namespace Vira.Core.Senders
 {
     public class SendEmail
     {

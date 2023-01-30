@@ -6,9 +6,9 @@ using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Entities;
+using Vira.DataLayer.Entities;
 
-namespace Berlance.DataLayer.Entities.Order
+namespace Vira.DataLayer.Entities.Order
 {
     public class OrderDetail
     {

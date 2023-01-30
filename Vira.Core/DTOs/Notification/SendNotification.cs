@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.Core.DTOs.Notification
+namespace Vira.Core.DTOs.Notification
 {
     public class SendNotification
     {

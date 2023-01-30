@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.Core.DTOs.Cart
+namespace Vira.Core.DTOs.Cart
 {
     public class ResultDto
     {

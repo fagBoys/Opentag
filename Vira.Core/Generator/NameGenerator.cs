@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Berlance.Core.Generator
+namespace Vira.Core.Generator
 {
     public class NameGenerator
     {

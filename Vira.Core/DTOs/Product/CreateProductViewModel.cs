@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.Core.DTOs.Product
+namespace Vira.Core.DTOs.Product
 {
     public class CreateProductViewModel
     {

@@ -1,24 +1,24 @@
-﻿using Berlance.Core.Services.Interfaces;
+﻿using Vira.Core.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Berlance.DataLayer.Context;
+using Vira.DataLayer.Context;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Berlance.Core.DTOs.Cart;
+using Vira.Core.DTOs.Cart;
 
-namespace Berlance.Core.Services
+namespace Vira.Core.Services
 {
     public class MessengerSupport : IMessengerSupport
     {
-        private BerLanceContext _context;
+        private ViraContext _context;
         private IUserService _userService;
 
-        public MessengerSupport(BerLanceContext context, IUserService userService)
+        public MessengerSupport(ViraContext context, IUserService userService)
         {
             _context = context;
             _userService = userService;

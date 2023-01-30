@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.DataLayer.Entities.Product
+namespace Vira.DataLayer.Entities.Product
 {
     public class Image
     {

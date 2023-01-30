@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Berlance.Core.DTOs.Storage
+namespace Vira.Core.DTOs.Storage
 {
     public class FilesInStorageViewModel
     {

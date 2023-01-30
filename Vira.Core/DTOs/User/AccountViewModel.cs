@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Berlance.Core.DTOs
+namespace Vira.Core.DTOs
 {
     public class RegisterViewModel
     {
