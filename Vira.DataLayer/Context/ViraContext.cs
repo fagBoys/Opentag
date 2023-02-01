@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
-
-
+using Vira.DataLayer.Entities.User;
 
 
 namespace Vira.DataLayer.Context
@@ -18,6 +18,14 @@ namespace Vira.DataLayer.Context
         }
 
 
+
+        #region User
+
+        public DbSet<User> Users { get; set; }
+
+
+        #endregion
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             var cascadeFKs = modelBuilder.Model.GetEntityTypes()
@@ -27,6 +35,7 @@ namespace Vira.DataLayer.Context
             foreach (var fk in cascadeFKs)
                 fk.DeleteBehavior = DeleteBehavior.Restrict;
 
+            modelBuilder.Entity<User>().HasQueryFilter(U => !U.IsDelete);
 
 
             base.OnModelCreating(modelBuilder);
