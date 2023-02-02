@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NTsnXTQaDSn//Dbf9NhmL+ZzhRjwLJi12oC9hxE20I4=",
+  "Hash": "AE6brnDmyakIL/rCb5wRu6g8wvuAAZui8I4bCtz6acg=",
   "Source": "Vira.Web",
   "BasePath": "_content/Vira.Web",
   "Mode": "Default",
@@ -83,23 +83,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
-      "Identity": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "Vira.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\wwwroot\\",
-      "BasePath": "_content/Vira.Web",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
@@ -202,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Identity": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "Vira.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\wwwroot\\",
+      "BasePath": "_content/Vira.Web",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
