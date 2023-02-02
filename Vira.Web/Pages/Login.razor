@@ -1,0 +1,44 @@
+﻿@page "/login"
+@using Vira.Core.Services.Interfaces;
+@using Vira.DataLayer.Entities.User
+@layout EmptyLayout
+@inject IUserService _userservice
+<div class="container">
+    <div class="row d-flex justify-content-center align-content-center vh-100 m-3">
+        <div class="card shadow col-12 col-md-3">
+            <div class="card-body text-center">
+                <h3>Vira</h3>
+                <EditForm Model="@user" OnInvalidSubmit="login">
+                    <div class="row justify-content-center">
+                        <div class="col-12 mb-3">
+                            <InputText required @bind-Value="user.UserName" class="form-control" placeholder="User name"></InputText>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-12 mb-3">
+                            <InputText required @bind-Value="user.Password" class="form-control" placeholder="Password"></InputText>
+                        </div>
+                    </div>
+                    <div class="col-12 justify-content-center">
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </div>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    User user = new User();
+
+    [Parameter]
+    public string Username { get; set; }
+
+    [Parameter]
+    public string Password { get; set; }
+
+    public void login()
+    {
+        //_userservice.Login(Username,Password);
+    }
+}
