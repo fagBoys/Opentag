@@ -18,6 +18,10 @@ namespace Vira.DataLayer.Entities.User
         [StringLength(10,MinimumLength = 5 ,ErrorMessage = "تعداد کاراکتر مجاز نمی باشد")]
         public string  UserName { get; set; }
 
+        [Display(Name = "کلمه عبور")]
+        [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
+        public string  Password { get; set; }
+
         [Display(Name = "نام ")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         public string  FirstName { get; set; }

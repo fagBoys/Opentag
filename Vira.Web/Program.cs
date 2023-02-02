@@ -1,8 +1,12 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using Vira.Core.Services.Interfaces;
+using Vira.Core.Services;
 using Vira.DataLayer.Context;
 using Vira.Web.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +15,23 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 
+#region Authentication
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+
+}).AddCookie(options =>
+{
+    options.LoginPath = "/Login";
+    options.LogoutPath = "/Logout";
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(43200);
+
+});
+
+#endregion
 
 #region DataBase Context
 
@@ -22,6 +43,12 @@ builder.Services.AddDbContext<ViraContext>(options =>
 
 #endregion
 
+#region IoC
+
+builder.Services.AddTransient<IUserService, UserService>();
+
+
+#endregion
 
 var app = builder.Build();
 
