@@ -79,9 +79,18 @@ namespace Vira.DataLayer.Entities.User
         [StringLength(10, MinimumLength = 10, ErrorMessage = "کدپستی وارد شده صحیح نمی باشد")]
         public string CompanyPostCode { get; set; }
 
+        [Display(Name = "وضعیت حذف")]
         public bool IsDelete { get; set; }
+
+        [Display(Name = "کد فعال سازی")]
         public string ActiveCode { get; set; }
+
+        [Display(Name = "عکس پروفایل")]
+        [MaxLength(200)]
         public string UserAvatar { get; set; }
+
+
+        [Display(Name = "وضعیت فعال سازی")]
         public bool IsActive { get; set; }
 
 

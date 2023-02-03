@@ -153,3 +153,5 @@ D:\Amir\developer\GitHub\Opentag\Vira.Web\obj\Debug\net7.0\refint\Vira.Web.dll
 D:\Amir\developer\GitHub\Opentag\Vira.Web\obj\Debug\net7.0\Vira.Web.pdb
 D:\Amir\developer\GitHub\Opentag\Vira.Web\obj\Debug\net7.0\Vira.Web.genruntimeconfig.cache
 D:\Amir\developer\GitHub\Opentag\Vira.Web\obj\Debug\net7.0\ref\Vira.Web.dll
+D:\Amir\developer\GitHub\Opentag\Vira.Web\bin\Debug\net7.0\Connected Services\SendSMS\ConnectedService.json
+D:\Amir\developer\GitHub\Opentag\Vira.Web\obj\Debug\net7.0\Vira.Web.MvcApplicationPartsAssemblyInfo.cs
