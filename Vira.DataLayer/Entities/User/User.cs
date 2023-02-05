@@ -15,7 +15,7 @@ namespace Vira.DataLayer.Entities.User
 
         [Display(Name = "نام کاربری ")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
-        [StringLength(10,MinimumLength = 5 ,ErrorMessage = "تعداد کاراکتر مجاز نمی باشد")]
+        [StringLength(11,MinimumLength = 11 ,ErrorMessage = "تعداد کاراکتر مجاز نمی باشد")]
         public string  UserName { get; set; }
 
         [Display(Name = "کلمه عبور")]
@@ -41,11 +41,11 @@ namespace Vira.DataLayer.Entities.User
         [Display(Name = "تلفن ثابت ")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         [StringLength(11, MinimumLength = 11, ErrorMessage = "شماره تلفن ثابت وارد شده صحیح نمی باشد")]
-        public string PhoneNumber { get; set; }
-
+        public string LandlineTelephone { get; set; }
+        
         [Display(Name = "تلفن همرا ")]
         [StringLength(11, MinimumLength = 11, ErrorMessage = "شماره تلفن موبایل وارد شده صحیح نمی باشد")]
-        public string MobileNumber { get; set; }
+        public string PhoneNumber { get; set; }
 
         [Display(Name = "اینستاگرام")]
         public string Instagram { get; set; }
