@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Vira.DataLayer.Entities.Main;
 using Vira.DataLayer.Entities.User;
 
 
@@ -25,6 +26,8 @@ namespace Vira.DataLayer.Context
 
 
         #endregion
+
+        public DbSet<Contact> Contacts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
