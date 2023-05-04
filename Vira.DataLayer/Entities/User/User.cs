@@ -11,11 +11,11 @@ namespace Vira.DataLayer.Entities.User
     public class User
     {
         [Key]
-        public int  Id { get; set; }
+        public int  UserId { get; set; }
 
         [Display(Name = "نام کاربری ")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
-        [StringLength(10,MinimumLength = 5 ,ErrorMessage = "تعداد کاراکتر مجاز نمی باشد")]
+        [StringLength(11,MinimumLength = 11 ,ErrorMessage = "تعداد کاراکتر مجاز نمی باشد")]
         public string  UserName { get; set; }
 
         [Display(Name = "کلمه عبور")]
@@ -41,11 +41,11 @@ namespace Vira.DataLayer.Entities.User
         [Display(Name = "تلفن ثابت ")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         [StringLength(11, MinimumLength = 11, ErrorMessage = "شماره تلفن ثابت وارد شده صحیح نمی باشد")]
-        public string phoneNumber { get; set; }
-
+        public string LandlineTelephone { get; set; }
+        
         [Display(Name = "تلفن همرا ")]
         [StringLength(11, MinimumLength = 11, ErrorMessage = "شماره تلفن موبایل وارد شده صحیح نمی باشد")]
-        public string MobileNumber { get; set; }
+        public string PhoneNumber { get; set; }
 
         [Display(Name = "اینستاگرام")]
         public string Instagram { get; set; }
@@ -79,7 +79,19 @@ namespace Vira.DataLayer.Entities.User
         [StringLength(10, MinimumLength = 10, ErrorMessage = "کدپستی وارد شده صحیح نمی باشد")]
         public string CompanyPostCode { get; set; }
 
+        [Display(Name = "وضعیت حذف")]
         public bool IsDelete { get; set; }
+
+        [Display(Name = "کد فعال سازی")]
+        public string ActiveCode { get; set; }
+
+        [Display(Name = "عکس پروفایل")]
+        [MaxLength(200)]
+        public string UserAvatar { get; set; }
+
+
+        [Display(Name = "وضعیت فعال سازی")]
+        public bool IsActive { get; set; }
 
 
 

@@ -7,6 +7,7 @@ using Vira.Core.Services;
 using Vira.DataLayer.Context;
 using Vira.Web.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using vira.DataLayer.Entities.permissions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +47,7 @@ builder.Services.AddDbContext<ViraContext>(options =>
 #region IoC
 
 builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IPermissionService, PermissionService>();
 
 
 #endregion

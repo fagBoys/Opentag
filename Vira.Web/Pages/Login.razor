@@ -1,22 +1,28 @@
 ﻿@page "/login"
 @using Vira.Core.Services.Interfaces;
 @using Vira.DataLayer.Entities.User
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Cookies
+@using Microsoft.AspNetCore.Identity
+@using Vira.Core.DTOs
 @layout EmptyLayout
-@inject IUserService _userservice
+@inject IUserService _userService
+@inject IPermissionService _PermissionService
 <div class="container">
     <div class="row d-flex justify-content-center align-content-center vh-100 m-3">
         <div class="card shadow col-12 col-md-3">
             <div class="card-body text-center">
                 <h3>Vira</h3>
-                <EditForm Model="@user" OnInvalidSubmit="login">
+                <EditForm Model="@loginVm" OnValidSubmit="login">
                     <div class="row justify-content-center">
                         <div class="col-12 mb-3">
-                            <InputText required @bind-Value="user.UserName" class="form-control" placeholder="User name"></InputText>
+                            <InputText required @bind-Value="loginVm.PhoneNumber" class="form-control" placeholder="User name"></InputText>
                         </div>
                     </div>
                     <div>
                         <div class="col-12 mb-3">
-                            <InputText required @bind-Value="user.Password" class="form-control" placeholder="Password"></InputText>
+                            <InputText required @bind-Value="loginVm.Password" class="form-control" placeholder="Password"></InputText>
                         </div>
                     </div>
                     <div class="col-12 justify-content-center">
@@ -29,16 +35,70 @@
 </div>
 
 @code {
-    User user = new User();
 
     [Parameter]
-    public string Username { get; set; }
+    public bool IsSuccess { get; set; }
+    [Parameter]
+    public bool Admin { get; set; }
+    [Parameter]
+    public string Username { get; set; } = "";
+    [Parameter]
+    public string Password { get; set; } = "";
 
     [Parameter]
-    public string Password { get; set; }
+    public User user { get; set; }
 
-    public void login()
+    LoginViewModel loginVm = new LoginViewModel();
+
+
+    private void hello()
     {
-        //_userservice.Login(Username,Password);
+        string hello = "hello";
+    }
+
+    private void login()
+    {
+        //if (!ModelState.IsValid)
+        //{
+        //    return View(login);
+        //}
+
+        var User = _userService.LoginUser(loginVm);
+        if (user != null)
+        {
+            if (user.IsActive)
+            {
+                if (_PermissionService.CheckPermission(1, User.UserName))
+                {
+                    Admin = true;
+                }
+
+                var claims = new List<Claim>()
+                {
+                    new Claim(ClaimTypes.NameIdentifier,User.UserId.ToString()),
+                    new Claim(ClaimTypes.Name,User.UserName)
+                };
+                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var principal = new ClaimsPrincipal(identity);
+
+                var properties = new AuthenticationProperties
+                {
+                        IsPersistent = loginVm.RememberMe
+                };
+                //SignInManager<User> signInManager = new SignInManager<User>(user);
+                //signInManager.SignInAsync(principal, properties);
+                
+                IsSuccess = true;
+                //return View();
+            }
+            else
+            {
+                //ModelState.AddModelError("Email", "حساب کاربری شما فعال نمی باشد");
+                //return RedirectToActionPermanent("ActiveAccountCode", "Account",new{userName = user.UserName});
+            }
+        }
+        //ModelState.AddModelError("Email", "کاربری با مشخصات وارد شده یافت نشد");
+        //return View(login);
+
     }
 }
