@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Vira.DataLayer.Entities.Main;
+using vira.DataLayer.Entities.permissions;
 using Vira.DataLayer.Entities.User;
 
 
@@ -23,6 +24,10 @@ namespace Vira.DataLayer.Context
         #region User
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<permission> Permission { get; set; }
+        public DbSet<RolePermission> RolePermission { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
 
 
         #endregion
