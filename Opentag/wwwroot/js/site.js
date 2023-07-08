@@ -349,8 +349,8 @@ function UpdateLangFunc() {
         footerContacts.textContent = 'Contacts';
         //Footer Header Constent
         footerEmail.textContent = 'Email: info@Vira_DevGroup.ir';
-        footerAddress.innerHTML = "Address:<br />Iran<br />Qom<br />Shohada St<br />Commercial Complex Ganjine";
-        footerPhoneAtag.textContent = "Phone : + 9 8 - 2 5 - 3 7 7 3 2 8 3 2";
+        footerAddress.innerHTML = "Address:<br />Iran<br />Qom<br />Saedi St<br />Commercial Complex Sirang<br /> Floor -2<br />Plaque   203";
+        footerPhoneAtag.textContent = "Phone : 0993 187 5729";
         footerPhone.setAttribute("style", " text-align: left !important; direction:ltr !important;");
         footerEmail.textContent = 'Email : info@Vira_DevGroup.ir';
         FooterAboutUsMid1.textContent = "Our team is interested about builing web apps, mobile apps and game developing over Microsoft practical and usefull Frawmeworks.";
@@ -572,10 +572,10 @@ function UpdateLangFunc() {
         footerAbout.textContent = 'درباره ما';
         footerContacts.textContent = 'ارتباط با ما';
         //Footer Header Constent
-        footerPhoneAtag.textContent = "+ 9 8 - 2 5 - 3 7 7 3 2 8 3 2 : شماره تماس";
+        footerPhoneAtag.textContent = "۰ ۹ ۹ ۳ ۱ ۸ ۷۵ ۷ ۲ ۹ : شماره تماس";
         footerPhone.setAttribute("style", "text-align: right !important; direction:ltr !important;");
         footerEmail.textContent = ' پست الکترونیک  : info@Vira_DevGroup.ir ';
-        footerAddress.innerHTML = `<a> آدرس :</a></br><a> ایران</a></br><a> قم</a></br><a> خیابان شهدا</a></br><a>مجتمع تجاری گنجینه</a>`;
+        footerAddress.innerHTML = `<a> آدرس :</a></br><a> ایران</a></br><a> قم</a></br><a> خیابان سعیدی</a></br><a>مجتمع تجاری سیرنگ</a></br><a>طبقه منفی 2</a></br><a> پلاک 203</a>`;
         FooterAboutUsMid1.textContent = "تیم ما علاقه مند به ساخت برنامه های وب، برنامه های تلفن همراه و توسعه بازی از طریق فریم ورک های کاربردی و مفید مایکروسافت است.";
         FooterAboutUsMid2.textContent = "اگر قصد کمک یا حمایت از جوامع برنامه نویسی را دارید، لطفاً ما را دنبال کنید.";
         LayViraNews.textContent = "اخبار ویرا - توسعه داخلی";
