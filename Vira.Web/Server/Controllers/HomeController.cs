@@ -29,9 +29,10 @@ namespace Vira.Web.Server.Controllers
         }
 
         [HttpPost]
-        public void AddContactUs([FromBody] AddContact StudentVM)
+        public string AddContactUs([FromBody] AddContact StudentVM)
         {
             _userService.AddContactUs(StudentVM);
+            return "successful";
         }
     }
 }
