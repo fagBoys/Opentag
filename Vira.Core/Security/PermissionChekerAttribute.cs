@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security;
-using System.Text;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Vira.Core.Services;
 using Vira.Core.Services.Interfaces;
-using Vira.DataLayer.Context;
 
 namespace Vira.Core.Security
 {

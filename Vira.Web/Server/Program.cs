@@ -1,4 +1,9 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
+using Vira.Core.Services;
+using Vira.Core.Services.Interfaces;
+using Vira.Web.Shared.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +11,33 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
+#region Authentication
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+
+}).AddCookie(options =>
+{
+    options.LoginPath = "/Login";
+    options.LogoutPath = "/Logout";
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(43200);
+
+});
+
+#endregion
+
+#region Context
+builder.Services.AddDbContext<ViraContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ViraConnection")));
+#endregion
+
+#region IOC
+builder.Services.AddTransient<IUserService,UserService>();
+builder.Services.AddTransient<IPermissionService,PermissionService>();
+#endregion
 
 var app = builder.Build();
 

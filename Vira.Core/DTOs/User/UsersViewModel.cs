@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Http;
-using Vira.DataLayer.Entities.User;
+using Vira.Web.Shared.Entities.User;
 
 namespace Vira.Core.DTOs
 {

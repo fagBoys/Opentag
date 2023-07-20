@@ -1,13 +1,14 @@
 D:\Amir\developer\GitHub\Opentag\Vira.Core\bin\Debug\net7.0\Vira.Core.deps.json
 D:\Amir\developer\GitHub\Opentag\Vira.Core\bin\Debug\net7.0\Vira.Core.dll
 D:\Amir\developer\GitHub\Opentag\Vira.Core\bin\Debug\net7.0\Vira.Core.pdb
-D:\Amir\developer\GitHub\Opentag\Vira.Core\bin\Debug\net7.0\Vira.DataLayer.dll
-D:\Amir\developer\GitHub\Opentag\Vira.Core\bin\Debug\net7.0\Vira.DataLayer.pdb
+D:\Amir\developer\GitHub\Opentag\Vira.Core\bin\Debug\net7.0\Vira.Web.Shared.dll
+D:\Amir\developer\GitHub\Opentag\Vira.Core\bin\Debug\net7.0\Vira.Web.Shared.pdb
 D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net7.0\Vira.Core.csproj.AssemblyReference.cache
 D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net7.0\Vira.Core.GeneratedMSBuildEditorConfig.editorconfig
 D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net7.0\Vira.Core.AssemblyInfoInputs.cache
 D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net7.0\Vira.Core.AssemblyInfo.cs
 D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net7.0\Vira.Core.csproj.CoreCompileInputs.cache
+D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net7.0\Vira.Core.sourcelink.json
 D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net7.0\Vira.Core.csproj.CopyComplete
 D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net7.0\Vira.Core.dll
 D:\Amir\developer\GitHub\Opentag\Vira.Core\obj\Debug\net7.0\refint\Vira.Core.dll
