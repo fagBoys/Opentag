@@ -1,4 +1,10 @@
-﻿
+﻿@inject HttpClient http
+@using Vira.Web.Shared.Entities.Main
+@using static System.Net.WebRequestMethods;
+@using Vira.Core.DTOs.Main
+
+
+
 <section class="u-align-center u-clearfix u-grey-10 u-valign-middle u-section-7" id="carousel_faa2">
     <div class="u-expanded-width u-palette-2-base u-shape u-shape-rectangle u-shape-1"></div>
     <div class="u-container-style u-group u-radius-10 u-shape-round u-white u-group-1">
@@ -16,7 +22,7 @@
             <a href="mailto:contact@yourmail.com" class="u-active-none u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-btn-2">
                 <span class="u-icon u-text-palette-2-base"><svg class="u-svg-content" viewBox="0 0 479.058 479.058" style="width: 1em; height: 1em;"><path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"></path></svg></span>&nbsp;contact@yourmail.com
             </a>
-            <p class="u-text u-text-2">
+            <p class="u-text u-text-2 text-end" dir="ltr">
                 <span class="u-icon u-text-palette-2-base">
                     <svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;">
                         <g>
@@ -30,7 +36,10 @@
                             </g>
                         </g>
                     </svg>
-                </span>&nbsp;203, Envato Labs, Behind Alis Steet, Australia
+                </span>&nbsp;
+                <span>
+                    قم ،خیابان سعیدی ،پاساژ سیرنگ ،طبقه منفی 2 ،پلاک 203
+                </span>
             </p>
             <div class="u-social-icons u-spacing-16 u-social-icons-1">
                 <a class="u-social-url" target="_blank" data-type="Custom" title="Custom" href="">
@@ -47,18 +56,26 @@
                 </a>
             </div>
             <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
-                <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 0px;" source="email" name="form-2">
+                <EditForm Model="AddContact" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 0px;" source="email" name="form-2" OnInvalidSubmit="Contact">
                     <div class="u-form-group u-form-name">
-                        <label for="name-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Name</label>
+                        <InputText @bind-Value="AddContact.Fullname" for="name-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Name</InputText>
                         <input type="text" placeholder="Enter your Name" id="name-da97" name="name" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="">
                     </div>
                     <div class="u-form-email u-form-group">
                         <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
-                        <input type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="">
+                        <InputText @bind-Value="AddContact.Email" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
+                    </div>
+                    <div class="u-form-email u-form-group">
+                        <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
+                        <InputText @bind-Value="AddContact.Phone" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
+                    </div>
+                    <div class="u-form-email u-form-group">
+                        <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
+                        <InputText @bind-Value="AddContact.Subject" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
                     </div>
                     <div class="u-form-group u-form-message">
                         <label for="message-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Message</label>
-                        <textarea placeholder="Enter your message" rows="4" cols="50" id="message-da97" name="message" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required=""></textarea>
+                        <InputText @bind-Value="AddContact.Text" placeholder="Enter your message" rows="4" cols="50" id="message-da97" name="message" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
                         <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-palette-2-base u-btn-3">Submit</a>
@@ -67,7 +84,7 @@
                     <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has been sent. </div>
                     <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message. Please fix errors then try again. </div>
                     <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
-                </form>
+                </EditForm>
             </div>
         </div>
     </div>
@@ -78,5 +95,9 @@
 
 @code 
 {
-
+    AddContact AddContact = new AddContact();
+    public async void Contact()
+    {
+        http.PostAsJsonAsync("api/Home/AddContactUs", AddContact);
+    }
 }
