@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using vira.DataLayer.Entities.permissions;
-using Vira.DataLayer.Entities.User;
+﻿using Vira.Web.Shared.Entities.permissions;
+using Vira.Web.Shared.Entities.User;
 
 namespace Vira.Core.Services.Interfaces
 {

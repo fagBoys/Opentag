@@ -1,11 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Vira.Core.DTOs;
-using Vira.DataLayer.Entities.User;
+using Vira.Core.DTOs.Main;
+using Vira.Web.Shared.Entities.Main;
+using Vira.Web.Shared.Entities.User;
 
 namespace Vira.Core.Services.Interfaces
 {
@@ -22,11 +19,12 @@ namespace Vira.Core.Services.Interfaces
         User GetUserByEmail(string email);
         void SaveAvatar(string userName, string AvatarName, string FileName, IFormFile UserAvatar);
         User GetUserById(int userId);
-        User GetUserByActiveCode(string activeCode, string PhoneNumber);
+        public User GetUserByActiveCode(string activeCode);
         User GetUserByUserName(string username);
         void UpdateUser(User user);
         int GetUserIdByUserName(string username);
-        //void AddVisiteCount(string ip);
-        //void AddContactUs(ContactUs contactUs);
+        public void AddVisitHomePage(string ip);
+
+        void AddContactUs(AddContact contactUs);
     }
 }

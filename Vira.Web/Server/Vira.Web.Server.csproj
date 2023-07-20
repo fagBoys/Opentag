@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Vira.Core\Vira.Core.csproj" />
     <ProjectReference Include="..\Client\Vira.Web.Client.csproj" />
     <ProjectReference Include="..\Shared\Vira.Web.Shared.csproj" />
   </ItemGroup>

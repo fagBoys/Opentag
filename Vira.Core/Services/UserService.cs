@@ -1,16 +1,12 @@
 ﻿using Berlance.Core.Generator;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Vira.Core.Convertors;
 using Vira.Core.DTOs;
+using Vira.Core.DTOs.Main;
 using Vira.Core.Security;
 using Vira.Core.Services.Interfaces;
-using Vira.DataLayer.Context;
-using Vira.DataLayer.Entities.User;
+using Vira.Web.Shared.Context;
+using Vira.Web.Shared.Entities.Main;
+using Vira.Web.Shared.Entities.User;
 
 namespace Vira.Core.Services
 {
@@ -46,7 +42,7 @@ namespace Vira.Core.Services
         {
             string hashPassword = PasswordHelper.EncodePasswordMd5(login.Password);
             //string email = FixedText.FixEmail(login.PhoneNeumber);
-            return _context.Users.SingleOrDefault(u => u.UserName == login.PhoneNumber && u.Password == hashPassword);
+            return _context.Users.SingleOrDefault(u => u.Email == login.Email && u.Password == hashPassword);
         }
 
         public bool ActiveAccount(string activeCode)
@@ -124,17 +120,9 @@ namespace Vira.Core.Services
             return _context.Users.Find(userId);
         }
 
-        public User GetUserByActiveCode(string activeCode, string PhoneNumber)
+        public User GetUserByActiveCode(string activeCode)
         {
-            var user = _context.Users.SingleOrDefault(u => u.ActiveCode == activeCode && u.PhoneNumber == PhoneNumber);
-            if (user == null || !user.IsActive)
-                return user;
-
-            user.IsActive = true;
-            user.ActiveCode = NameGenerator.RandomString(4);
-            _context.SaveChanges();
-
-            return user;
+            return _context.Users.SingleOrDefault(u => u.ActiveCode == activeCode);
         }
 
         public User GetUserByUserName(string username)
@@ -153,25 +141,34 @@ namespace Vira.Core.Services
             return _context.Users.Single(A => A.UserName == username).UserId;
         }
 
-        //public void AddVisiteCount(string ip)
-        //{
-        //    var visite = _context.VisiteCounts.Any(v => v.Ip == ip && v.DateVisite.Date == DateTime.Now.Date);
-        //    if (!visite)
-        //    {
-        //        VisiteCount visiteCount = new VisiteCount()
-        //        {
-        //            Ip = ip,
-        //        };
-        //        _context.VisiteCounts.Add(visiteCount);
-        //        _context.SaveChanges();
-        //    }
+        public void AddVisitHomePage(string ip)
+        {
+            var visite = _context.VisitHomePages.Any(v => v.Ip == ip && v.VisitDate.Date == DateTime.Now.Date);
+            if (!visite)
+            {
+                VisitHomePage visiteCount = new VisitHomePage
+                {
+                    Ip = ip,
+                    VisitDate = DateTime.Now.Date,
+                };
 
-        //}
+                _context.VisitHomePages.Add(visiteCount);
+                _context.SaveChanges();
+            }
 
-        //public void AddContactUs(ContactUs contactUs)
-        //{
-        //    _context.ContactUs.Add(contactUs);
-        //    _context.SaveChanges();
-        //}
+        }
+
+        public void AddContactUs(AddContact contactUs)
+        {
+            Contact contact = new Contact();
+            contact.Fullname = contactUs.Fullname;
+            contact.Email = contactUs.Email;
+            contact.Phone = contactUs.Phone;
+            contact.Subject = contactUs.Subject;
+            contact.Text = contactUs.Text;
+            contact.ContactDate = DateTime.Now;
+            _context.Contacts.Add(contact);
+            _context.SaveChanges();
+        }
     }
 }
