@@ -6031,23 +6031,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\j666a\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\zack\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Core\\Vira.Core.csproj",
+      "projectUniqueName": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Core\\Vira.Core.csproj",
       "projectName": "Vira.Core",
-      "projectPath": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Core\\Vira.Core.csproj",
-      "packagesPath": "C:\\Users\\j666a\\.nuget\\packages\\",
-      "outputPath": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Core\\obj\\",
+      "projectPath": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Core\\Vira.Core.csproj",
+      "packagesPath": "C:\\Users\\zack\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\j666a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zack\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6056,15 +6058,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.DataLayer\\Vira.DataLayer.csproj": {
-              "projectPath": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.DataLayer\\Vira.DataLayer.csproj"
+            "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.DataLayer\\Vira.DataLayer.csproj": {
+              "projectPath": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.DataLayer\\Vira.DataLayer.csproj"
             }
           }
         }
@@ -6120,7 +6121,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400-preview.23225.8\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3538,23 +3538,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\j666a\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\zack\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.DataLayer\\Vira.DataLayer.csproj",
+      "projectUniqueName": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.DataLayer\\Vira.DataLayer.csproj",
       "projectName": "Vira.DataLayer",
-      "projectPath": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.DataLayer\\Vira.DataLayer.csproj",
-      "packagesPath": "C:\\Users\\j666a\\.nuget\\packages\\",
-      "outputPath": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.DataLayer\\obj\\",
+      "projectPath": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.DataLayer\\Vira.DataLayer.csproj",
+      "packagesPath": "C:\\Users\\zack\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\j666a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zack\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3563,7 +3565,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3617,7 +3618,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400-preview.23225.8\\RuntimeIdentifierGraph.json"
       }
     }
   }
