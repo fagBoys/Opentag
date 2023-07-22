@@ -1,6 +1,7 @@
 ﻿@inject HttpClient http
 @using Vira.Web.Shared.Entities.Main
 @using static System.Net.WebRequestMethods;
+@using Microsoft.AspNetCore.Components
 @using Vira.Core.DTOs.Main
 
 
@@ -56,7 +57,7 @@
                 </a>
             </div>
             <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
-                <EditForm Model="AddContact" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 0px;" source="email" name="form-2" OnInvalidSubmit="Contact">
+                <EditForm Model="AddContact" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 0px;" source="email" name="form-2" OnValidSubmit="Contact">
                     <div class="u-form-group u-form-name">
                         <InputText @bind-Value="AddContact.Fullname" for="name-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Name</InputText>
                         <input type="text" placeholder="Enter your Name" id="name-da97" name="name" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="">
@@ -83,7 +84,6 @@
                     </div>
                     <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has been sent. </div>
                     <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message. Please fix errors then try again. </div>
-                    <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
                 </EditForm>
             </div>
         </div>
@@ -98,6 +98,6 @@
     AddContact AddContact = new AddContact();
     public async void Contact()
     {
-        http.PostAsJsonAsync("api/Home/AddContactUs", AddContact);
+        http.PostAsJsonAsync("https://localhost:7030/api/AddContactUs", AddContact);
     }
 }
