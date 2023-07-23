@@ -8,6 +8,7 @@ using Vira.Core.DTOs;
 using Vira.Core.Security;
 using Vira.Core.Senders;
 using Vira.Core.Services.Interfaces;
+using Vira.Web.Shared;
 using Vira.Web.Shared.Entities.User;
 
 namespace Vira.Web.Server.Controllers

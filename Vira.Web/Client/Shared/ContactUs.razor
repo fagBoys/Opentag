@@ -3,6 +3,7 @@
 @using static System.Net.WebRequestMethods;
 @using Microsoft.AspNetCore.Components
 @using Vira.Core.DTOs.Main
+@using Vira.Web.Shared;
 
 
 
@@ -130,16 +131,23 @@
     <button type="submit" class="btn btn-primary">ثبت</button>
 </EditForm>
 
-
+<div>
+    <p>kir</p>
+    <p>@mess</p>
+</div>
 
 
 @code
 {
     AddContact AddContact = new AddContact();
+    string mess = string.Empty;
 
 
-    private async Task FContactUs()
+    public async Task FContactUs()
     {
-        http.PostAsJsonAsync("https://localhost:7030/api/AddContactUs", AddContact);
+        var result = await http.PostAsJsonAsync("api/Home/AddContactUs", AddContact);
+        var message = await result.Content.ReadFromJsonAsync<OperationResult>();
+        mess = message.Message;
+        
     }
 }

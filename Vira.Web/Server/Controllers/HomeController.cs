@@ -2,11 +2,12 @@
 using System.Net;
 using Vira.Core.DTOs.Main;
 using Vira.Core.Services.Interfaces;
+using Vira.Web.Shared;
 
 namespace Vira.Web.Server.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
 
     public class HomeController : Controller
     {
@@ -32,14 +33,18 @@ namespace Vira.Web.Server.Controllers
 
         [HttpPost]
         [Route("AddContactUs")]
-        public string AddContactUs([FromBody] AddContact StudentVM)
+        public async Task<OperationResult> AddContactUs(AddContact AddContact)
         {
-            if (StudentVM == null)
+           OperationResult operation = new OperationResult();
+
+            if (AddContact == null)
             {
-                return "Failed";
+                return operation.Failed(ApplicationMessages.RecordNotFound);
             }
-            _userService.AddContactUs(StudentVM);
-            return "Successful";
+            _userService.AddContactUs(AddContact);
+
+            return operation.Succedded();
+
         }
 
 
