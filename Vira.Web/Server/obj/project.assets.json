@@ -212,7 +212,7 @@
           "build/net7.0/_._": {}
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.5": {
+      "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.9": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
@@ -2376,10 +2376,10 @@
         "microsoft.aspnetcore.components.webassembly.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.5": {
-      "sha512": "QFqV5774RuCP0usecGBezh3S6HQLS0iTiEvuDBGNKVUKyOpamhdKSLSocid8Sh4GEO7IueY1VVIdGrgq0NdcWw==",
+    "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.9": {
+      "sha512": "jp9TVSVnx3yUg0eFPUIjl4hVqmemPs6D962eMI9WTZlI0lgam16alZYoBqW/WR934Z7RmKop2ZI7jgOR5ZyqDQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.webassembly.server/7.0.5",
+      "path": "microsoft.aspnetcore.components.webassembly.server/7.0.9",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -2389,7 +2389,7 @@
         "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets",
         "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll",
         "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.xml",
-        "microsoft.aspnetcore.components.webassembly.server.7.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.server.7.0.9.nupkg.sha512",
         "microsoft.aspnetcore.components.webassembly.server.nuspec",
         "tools/BlazorDebugProxy/BrowserDebugHost.dll",
         "tools/BlazorDebugProxy/BrowserDebugHost.runtimeconfig.json",
@@ -5880,7 +5880,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 7.0.5",
+      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 7.0.9",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9",
@@ -5948,7 +5948,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly.Server": {
             "target": "Package",
-            "version": "[7.0.5, )"
+            "version": "[7.0.9, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

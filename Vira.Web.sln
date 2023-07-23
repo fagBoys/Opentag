@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vira.DataLayer", "Vira.DataLayer\Vira.DataLayer.csproj", "{710F11DA-D461-4DAD-927B-3351B25BE572}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vira.Core", "Vira.Core\Vira.Core.csproj", "{36021614-2BF6-4505-ACD1-8A83402A63DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vira.Web.Server", "Vira.Web\Server\Vira.Web.Server.csproj", "{2ED63F2A-3388-4FBE-9203-818F3A24437D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vira.Web.Server", "Vira.Web\Server\Vira.Web.Server.csproj", "{2ED63F2A-3388-4FBE-9203-818F3A24437D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vira.Web.Client", "Vira.Web\Client\Vira.Web.Client.csproj", "{598F1BC4-4BE5-491B-94E6-E74D06F0F102}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vira.Web.Client", "Vira.Web\Client\Vira.Web.Client.csproj", "{598F1BC4-4BE5-491B-94E6-E74D06F0F102}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vira.Web.Shared", "Vira.Web\Shared\Vira.Web.Shared.csproj", "{BAAD53A8-838A-4844-ACDE-ADEE5CE7F5E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vira.Web.Shared", "Vira.Web\Shared\Vira.Web.Shared.csproj", "{BAAD53A8-838A-4844-ACDE-ADEE5CE7F5E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{710F11DA-D461-4DAD-927B-3351B25BE572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{710F11DA-D461-4DAD-927B-3351B25BE572}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{710F11DA-D461-4DAD-927B-3351B25BE572}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{710F11DA-D461-4DAD-927B-3351B25BE572}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36021614-2BF6-4505-ACD1-8A83402A63DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{36021614-2BF6-4505-ACD1-8A83402A63DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36021614-2BF6-4505-ACD1-8A83402A63DF}.Release|Any CPU.ActiveCfg = Release|Any CPU

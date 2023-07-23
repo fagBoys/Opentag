@@ -9,41 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Vira.Web.Client
 build_property.RootNamespace = Vira.Web.Client
-build_property.ProjectDir = C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Client\
+build_property.ProjectDir = D:\Amir\developer\GitHub\Opentag\Vira.Web\Client\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Client
+build_property.MSBuildProjectDirectory = D:\Amir\developer\GitHub\Opentag\Vira.Web\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/App.razor]
+[D:/Amir/developer/GitHub/Opentag/Vira.Web/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Pages/Counter.razor]
+[D:/Amir/developer/GitHub/Opentag/Vira.Web/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Pages/FetchData.razor]
+[D:/Amir/developer/GitHub/Opentag/Vira.Web/Client/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Pages/Index.razor]
+[D:/Amir/developer/GitHub/Opentag/Vira.Web/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/SurveyPrompt.razor]
+[D:/Amir/developer/GitHub/Opentag/Vira.Web/Client/Shared/ContactUs.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbnRhY3RVcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Amir/developer/GitHub/Opentag/Vira.Web/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/_Imports.razor]
+[D:/Amir/developer/GitHub/Opentag/Vira.Web/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/MainLayout.razor]
+[D:/Amir/developer/GitHub/Opentag/Vira.Web/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-f7iboa25hu
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/NavMenu.razor]
+[D:/Amir/developer/GitHub/Opentag/Vira.Web/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-33iqzedix5

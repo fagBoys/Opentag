@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Vira.Web.Server/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components.WebAssembly.Server": "7.0.5",
+          "Microsoft.AspNetCore.Components.WebAssembly.Server": "7.0.9",
           "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore.Design": "7.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
@@ -151,11 +151,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.5": {
+      "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.9": {
         "runtime": {
           "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
-            "assemblyVersion": "7.0.5.0",
-            "fileVersion": "7.0.523.17410"
+            "assemblyVersion": "7.0.9.0",
+            "fileVersion": "7.0.923.32110"
           }
         }
       },
@@ -1256,12 +1256,12 @@
       "path": "microsoft.aspnetcore.components.webassembly/7.0.5",
       "hashPath": "microsoft.aspnetcore.components.webassembly.7.0.5.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.5": {
+    "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QFqV5774RuCP0usecGBezh3S6HQLS0iTiEvuDBGNKVUKyOpamhdKSLSocid8Sh4GEO7IueY1VVIdGrgq0NdcWw==",
-      "path": "microsoft.aspnetcore.components.webassembly.server/7.0.5",
-      "hashPath": "microsoft.aspnetcore.components.webassembly.server.7.0.5.nupkg.sha512"
+      "sha512": "sha512-jp9TVSVnx3yUg0eFPUIjl4hVqmemPs6D962eMI9WTZlI0lgam16alZYoBqW/WR934Z7RmKop2ZI7jgOR5ZyqDQ==",
+      "path": "microsoft.aspnetcore.components.webassembly.server/7.0.9",
+      "hashPath": "microsoft.aspnetcore.components.webassembly.server.7.0.9.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
       "type": "package",
