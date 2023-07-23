@@ -57,7 +57,9 @@
                 </a>
             </div>
             <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
-                <EditForm Model="AddContact" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 0px;" source="email" name="form-2" OnValidSubmit="Contact">
+                <EditForm Model="AddContact" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 0px;" name="form-2" OnValidSubmit="FContactUs" OnInvalidSubmit="FContactUs">
+                    <DataAnnotationsValidator />
+
                     <div class="u-form-group u-form-name">
                         <InputText @bind-Value="AddContact.Fullname" for="name-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Name</InputText>
                         <input type="text" placeholder="Enter your Name" id="name-da97" name="name" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="">
@@ -80,7 +82,7 @@
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
                         <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-palette-2-base u-btn-3">Submit</a>
-                        <input type="submit" value="submit" class="u-form-control-hidden" wfd-invisible="true">
+                        <input type="submit" class="u-form-control-hidden" wfd-invisible="true">
                     </div>
                     <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has been sent. </div>
                     <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message. Please fix errors then try again. </div>
@@ -91,12 +93,52 @@
 </section>
 
 
+<EditForm Model="AddContact" OnValidSubmit="FContactUs" OnInvalidSubmit="FContactUs">
+    <DataAnnotationsValidator />
+    <div class="mb-3">
+        <label for="Fullname">نام و نام خانوادگی</label>
+        <InputText id="Fullname" @bind-Value="AddContact.Fullname" class="form-control" type="text" />
+        <ValidationMessage For="@(() => AddContact.Fullname)" />
+    </div>
+    <div class="mb-3">
+        <label for="email">ایمیل</label>
+        <InputText id="email" @bind-Value="AddContact.Email" class="form-control" type="email" />
+        <ValidationMessage For="@(() => AddContact.Email)" />
+    </div>
+    <div class="mb-3">
+        <label for="PhoneNumber">شماره</label>
+        <InputText id="PhoneNumber" @bind-Value="AddContact.Phone" class="form-control" type="number" />
+        <ValidationMessage For="@(() => AddContact.Fullname)" />
+    </div>
+    <div class="mb-3">
+        <label for="Subject">
+           موضوع
+        </label>
+        <InputSelect id="Subject" @bind-Value="AddContact.Subject" class="form-control" >
+                <option value="1">سفارش وب سایت</option>
+                <option value="2">سوالات فنی</option>
+                <option value="3">مشاوره</option>
+                <option value="4">پشتیبانی</option>
+        </InputSelect>
+        <ValidationMessage For="@(() => AddContact.Fullname)" />
+    </div>
+    <div class="mb-3">
+        <label for="Text">متن</label>
+        <InputTextArea id="Text" @bind-Value="AddContact.Text" class="form-control" type="text" />
+        <ValidationMessage For="@(() => AddContact.Text)" />
+    </div>
+    <button type="submit" class="btn btn-primary">ثبت</button>
+</EditForm>
 
 
-@code 
+
+
+@code
 {
     AddContact AddContact = new AddContact();
-    public async void Contact()
+
+
+    private async Task FContactUs()
     {
         http.PostAsJsonAsync("https://localhost:7030/api/AddContactUs", AddContact);
     }
