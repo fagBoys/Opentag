@@ -32,7 +32,6 @@ namespace Vira.Core.Services
 
         public int AddUser(User user)
         {
-            user.BirthDate = DateTime.Now;
             _context.Users.Add(user);
             _context.SaveChanges();
             return user.UserId;

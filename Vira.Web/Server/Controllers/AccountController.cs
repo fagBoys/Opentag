@@ -29,25 +29,27 @@ namespace Vira.Web.Server.Controllers
 
         [HttpPost]
         [Route("Register")]
-        public RegisterViewModel Register(RegisterViewModel register)
+        public OperationResult Register(RegisterViewModel register)
         {
+            var opration = new OperationResult();
+
             if (!ModelState.IsValid)
             {
-                return register;
+                return opration.Failed(ApplicationMessages.ModelState);
             }
 
 
             if (_userService.IsExistUserName(register.UserName))
             {
                 ModelState.AddModelError("UserName", "نام کاربری معتبر نمی باشد");
-                return register;
-
+                return opration.Failed(ApplicationMessages.ModelState);
             }
 
             if (_userService.IsExistEmail(FixedText.FixEmail(register.Email)))
             {
                 ModelState.AddModelError("Email", "ایمیل معتبر نمی باشد");
-                return register;
+                return opration.Failed(ApplicationMessages.ModelState);
+
             }
 
 
@@ -69,7 +71,8 @@ namespace Vira.Web.Server.Controllers
             SendEmail.Send(user.Email, "فعالسازی", body);
 
             #endregion
-            return register;
+
+            return opration.Succedded();
 
         }
 
