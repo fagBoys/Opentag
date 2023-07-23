@@ -98,17 +98,17 @@
     <DataAnnotationsValidator />
     <div class="mb-3">
         <label for="Fullname">نام و نام خانوادگی</label>
-        <InputText id="Fullname" @bind-Value="AddContact.Fullname" class="form-control" type="text" />
+        <InputText id="Fullname" @bind-Value="AddContact.Fullname" class="form-control" type="text" placeholder="نام و نام خانوادگی" />
         <ValidationMessage For="@(() => AddContact.Fullname)" />
     </div>
     <div class="mb-3">
         <label for="email">ایمیل</label>
-        <InputText id="email" @bind-Value="AddContact.Email" class="form-control" type="email" />
+        <InputText id="email" @bind-Value="AddContact.Email" class="form-control" type="email" placeholder="پست الکترونیک" />
         <ValidationMessage For="@(() => AddContact.Email)" />
     </div>
     <div class="mb-3">
         <label for="PhoneNumber">شماره</label>
-        <InputText id="PhoneNumber" @bind-Value="AddContact.Phone" class="form-control" type="number" />
+        <InputText id="PhoneNumber" @bind-Value="AddContact.Phone" class="form-control" type="number" DisplayName="شماره همراه" placeholder="شماره همراه" />
         <ValidationMessage For="@(() => AddContact.Fullname)" />
     </div>
     <div class="mb-3">
@@ -125,14 +125,13 @@
     </div>
     <div class="mb-3">
         <label for="Text">متن</label>
-        <InputTextArea id="Text" @bind-Value="AddContact.Text" class="form-control" type="text" />
+        <InputTextArea id="Text" @bind-Value="AddContact.Text" class="form-control" type="text" placeholder="متن" />
         <ValidationMessage For="@(() => AddContact.Text)" />
     </div>
     <button type="submit" class="btn btn-primary">ثبت</button>
 </EditForm>
 
-<div>
-    <p>kir</p>
+<div class="row @messageCssClass">
     <p>@mess</p>
 </div>
 
@@ -141,6 +140,7 @@
 {
     AddContact AddContact = new AddContact();
     string mess = string.Empty;
+    string messageCssClass = string.Empty;
 
 
     public async Task FContactUs()
@@ -148,6 +148,16 @@
         var result = await http.PostAsJsonAsync("api/Home/AddContactUs", AddContact);
         var message = await result.Content.ReadFromJsonAsync<OperationResult>();
         mess = message.Message;
-        
+        if(message.isSuccedded == true)
+        {
+            messageCssClass = "text-success";
+
+        }
+        else
+        {
+            messageCssClass = "text-danger";
+        }
+
+        AddContact = new AddContact();
     }
 }
