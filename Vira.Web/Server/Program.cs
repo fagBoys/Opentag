@@ -12,6 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 #region Authentication
 
 builder.Services.AddAuthentication(options =>
@@ -40,6 +43,8 @@ builder.Services.AddTransient<IPermissionService,PermissionService>();
 #endregion
 
 var app = builder.Build();
+app.UseSwaggerUI();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -53,6 +58,7 @@ else
     app.UseHsts();
 }
 
+app.UseSwagger();
 app.UseHttpsRedirection();
 
 app.UseBlazorFrameworkFiles();
