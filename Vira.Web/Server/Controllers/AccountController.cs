@@ -124,9 +124,10 @@ namespace Vira.Web.Server.Controllers
 
         #region Active Account
         [HttpGet]
-        public IActionResult ActiveAccount(string id)
+        [Route("ActiveAccount/{activeCode}")]
+        public IActionResult ActiveAccount(string activeCode)
         {
-            ViewBag.IsActive = _userService.ActiveAccount(id);
+            ViewBag.IsActive = _userService.ActiveAccount(activeCode);
             return View();
         }
 
@@ -179,6 +180,7 @@ namespace Vira.Web.Server.Controllers
 
         #region Reset Password
         [HttpGet]
+        [Route("ResetPassword/{id}")]
         public ActionResult ResetPassword(string id)
         {
             return View(new ResetPasswordViewModel()
@@ -189,6 +191,7 @@ namespace Vira.Web.Server.Controllers
 
 
         [HttpPost]
+        [Route("ResetPassword")]
         public ActionResult ResetPassword(ResetPasswordViewModel reset)
         {
             if (!ModelState.IsValid)

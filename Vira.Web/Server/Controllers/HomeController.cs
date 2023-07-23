@@ -7,6 +7,7 @@ namespace Vira.Web.Server.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+
     public class HomeController : Controller
     {
         private readonly IUserService _userService;
@@ -17,6 +18,7 @@ namespace Vira.Web.Server.Controllers
         }
 
         [HttpPost]
+        [Route("AddVisitHomePage")]
         public void AddVisitHomePage()
         {
             string ip = Response.HttpContext.Connection.RemoteIpAddress.ToString();
@@ -32,8 +34,14 @@ namespace Vira.Web.Server.Controllers
         [Route("AddContactUs")]
         public string AddContactUs([FromBody] AddContact StudentVM)
         {
+            if (StudentVM == null)
+            {
+                return "Failed";
+            }
             _userService.AddContactUs(StudentVM);
-            return "successful";
+            return "Successful";
         }
+
+
     }
 }
