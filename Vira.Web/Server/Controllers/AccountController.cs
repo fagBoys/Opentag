@@ -84,11 +84,12 @@ namespace Vira.Web.Server.Controllers
 
         [HttpPost]
         [Route("Login")]
-        public LoginViewModel Login(LoginViewModel login , string ReturnUrl = "/")
+        public OperationResult Login(LoginViewModel login , string ReturnUrl = "/")
         {
+            var opration = new OperationResult();
             if (!ModelState.IsValid)
             {
-                return login;
+                return opration.Failed(ApplicationMessages.ModelState);
             }
 
             var user = _userService.LoginUser(login);
@@ -112,16 +113,16 @@ namespace Vira.Web.Server.Controllers
 
                     ViewBag.IsSuccess = true;
 
-                    return login;
+                    return opration.Succedded();
 
                 }
                 else
                 {
-                    ModelState.AddModelError("Email", "حساب کاربری شما فعال نمی باشد");
+                    return opration.Failed(ApplicationMessages.ModelState);
                 }
             }
-            ModelState.AddModelError("Email", "کاربری با مشخصات وارد شده یافت نشد");
-                    return login;
+            return opration.Failed(ApplicationMessages.ModelState);
+
         }
 
         #endregion
@@ -129,10 +130,10 @@ namespace Vira.Web.Server.Controllers
         #region Active Account
         [HttpGet]
         [Route("ActiveAccount/{activeCode}")]
-        public IActionResult ActiveAccount(string activeCode)
+        public bool ActiveAccount(string activeCode)
         {
-            ViewBag.IsActive = _userService.ActiveAccount(activeCode);
-            return View();
+            var code = _userService.ActiveAccount(activeCode);
+            return code;
         }
 
         #endregion
@@ -150,19 +151,15 @@ namespace Vira.Web.Server.Controllers
 
 
         #region Forgot Password
-        [HttpGet]
-        [Route("ForgotPassword")]
-        public ActionResult ForgotPassword()
-        {
-            return View();
-        }
 
         [HttpPost]
         [Route("ForgotPassword")]
-        public ActionResult ForgotPassword(ForgotPasswordViewModel forgot)
+        public OperationResult ForgotPassword(ForgotPasswordViewModel forgot)
         {
+            var opration = new OperationResult();
+
             if (!ModelState.IsValid)
-                return View(forgot);
+                return opration.Failed(ApplicationMessages.ModelState);
 
             string fixedEmail = FixedText.FixEmail(forgot.Email);
             
@@ -170,47 +167,48 @@ namespace Vira.Web.Server.Controllers
 
             if (user == null)
             {
-                ModelState.AddModelError("Email", "کاربری یافت نشد");
-                return View(forgot);
+                return opration.Failed("کاربری یافت نشد");
             }
 
             string bodyEmail = _viewRender.RenderToStringAsync("_ForgotPassword", user);
             SendEmail.Send(user.Email, "بازیابی حساب کاربری", bodyEmail);
             ViewBag.IsSuccess = true;
 
-            return View();
+            return opration.Succedded();
         }
         #endregion
 
         #region Reset Password
         [HttpGet]
         [Route("ResetPassword/{id}")]
-        public ActionResult ResetPassword(string id)
+        public ResetPasswordViewModel ResetPassword(string id)
         {
-            return View(new ResetPasswordViewModel()
-            {
-                ActiveCode = id
-            });
+            ResetPasswordViewModel passwordViewModel = new ResetPasswordViewModel();
+            passwordViewModel.ActiveCode=id;
+            return passwordViewModel;
         }
 
 
         [HttpPost]
         [Route("ResetPassword")]
-        public ActionResult ResetPassword(ResetPasswordViewModel reset)
+        public OperationResult ResetPassword(ResetPasswordViewModel reset)
         {
+            var opration = new OperationResult();
+
             if (!ModelState.IsValid)
-                return View(reset);
+                return opration.Failed(ApplicationMessages.ModelState);
 
             User user = _userService.GetUserByActiveCode(reset.ActiveCode);
 
             if (user == null)
-                return NotFound();
+                return opration.Failed(ApplicationMessages.ModelState);
+
 
             string hashNewPassword = PasswordHelper.EncodePasswordMd5(reset.Password);
             user.Password = hashNewPassword;
             _userService.UpdateUser(user);
 
-            return Redirect("/Login");
+            return opration.Succedded("/Login");
 
         }
         #endregion
