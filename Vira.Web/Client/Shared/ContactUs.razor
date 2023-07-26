@@ -7,22 +7,56 @@
 
 
 
+
+                <EditForm Model="AddContact" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 0px;" name="form-2" OnValidSubmit="FContactUs" OnInvalidSubmit="FContactUs">
+                    <DataAnnotationsValidator />
+
+                    <div class="u-form-group u-form-name">
+                        <InputText @bind-Value="AddContact.Fullname" for="name-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Name</InputText>
+                        <input type="text" placeholder="Enter your Name" id="name-da97" name="name" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="">
+                    </div>
+                    <div class="u-form-email u-form-group">
+                        <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
+                        <InputText @bind-Value="AddContact.Email" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
+                    </div>
+                    <div class="u-form-email u-form-group">
+                        <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
+                        <InputText @bind-Value="AddContact.Phone" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
+                    </div>
+                    <div class="u-form-email u-form-group">
+                        <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
+                        <InputText @bind-Value="AddContact.Subject" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
+                    </div>
+                    <div class="u-form-group u-form-message">
+                        <label for="message-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Message</label>
+                        <InputText @bind-Value="AddContact.Text" placeholder="Enter your message" rows="4" cols="50" id="message-da97" name="message" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
+                    </div>
+                    <div class="u-align-left u-form-group u-form-submit">
+                        <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-palette-2-base u-btn-3">Submit</a>
+                        <input type="submit" class="u-form-control-hidden" wfd-invisible="true">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has been sent. </div>
+                    <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message. Please fix errors then try again. </div>
+                </EditForm>
+
+
+
 <section class="u-align-center u-clearfix u-grey-10 u-valign-middle u-section-7" id="carousel_faa2">
     <div class="u-expanded-width u-palette-2-base u-shape u-shape-rectangle u-shape-1"></div>
     <div class="u-container-style u-group u-radius-10 u-shape-round u-white u-group-1">
         <div class="u-container-layout u-container-layout-1">
             <h3 class="u-custom-font u-font-open-sans u-text u-text-1">Contact Info</h3>
-            <a href="https://nicepage.com/k/interactive-website-templates" class="u-active-none u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-btn-1">
+            <a href="tel:09931875729" class="u-active-none u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-btn-1">
                 <span class="u-icon u-text-palette-2-base">
                     <svg class="u-svg-content" viewBox="0 0 241.73 241.73" x="0px" y="0px" style="width: 1em; height: 1em;">
                         <g>
                             <path style="fill:currentColor;" d="M234.771,181.213l-34.938-34.953c-4.692-4.668-10.975-7.24-17.689-7.24   c-6.987,0-13.584,2.751-18.572,7.742l-13.6,13.597c-10.568-5.874-24.614-13.953-39.197-28.536   c-14.566-14.571-22.646-28.576-28.55-39.201l13.613-13.603c10.121-10.142,10.328-26.413,0.463-36.269L61.37,7.818   c-4.679-4.692-10.962-7.276-17.693-7.276c-6.831,0-13.293,2.63-18.252,7.417c-3,2.416-18.055,15.706-23.666,43.114   c-7.856,38.363,10.194,75.274,62.302,127.403c58.209,58.191,107.902,62.714,121.746,62.714c2.882,0,4.621-0.178,5.085-0.232   c27.147-3.182,36.867-15.238,43.964-24.041C244.052,205.508,244.02,190.496,234.771,181.213z M223.178,207.502   c-6.671,8.274-12.971,16.088-34.031,18.557c-0.011,0.001-1.163,0.13-3.34,0.13c-12.386,0-57.008-4.206-111.139-58.32   C26.615,119.796,9.749,86.829,16.454,54.081c4.894-23.906,17.887-34.067,18.392-34.453l0.448-0.331l0.393-0.394   c2.169-2.167,5.006-3.361,7.989-3.361c2.716,0,5.228,1.018,7.08,2.876l34.939,34.94c4.02,4.016,3.806,10.774-0.471,15.06   L69.829,83.8l-0.253,0.265c-4.012,4.419-3.54,10.391-1.33,14.28c6.377,11.508,15.112,27.269,31.92,44.082   c16.752,16.752,32.49,25.48,43.966,31.845c1.149,0.645,3.521,1.727,6.49,1.727c3.506,0,6.725-1.484,9.108-4.189l14.448-14.444   c2.157-2.158,4.985-3.347,7.964-3.347c2.722,0,5.247,1.021,7.095,2.859l34.915,34.93   C228.587,196.259,226.756,203.064,223.178,207.502z"></path><path style="fill:currentColor;" d="M146.447,37.293c12.887,1.483,28.061,9.289,38.657,19.886c10.695,10.695,18.52,26.023,19.933,39.05   c0.417,3.843,3.667,6.691,7.447,6.691c0.27,0,0.544-0.015,0.818-0.044c4.118-0.447,7.094-4.147,6.647-8.265   c-1.787-16.467-11.075-34.874-24.238-48.038c-13.04-13.041-31.259-22.306-47.549-24.181c-4.113-0.477-7.834,2.479-8.308,6.593   C139.38,33.099,142.331,36.819,146.447,37.293z"></path><path style="fill:currentColor;" d="M139.44,68.711c6.97,0.803,16.616,5.973,22.935,12.292c6.373,6.374,11.553,16.112,12.316,23.157   c0.417,3.844,3.667,6.692,7.447,6.692c0.27,0,0.543-0.015,0.817-0.044c4.118-0.447,7.095-4.147,6.648-8.265   c-1.304-12.028-9.289-24.813-16.623-32.147c-7.268-7.269-19.928-15.216-31.825-16.587c-4.119-0.479-7.835,2.478-8.309,6.592   C132.373,64.516,135.325,68.237,139.44,68.711z"></path>
                         </g>
                     </svg>
-                </span>&nbsp;+1 (234) 567-8910
+                </span>&nbsp;+۹۸ ۹۹۳ ۱۸۷ ۵۷۲۹
             </a>
-            <a href="mailto:contact@yourmail.com" class="u-active-none u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-btn-2">
-                <span class="u-icon u-text-palette-2-base"><svg class="u-svg-content" viewBox="0 0 479.058 479.058" style="width: 1em; height: 1em;"><path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"></path></svg></span>&nbsp;contact@yourmail.com
+            <a href="mailto:viradeveloper.co@gmail.com" class="u-active-none u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-btn-2">
+                <span class="u-icon u-text-palette-2-base"><svg class="u-svg-content" viewBox="0 0 479.058 479.058" style="width: 1em; height: 1em;"><path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"></path></svg></span>&nbsp;ViraDeveloper.Co@Gmail.com
             </a>
             <p class="u-text u-text-2 text-end" dir="ltr">
                 <span class="u-icon u-text-palette-2-base">
@@ -57,79 +91,50 @@
                     <span class="u-icon u-icon-circle u-social-custom u-social-icon u-text-palette-2-base u-icon-7"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -62 512.00199 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-09c1"></use></svg><svg class="u-svg-content" viewBox="0 -62 512.00199 512" id="svg-09c1"><path d="m334.808594 170.992188-113.113282-61.890626c-6.503906-3.558593-14.191406-3.425781-20.566406.351563-6.378906 3.78125-10.183594 10.460937-10.183594 17.875v122.71875c0 7.378906 3.78125 14.046875 10.117188 17.832031 3.308594 1.976563 6.976562 2.96875 10.652344 2.96875 3.367187 0 6.742187-.832031 9.847656-2.503906l113.117188-60.824219c6.714843-3.613281 10.90625-10.59375 10.9375-18.222656.027343-7.628906-4.113282-14.640625-10.808594-18.304687zm-113.859375 63.617187v-91.71875l84.539062 46.257813zm0 0"></path><path d="m508.234375 91.527344-.023437-.234375c-.433594-4.121094-4.75-40.777344-22.570313-59.421875-20.597656-21.929688-43.949219-24.59375-55.179687-25.871094-.929688-.105469-1.78125-.203125-2.542969-.304688l-.894531-.09375c-67.6875-4.921874-169.910157-5.5937495-170.933594-5.59765575l-.089844-.00390625-.089844.00390625c-1.023437.00390625-103.246094.67578175-171.542968 5.59765575l-.902344.09375c-.726563.097657-1.527344.1875-2.398438.289063-11.101562 1.28125-34.203125 3.949219-54.859375 26.671875-16.972656 18.445312-21.878906 54.316406-22.382812 58.347656l-.058594.523438c-.152344 1.714844-3.765625 42.539062-3.765625 83.523437v38.3125c0 40.984375 3.613281 81.808594 3.765625 83.527344l.027344.257813c.433593 4.054687 4.746093 40.039062 22.484375 58.691406 19.367187 21.195312 43.855468 24 57.027344 25.507812 2.082031.238282 3.875.441406 5.097656.65625l1.183594.164063c39.082031 3.71875 161.617187 5.550781 166.8125 5.625l.15625.003906.15625-.003906c1.023437-.003907 103.242187-.675781 170.929687-5.597657l.894531-.09375c.855469-.113281 1.816406-.214843 2.871094-.324218 11.039062-1.171875 34.015625-3.605469 54.386719-26.019532 16.972656-18.449218 21.882812-54.320312 22.382812-58.347656l.058594-.523437c.152344-1.71875 3.769531-42.539063 3.769531-83.523438v-38.3125c-.003906-40.984375-3.617187-81.804687-3.769531-83.523437zm-26.238281 121.835937c0 37.933594-3.3125 77-3.625 80.585938-1.273438 9.878906-6.449219 32.574219-14.71875 41.5625-12.75 14.027343-25.847656 15.417969-35.410156 16.429687-1.15625.121094-2.226563.238282-3.195313.359375-65.46875 4.734375-163.832031 5.460938-168.363281 5.488281-5.082032-.074218-125.824219-1.921874-163.714844-5.441406-1.941406-.316406-4.039062-.558594-6.25-.808594-11.214844-1.285156-26.566406-3.042968-38.371094-16.027343l-.277344-.296875c-8.125-8.464844-13.152343-29.6875-14.429687-41.148438-.238281-2.710937-3.636719-42.238281-3.636719-80.703125v-38.3125c0-37.890625 3.304688-76.914062 3.625-80.574219 1.519532-11.636718 6.792969-32.957031 14.71875-41.574218 13.140625-14.453125 26.996094-16.054688 36.160156-17.113282.875-.101562 1.691407-.195312 2.445313-.292968 66.421875-4.757813 165.492187-5.464844 169.046875-5.492188 3.554688.023438 102.589844.734375 168.421875 5.492188.808594.101562 1.691406.203125 2.640625.3125 9.425781 1.074218 23.671875 2.699218 36.746094 16.644531l.121094.128906c8.125 8.464844 13.152343 30.058594 14.429687 41.75.226563 2.558594 3.636719 42.171875 3.636719 80.71875zm0 0"></path></svg></span>
                 </a>
             </div>
-            <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
-                <EditForm Model="AddContact" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 0px;" name="form-2" OnValidSubmit="FContactUs" OnInvalidSubmit="FContactUs">
+            <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1" dir="rtl">
+                <EditForm Model="AddContact" OnValidSubmit="FContactUs" OnInvalidSubmit="FContactUs">
                     <DataAnnotationsValidator />
-
-                    <div class="u-form-group u-form-name">
-                        <InputText @bind-Value="AddContact.Fullname" for="name-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Name</InputText>
-                        <input type="text" placeholder="Enter your Name" id="name-da97" name="name" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="">
+                    <div class="mb-3  text-end">
+                        <label for="Fullname">نام و نام خانوادگی</label>
+                        <InputText id="Fullname" @bind-Value="AddContact.Fullname" class="form-control" type="text" placeholder="نام و نام خانوادگی" />
+                        <ValidationMessage For="@(() => AddContact.Fullname)" />
                     </div>
-                    <div class="u-form-email u-form-group">
-                        <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
-                        <InputText @bind-Value="AddContact.Email" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
+                    <div class="mb-3 text-end">
+                        <label for="email">ایمیل</label>
+                        <InputText id="email" @bind-Value="AddContact.Email" class="form-control" type="email" placeholder="پست الکترونیک" />
+                        <ValidationMessage For="@(() => AddContact.Email)" />
                     </div>
-                    <div class="u-form-email u-form-group">
-                        <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
-                        <InputText @bind-Value="AddContact.Phone" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
+                    <div class="mb-3 text-end">
+                        <label for="PhoneNumber">شماره</label>
+                        <InputText id="PhoneNumber" @bind-Value="AddContact.Phone" class="form-control" type="number" DisplayName="شماره همراه" placeholder="شماره همراه" />
+                        <ValidationMessage For="@(() => AddContact.Fullname)" />
                     </div>
-                    <div class="u-form-email u-form-group">
-                        <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
-                        <InputText @bind-Value="AddContact.Subject" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
+                    <div class="mb-3 text-end">
+                        <label for="Subject">
+                            موضوع
+                        </label>
+                        <InputSelect id="Subject" @bind-Value="AddContact.Subject" class="form-control" >
+                            <option value="1">سفارش وب سایت</option>
+                            <option value="2">سوالات فنی</option>
+                            <option value="3">مشاوره</option>
+                            <option value="4">پشتیبانی</option>
+                        </InputSelect>
+                        <ValidationMessage For="@(() => AddContact.Fullname)" />
                     </div>
-                    <div class="u-form-group u-form-message">
-                        <label for="message-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Message</label>
-                        <InputText @bind-Value="AddContact.Text" placeholder="Enter your message" rows="4" cols="50" id="message-da97" name="message" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
+                    <div class="mb-3 text-end">
+                        <label for="Text">متن</label>
+                        <InputTextArea id="Text" @bind-Value="AddContact.Text" class="form-control" type="text" placeholder="متن" />
+                        <ValidationMessage For="@(() => AddContact.Text)" />
                     </div>
-                    <div class="u-align-left u-form-group u-form-submit">
-                        <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-palette-2-base u-btn-3">Submit</a>
-                        <input type="submit" class="u-form-control-hidden" wfd-invisible="true">
-                    </div>
-                    <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has been sent. </div>
-                    <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message. Please fix errors then try again. </div>
-                </EditForm>
-            </div>
+                    <button type="submit" class="btn btn-primary">ثبت</button>
+                </EditForm>            </div>
         </div>
     </div>
 </section>
 
 
-<EditForm Model="AddContact" OnValidSubmit="FContactUs" OnInvalidSubmit="FContactUs">
-    <DataAnnotationsValidator />
-    <div class="mb-3">
-        <label for="Fullname">نام و نام خانوادگی</label>
-        <InputText id="Fullname" @bind-Value="AddContact.Fullname" class="form-control" type="text" placeholder="نام و نام خانوادگی" />
-        <ValidationMessage For="@(() => AddContact.Fullname)" />
-    </div>
-    <div class="mb-3">
-        <label for="email">ایمیل</label>
-        <InputText id="email" @bind-Value="AddContact.Email" class="form-control" type="email" placeholder="پست الکترونیک" />
-        <ValidationMessage For="@(() => AddContact.Email)" />
-    </div>
-    <div class="mb-3">
-        <label for="PhoneNumber">شماره</label>
-        <InputText id="PhoneNumber" @bind-Value="AddContact.Phone" class="form-control" type="number" DisplayName="شماره همراه" placeholder="شماره همراه" />
-        <ValidationMessage For="@(() => AddContact.Fullname)" />
-    </div>
-    <div class="mb-3">
-        <label for="Subject">
-           موضوع
-        </label>
-        <InputSelect id="Subject" @bind-Value="AddContact.Subject" class="form-control" >
-                <option value="1">سفارش وب سایت</option>
-                <option value="2">سوالات فنی</option>
-                <option value="3">مشاوره</option>
-                <option value="4">پشتیبانی</option>
-        </InputSelect>
-        <ValidationMessage For="@(() => AddContact.Fullname)" />
-    </div>
-    <div class="mb-3">
-        <label for="Text">متن</label>
-        <InputTextArea id="Text" @bind-Value="AddContact.Text" class="form-control" type="text" placeholder="متن" />
-        <ValidationMessage For="@(() => AddContact.Text)" />
-    </div>
-    <button type="submit" class="btn btn-primary">ثبت</button>
-</EditForm>
+
+
 
 <div class="row @messageCssClass">
     <p>@mess</p>
