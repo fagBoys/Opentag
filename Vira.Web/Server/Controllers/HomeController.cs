@@ -18,7 +18,7 @@ namespace Vira.Web.Server.Controllers
             _userService = userService;
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("AddVisitHomePage")]
         public void AddVisitHomePage()
         {
@@ -28,6 +28,7 @@ namespace Vira.Web.Server.Controllers
             {
                 ip = Dns.GetHostEntry(Dns.GetHostName()).AddressList[1].ToString();
             }
+
             _userService.AddVisitHomePage(ip);
         }
 
