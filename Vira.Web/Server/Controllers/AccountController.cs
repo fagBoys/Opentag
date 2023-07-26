@@ -9,6 +9,7 @@ using Vira.Core.Security;
 using Vira.Core.Senders;
 using Vira.Core.Services.Interfaces;
 using Vira.Web.Shared;
+using Vira.Web.Shared.Entities.Main;
 using Vira.Web.Shared.Entities.User;
 
 namespace Vira.Web.Server.Controllers
@@ -211,6 +212,17 @@ namespace Vira.Web.Server.Controllers
             return opration.Succedded("/Login");
 
         }
+        #endregion
+
+        #region ContactUs
+
+        [HttpGet]
+        [Route("ListContactUs")]
+        public List<Contact> ListContactUs()
+        {
+            return _userService.ListContactUs();
+        }
+
         #endregion
     }
 }

@@ -22,9 +22,12 @@ namespace Vira.Core.Services.Interfaces
         public User GetUserByActiveCode(string activeCode);
         User GetUserByUserName(string username);
         void UpdateUser(User user);
-        int GetUserIdByUserName(string username);
-        public void AddVisitHomePage(string ip);
+        int GetUserIdByUserName(string username); 
+        void AddVisitHomePage(string ip);
 
         void AddContactUs(AddContact contactUs);
+
+        List<Contact> ListContactUs();
+
     }
 }

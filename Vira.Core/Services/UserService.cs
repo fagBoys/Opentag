@@ -169,5 +169,10 @@ namespace Vira.Core.Services
             _context.Contacts.Add(contact);
             _context.SaveChanges();
         }
+
+        public List<Contact> ListContactUs()
+        {
+            return _context.Contacts.ToList();
+        }
     }
 }
