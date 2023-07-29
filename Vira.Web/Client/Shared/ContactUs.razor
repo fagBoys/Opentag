@@ -5,47 +5,13 @@
 @using Vira.Core.DTOs.Main
 @using Vira.Web.Shared;
 
-
-
-
-                <EditForm Model="AddContact" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 0px;" name="form-2" OnValidSubmit="FContactUs" OnInvalidSubmit="FContactUs">
-                    <DataAnnotationsValidator />
-
-                    <div class="u-form-group u-form-name">
-                        <InputText @bind-Value="AddContact.Fullname" for="name-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Name</InputText>
-                        <input type="text" placeholder="Enter your Name" id="name-da97" name="name" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="">
-                    </div>
-                    <div class="u-form-email u-form-group">
-                        <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
-                        <InputText @bind-Value="AddContact.Email" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
-                    </div>
-                    <div class="u-form-email u-form-group">
-                        <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
-                        <InputText @bind-Value="AddContact.Phone" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
-                    </div>
-                    <div class="u-form-email u-form-group">
-                        <label for="email-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
-                        <InputText @bind-Value="AddContact.Subject" type="email" placeholder="Enter a valid email address" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
-                    </div>
-                    <div class="u-form-group u-form-message">
-                        <label for="message-da97" class="u-form-control-hidden u-label" wfd-invisible="true">Message</label>
-                        <InputText @bind-Value="AddContact.Text" placeholder="Enter your message" rows="4" cols="50" id="message-da97" name="message" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle" required="" />
-                    </div>
-                    <div class="u-align-left u-form-group u-form-submit">
-                        <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-palette-2-base u-btn-3">Submit</a>
-                        <input type="submit" class="u-form-control-hidden" wfd-invisible="true">
-                    </div>
-                    <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has been sent. </div>
-                    <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message. Please fix errors then try again. </div>
-                </EditForm>
-
-
-
 <section class="u-align-center u-clearfix u-grey-10 u-valign-middle u-section-7" id="carousel_faa2">
     <div class="u-expanded-width u-palette-2-base u-shape u-shape-rectangle u-shape-1"></div>
     <div class="u-container-style u-group u-radius-10 u-shape-round u-white u-group-1">
         <div class="u-container-layout u-container-layout-1">
-            <h3 class="u-custom-font u-font-open-sans u-text u-text-1">Contact Info</h3>
+            <h3 class="u-custom-font u-font-open-sans u-text u-text-1">
+                ارتباط با ما
+            </h3>
             <a href="tel:09931875729" class="u-active-none u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-btn-1">
                 <span class="u-icon u-text-palette-2-base">
                     <svg class="u-svg-content" viewBox="0 0 241.73 241.73" x="0px" y="0px" style="width: 1em; height: 1em;">
@@ -113,7 +79,7 @@
                         <label for="Subject">
                             موضوع
                         </label>
-                        <InputSelect id="Subject" @bind-Value="AddContact.Subject" class="form-control" >
+                        <InputSelect id="Subject" @bind-Value="AddContact.Subject" class="form-control">
                             <option value="1">سفارش وب سایت</option>
                             <option value="2">سوالات فنی</option>
                             <option value="3">مشاوره</option>
@@ -126,8 +92,18 @@
                         <InputTextArea id="Text" @bind-Value="AddContact.Text" class="form-control" type="text" placeholder="متن" />
                         <ValidationMessage For="@(() => AddContact.Text)" />
                     </div>
-                    <button type="submit" class="btn btn-primary">ثبت</button>
-                </EditForm>            </div>
+                    <div class="row">
+                        <div class="col ">
+                            <div class="row @messageCssClass text-end">
+                                <p>@mess</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <button type="submit" class="btn btn-primary">ثبت</button>
+                        </div>
+                    </div>
+                </EditForm>
+            </div>
         </div>
     </div>
 </section>
@@ -136,9 +112,6 @@
 
 
 
-<div class="row @messageCssClass">
-    <p>@mess</p>
-</div>
 
 
 @code
@@ -153,7 +126,7 @@
         var result = await http.PostAsJsonAsync("api/Home/AddContactUs", AddContact);
         var message = await result.Content.ReadFromJsonAsync<OperationResult>();
         mess = message.Message;
-        if(message.isSuccedded == true)
+        if (message.isSuccedded == true)
         {
             messageCssClass = "text-success";
 
