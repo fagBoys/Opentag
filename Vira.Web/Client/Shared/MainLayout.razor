@@ -1,24 +1,10 @@
 ﻿@inherits LayoutComponentBase
-<NewNavMenu Header="Vira"/>
 
 
-
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+<div class="container-fluid p-0 m-0 bg-info">
+    <NewNavMenu Header="Vira" />
+    @Body
+    <div class="bg-danger p-0 m-0">
+        sdawd
     </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-    
-</div>
-<div class="container-fluid">
-
 </div>
