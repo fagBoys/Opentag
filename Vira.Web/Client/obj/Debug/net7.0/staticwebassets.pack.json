@@ -1,155 +1,155 @@
 {
   "Files": [
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\compressed\\259llzif1g.gz",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\6dNyi03j.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Vira.Web.Client.styles.css",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Vira.Web.Client.styles.css",
       "PackagePath": "staticwebassets\\Vira.Web.Client.styles.css"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\service-worker-assets.js",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\service-worker-assets.js",
       "PackagePath": "staticwebassets\\service-worker-assets.js"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.published.js",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.published.js",
       "PackagePath": "staticwebassets\\service-worker.js"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\README.md",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\README.md",
       "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\Home.css",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\Home.css",
       "PackagePath": "staticwebassets\\dist\\Home.css"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\Post-Template.css",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\Post-Template.css",
       "PackagePath": "staticwebassets\\dist\\Post-Template.css"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\0fd3416c.jpeg",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\0fd3416c.jpeg",
       "PackagePath": "staticwebassets\\dist\\images\\0fd3416c.jpeg"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\68f64b9d.jpeg",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\68f64b9d.jpeg",
       "PackagePath": "staticwebassets\\dist\\images\\68f64b9d.jpeg"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\8ad73f3c.jpeg",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\8ad73f3c.jpeg",
       "PackagePath": "staticwebassets\\dist\\images\\8ad73f3c.jpeg"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\default-logo.png",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\default-logo.png",
       "PackagePath": "staticwebassets\\dist\\images\\default-logo.png"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\ds.jpg",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\ds.jpg",
       "PackagePath": "staticwebassets\\dist\\images\\ds.jpg"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\gggg.jpg",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\gggg.jpg",
       "PackagePath": "staticwebassets\\dist\\images\\gggg.jpg"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\hgghgh.jpg",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\hgghgh.jpg",
       "PackagePath": "staticwebassets\\dist\\images\\hgghgh.jpg"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\uuu.png",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\uuu.png",
       "PackagePath": "staticwebassets\\dist\\images\\uuu.png"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\w.jpg",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\w.jpg",
       "PackagePath": "staticwebassets\\dist\\images\\w.jpg"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\xcc-min.png",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\xcc-min.png",
       "PackagePath": "staticwebassets\\dist\\images\\xcc-min.png"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\xcxcxcxc-min.png",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\images\\xcxcxcxc-min.png",
       "PackagePath": "staticwebassets\\dist\\images\\xcxcxcxc-min.png"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\jquery.js",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\nicepage.css",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\nicepage.css",
       "PackagePath": "staticwebassets\\dist\\nicepage.css"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\nicepage.js",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\dist\\nicepage.js",
       "PackagePath": "staticwebassets\\dist\\nicepage.js"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\icon-512.png",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\icon-512.png",
       "PackagePath": "staticwebassets\\icon-512.png"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\index.html",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "D:\\Amir\\developer\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\manifest.json",
+      "Id": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\wwwroot\\manifest.json",
       "PackagePath": "staticwebassets\\manifest.json"
     },
     {

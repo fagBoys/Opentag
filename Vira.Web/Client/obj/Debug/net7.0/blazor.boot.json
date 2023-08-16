@@ -3,9 +3,6 @@
   "config": [ ],
   "debugBuild": true,
   "entryAssembly": "Vira.Web.Client",
-  "extensions": {
-    "blazor": { }
-  },
   "icuDataMode": 0,
   "linkerEnabled": false,
   "resources": {
@@ -62,6 +59,13 @@
       "System.Security.Cryptography.ProtectedData.dll": "sha256-o9hgrSsHZUHXSE21NQsd2rTAi1DjeRPsKygFEIhV7VA=",
       "System.Security.Permissions.dll": "sha256-AW\/sG8Kc4uNCDcvJW3C4knYf5kBPjdRR8bV5mb8A4pg=",
       "System.Windows.Extensions.dll": "sha256-BbG3Acl8iXmfE3LuNvbKYS6X2odUBKq\/rEdnj+dGEos=",
+      "Telerik.DataSource.dll": "sha256-KAo09FtOCF3tr8Z0TM6F6mRdxzUh5pbGdy94O3+W9NY=",
+      "Telerik.Documents.SpreadsheetStreaming.dll": "sha256-RcfEMRDPNAl7rlXtsyqKjowVYgzhE4WqJI5zCEvARo8=",
+      "Telerik.FontIcons.dll": "sha256-mk7ozJNA6IrixrVubopsxwetUXIblwsB4vTDNu3bENQ=",
+      "Telerik.Recurrence.dll": "sha256-\/MZZVfpP2qvrUpYUJbyZmnr3tF1\/51vMooYjg\/S6yOE=",
+      "Telerik.SvgIcons.dll": "sha256-3Q9U29m7na72MaAgNZhSra8RPatRqfgo51e5x7pUPhk=",
+      "Telerik.Blazor.dll": "sha256-XOgYrpidjRQmII7V8BQuzIjWtV5AaaLDJaccg7J9OwY=",
+      "Telerik.Zip.dll": "sha256-gDcQGWApW+O3FuCzeAU5rBJMRXUXtDBPoD5FuszNIsA=",
       "Microsoft.CSharp.dll": "sha256-6Y1rN8knL1K5x5lsZ2tEVDND2h4LtDSuVgCg1N8ghkA=",
       "Microsoft.VisualBasic.Core.dll": "sha256-LRJ4hN7opopr3bsogxcz7uyVjh4bNZOdMbVbIIQ9z+8=",
       "Microsoft.VisualBasic.dll": "sha256-xkUVMleH\/xQU+9disGUzBr7fT6ckmem5\/CMscxtghD8=",
@@ -230,18 +234,18 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "Vira.Web.Shared.dll": "sha256-F5lNfjJpIL82CsMI3wThbhfsq4lcEqLxON+HaqEqWHU=",
-      "Vira.Web.Client.dll": "sha256-O6kPgkOTbgD0WXfiTRm9bNAjCkpLcyUwMNQbrSV+r\/Y="
+      "Vira.Web.Shared.dll": "sha256-RrXyEMHKPdKhmRK\/wJ1tI2oVvUMXb7ymtliOb4eBXds=",
+      "Vira.Web.Client.dll": "sha256-Bk\/KcCeBIHymG5R2WRzNGAk6AtMAWEX2qYRGTVLdtc0="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Vira.Web.Shared.pdb": "sha256-ojCwX6iS\/2857G87E88qgy2L8VbQDwnGD9pPgu04OIk=",
-      "Vira.Web.Client.pdb": "sha256-CCU\/HtewzOPuqwRUYExKrPqOaUSoqHmFngvLYmuTo3g="
+      "Vira.Web.Shared.pdb": "sha256-NxmORMt0WxUJJ\/E04p\/n3zF\/uwcXacYq5wp9fWf5VWk=",
+      "Vira.Web.Client.pdb": "sha256-04TaoKKjf2xM9yBRZfWubydwc3axNPfvd+0SsVwaGps="
     },
     "runtime": {
-      "dotnet.7.0.5.jnukloiz1q.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",
+      "dotnet.7.0.5.6znhj7x1sa.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",
       "dotnet.timezones.blat": "sha256-rIVQOJ+gHn4DeRSq6Ac3CURS8YBJG3P4CtYPfIuZ\/kk=",
       "dotnet.wasm": "sha256-6u4NhRISPvoDQ8pKvno9KKJh2aKqzTavj4dpcdFCV\/o=",
       "icudt.dat": "sha256-tO5O5YzMTVSaKBboxAqezOQL9ewmupzV2JrB5Rkc8a4=",
@@ -256,7 +260,5 @@
       }
     },
     "satelliteResources": null
-  },
-  "runtimeOptions": null,
-  "startupMemoryCache": null
+  }
 }

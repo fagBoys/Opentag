@@ -25,3 +25,5 @@ D:\Amir\developer\GitHub\Opentag\Vira.Web\Shared\obj\Debug\net7.0\refint\Vira.We
 D:\Amir\developer\GitHub\Opentag\Vira.Web\Shared\obj\Debug\net7.0\Vira.Web.Shared.pdb
 D:\Amir\developer\GitHub\Opentag\Vira.Web\Shared\obj\Debug\net7.0\Vira.Web.Shared.genruntimeconfig.cache
 D:\Amir\developer\GitHub\Opentag\Vira.Web\Shared\obj\Debug\net7.0\ref\Vira.Web.Shared.dll
+C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Shared\bin\Debug\net7.0\Vira.Web.Shared.runtimeconfig.json
+C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Shared\obj\Debug\net7.0\Vira.Web.Shared.genruntimeconfig.cache
