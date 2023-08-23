@@ -1,0 +1,111 @@
+﻿<div class="row">
+    <TelerikCarousel Class="carouselSize p-0 m-0" Data="@CarouselData"
+                     Width="512px" Height="500px">
+        <Template>
+            <div class="image-with-text row">
+                <p class="lt">Showing image @(context.ImageID) of @CarouselData.Count.ToString().</p>
+                <img src="images/photos/@(context.ImageID).jpg" alt="Photograph" width="512" height="500" />
+                <p class="text-center ts">
+                    my text with
+                    <a href=".">
+                        Link
+                    </a>
+                    here
+                </p>
+                <div class="row">
+                    <div class="col-3" style="background-color: rgba(1,0,0,0.5)">
+                        dawd 01
+                    </div>
+                    <div class="col-3" style="background-color: rgba(0,1,255,0.5)">
+                        dawd 02
+                    </div>
+                    <div class="col-3" style="background-color: rgba(0,255,1,0.5)">
+                        dawd 03
+                    </div>
+                    <div class="col-3" style="background-color: rgba(255,0,0,0.5)">
+                        dawd 04
+                    </div>
+                </div>
+
+            </div>
+        </Template>
+    </TelerikCarousel>
+</div>
+
+
+<style>
+    /* center the Carousel horizontally */
+    /* k-scrollview is the default component class */
+    .k-scrollview {
+        margin: 0 auto;
+    }
+
+    .k-scrollview-nav
+    {
+        padding-top: 5px;
+    }
+
+    /* enable absolute positioning inside the Carousel template */
+    .image-with-text {
+        position: relative;
+    }
+
+        /* style the overlay text inside the Carousel */
+        .image-with-text > .lt {
+            position: absolute;
+            top: 1rem;
+            left: 1.6rem;
+            color: rgba(255, 255, 255, .8);
+            margin: 0;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+        }
+
+        .image-with-text > div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(1,0,0,0.3);
+        }
+
+    .ts {
+        position: absolute;
+        bottom: 3.5rem;
+        right: 1.6rem;
+        left: 1.6rem;
+        color: rgba(255, 255, 255, .8);
+        margin: 0;
+        font-style: italic;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+    }
+
+    .image-with-text > img {
+        width: 100% !important;
+    }
+
+
+
+    .carouselSize {
+        width: 100% !important;
+    }
+
+</style>
+
+@code {
+    public List<CarouselModel> CarouselData { get; set; }
+
+    protected override Task OnInitializedAsync()
+    {
+        CarouselData = Enumerable.Range(1, 7).Select(x => new CarouselModel
+            {
+                ImageID = x
+            }).ToList();
+
+        return base.OnInitializedAsync();
+    }
+
+    public class CarouselModel
+    {
+        public int ImageID { get; set; }
+    }
+}
