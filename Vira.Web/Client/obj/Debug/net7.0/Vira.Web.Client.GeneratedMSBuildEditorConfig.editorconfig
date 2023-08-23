@@ -28,8 +28,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/BlazorCarousel.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJsYXpvckNhcm91c2VsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/ContactUs.razor]
@@ -47,6 +47,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-cgmsxp4zm5
 
 [C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

@@ -234,15 +234,15 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "Vira.Web.Shared.dll": "sha256-RrXyEMHKPdKhmRK\/wJ1tI2oVvUMXb7ymtliOb4eBXds=",
-      "Vira.Web.Client.dll": "sha256-Bk\/KcCeBIHymG5R2WRzNGAk6AtMAWEX2qYRGTVLdtc0="
+      "Vira.Web.Shared.dll": "sha256-44L5++XZ9K3EEeu\/\/UIGvzZWR\/iRJqRPb2T1ypNDp1A=",
+      "Vira.Web.Client.dll": "sha256-p56eT4G\/2EiuvH\/2tMOWaxtMm9+mTEem5PBnG29R\/lg="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Vira.Web.Shared.pdb": "sha256-NxmORMt0WxUJJ\/E04p\/n3zF\/uwcXacYq5wp9fWf5VWk=",
-      "Vira.Web.Client.pdb": "sha256-04TaoKKjf2xM9yBRZfWubydwc3axNPfvd+0SsVwaGps="
+      "Vira.Web.Shared.pdb": "sha256-I0nc0qAlOgi+pUwqNmEmyeNDscJp6AsXo5hfG5+OLP8=",
+      "Vira.Web.Client.pdb": "sha256-v6y+mtCtCVBgCJz8q2Ay33Qz0Djn5p41ZhxULaqXJVU="
     },
     "runtime": {
       "dotnet.7.0.5.6znhj7x1sa.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

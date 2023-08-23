@@ -137,6 +137,7 @@ D:\Amir\developer\GitHub\Opentag\Vira.Web\Server\obj\Debug\net7.0\refint\Vira.We
 D:\Amir\developer\GitHub\Opentag\Vira.Web\Server\obj\Debug\net7.0\Vira.Web.Server.pdb
 D:\Amir\developer\GitHub\Opentag\Vira.Web\Server\obj\Debug\net7.0\Vira.Web.Server.genruntimeconfig.cache
 D:\Amir\developer\GitHub\Opentag\Vira.Web\Server\obj\Debug\net7.0\ref\Vira.Web.Server.dll
+C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Vira.Web.Client.staticwebassets.runtime.json
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\appsettings.json
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.dll
@@ -147,7 +148,6 @@ C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\BlazorDe
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\BlazorDebugProxy\Newtonsoft.Json.dll
-C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Vira.Web.Client.staticwebassets.runtime.json
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Vira.Web.Server.staticwebassets.runtime.json
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Vira.Web.Server.exe
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Vira.Web.Server.deps.json
@@ -209,6 +209,13 @@ C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\System.R
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\System.Security.Permissions.dll
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.DataSource.dll
+C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.Documents.SpreadsheetStreaming.dll
+C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.FontIcons.dll
+C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.Recurrence.dll
+C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.SvgIcons.dll
+C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.Blazor.dll
+C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.Zip.dll
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -275,10 +282,3 @@ C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\obj\Debug\net7.0\refint\V
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\obj\Debug\net7.0\Vira.Web.Server.pdb
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\obj\Debug\net7.0\Vira.Web.Server.genruntimeconfig.cache
 C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\obj\Debug\net7.0\ref\Vira.Web.Server.dll
-C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.DataSource.dll
-C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.Documents.SpreadsheetStreaming.dll
-C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.FontIcons.dll
-C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.Recurrence.dll
-C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.SvgIcons.dll
-C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.Blazor.dll
-C:\Users\zack\Documents\GitHub\Opentag\Vira.Web\Server\bin\Debug\net7.0\Telerik.Zip.dll
