@@ -1,0 +1,59 @@
+﻿@{
+    // ViewData["Title"] = "بروز رسانی";
+    Layout = null;
+    // Layout = "~/Views/Shared/_LayoutNull.cshtml";
+}
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>بروز رسانی</title>
+    <link rel="stylesheet" href="/css/UpdatingStyle.css">
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <canvas id="canvas"></canvas>
+    <div id="text" dir="rtl" style="display:block !important">
+        <h1 style="display: inline-block  !important; width: 100%; margin-top: 100px; padding-top: 100px;">
+            در حال بروز رسانی وبسایت...
+            @* Website Updating... *@
+        </h1>
+        <a asp-action="Index" style="display: inline-block !important; width: 100%; text-decoration: none !important; text-align: start; color: whitesmoke; padding-right: 66px; font-size: 35px" onmouseover="redit(1)" onmouseout="redit(0)" ontouchstart="">
+            <small>
+                <span class="hart" >
+                    🤍
+                </span>
+                 برو به حالت قبلی وب سایت :)
+            </small>
+        </a>
+    </div>
+
+    <!-- partial -->
+    <script src="/js/UpdatingScript.js"></script>
+    <script>
+        function redit(x) 
+        {
+            if(x.toString() === "1")
+            {
+                document.querySelector(".hart").innerHTML = "❤️";
+            }
+            else
+            {
+                document.querySelector(".hart").innerHTML = "🤍";
+            }
+        }
+
+        
+    </script>
+
+</body>
+</html>
