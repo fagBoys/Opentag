@@ -47,6 +47,59 @@ namespace Opentag.Controllers
                 ApplicationDbContext Context = new ApplicationDbContext();
                 Context.Contact.Add(contact);
                 await Context.SaveChangesAsync();
+
+                ///////    Send Email     ///////
+                ///
+                List<string> emailList = new List<string>();
+                emailList.Add("viradeveloper.co@gmail.com");
+                emailList.Add("j666.amir@gmail.com");
+                emailList.Add("johnzack424@gmail.com");
+
+                foreach (var VARIABLE in emailList)
+                {
+               
+                    MimeMessage message = new MimeMessage();
+
+                    MailboxAddress from = new MailboxAddress("Vira-Dev", "viradeveloper.co@gmail.com");
+                    message.From.Add(from);
+
+                    MailboxAddress to = new MailboxAddress("Vira-Dev", $"{VARIABLE}");
+                    message.To.Add(to);
+
+                    message.Subject = "New contact Us";
+
+                    BodyBuilder bodyBuilder = new BodyBuilder();
+
+                    var mybody = @System.IO.File.ReadAllText(_environment.WebRootPath + @"\Email\emailbody-order.html");
+                    mybody = mybody.Replace("Value01", contact.FullName);
+                    mybody = mybody.Replace("Value02", contact.PhoneNumber);
+                    mybody = mybody.Replace("Value03", contact.EmailAddress);
+                    mybody = mybody.Replace("Value04", contact.Subject);
+                    mybody = mybody.Replace("Value05", contact.Message);
+
+                    bodyBuilder.HtmlBody = mybody;
+
+                    var usericon = bodyBuilder.LinkedResources.Add(_environment.WebRootPath + @"/Email/newuser.png");
+                    usericon.ContentId = MimeUtils.GenerateMessageId();
+
+                    bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{", "{{");
+                    bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("}", "}}");
+                    bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{{0}}", "{0}");
+
+                    bodyBuilder.HtmlBody = string.Format(bodyBuilder.HtmlBody, usericon.ContentId);
+
+                    message.Body = bodyBuilder.ToMessageBody();
+
+
+                    SmtpClient client = new SmtpClient();
+                    client.Connect("smtp.gmail.com", 465, true);
+                    client.Authenticate("viradeveloper.co@gmail.com", "vhvxxvxofkrbhnsl");
+                    client.Send(message);
+                    ///////    Send Email     ///////
+
+                }
+
+
                 return View();
             }
             return View();
@@ -71,47 +124,54 @@ namespace Opentag.Controllers
             context.Add(contact);
             context.SaveChanges();
 
+            List<string> emailList = new List<string>();
+            emailList.Add("viradeveloper.co@gmail.com");
+            emailList.Add("j666.amir@gmail.com");
+            emailList.Add("johnzack424@gmail.com");
+            foreach (var VARIABLE in emailList)
+            {
 
-            ///////    Send Email     ///////
-            MimeMessage message = new MimeMessage();
+                ///////    Send Email     ///////
+                MimeMessage message = new MimeMessage();
 
-            MailboxAddress from = new MailboxAddress("Vira-Dev", "viradeveloper.co@gmail.com");
-            message.From.Add(from);
+                MailboxAddress from = new MailboxAddress("Vira-Dev", "viradeveloper.co@gmail.com");
+                message.From.Add(from);
 
-            MailboxAddress to = new MailboxAddress("Vira-Dev", "viradeveloper.co@gmail.com");
-            message.To.Add(to);
+                MailboxAddress to = new MailboxAddress("Vira-Dev", $"{VARIABLE}");
+                message.To.Add(to);
 
-            message.Subject = "New contact Us";
+                message.Subject = "New contact Us";
 
-            BodyBuilder bodyBuilder = new BodyBuilder();
+                BodyBuilder bodyBuilder = new BodyBuilder();
 
-            var mybody = @System.IO.File.ReadAllText(_environment.WebRootPath + @"\Email\emailbody-order.html");
-            mybody = mybody.Replace("Value01", contact.FullName);
-            mybody = mybody.Replace("Value02", contact.PhoneNumber);
-            mybody = mybody.Replace("Value03", contact.EmailAddress);
-            mybody = mybody.Replace("Value04", contact.Subject);
-            mybody = mybody.Replace("Value05", contact.Message);
+                var mybody = @System.IO.File.ReadAllText(_environment.WebRootPath + @"\Email\emailbody-order.html");
+                mybody = mybody.Replace("Value01", contact.FullName);
+                mybody = mybody.Replace("Value02", contact.PhoneNumber);
+                mybody = mybody.Replace("Value03", contact.EmailAddress);
+                mybody = mybody.Replace("Value04", contact.Subject);
+                mybody = mybody.Replace("Value05", contact.Message);
 
-            bodyBuilder.HtmlBody = mybody;
+                bodyBuilder.HtmlBody = mybody;
 
-            var usericon = bodyBuilder.LinkedResources.Add(_environment.WebRootPath + @"/Email/newuser.png");
-            usericon.ContentId = MimeUtils.GenerateMessageId();
+                var usericon = bodyBuilder.LinkedResources.Add(_environment.WebRootPath + @"/Email/newuser.png");
+                usericon.ContentId = MimeUtils.GenerateMessageId();
 
-            bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{", "{{");
-            bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("}", "}}");
-            bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{{0}}", "{0}");
+                bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{", "{{");
+                bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("}", "}}");
+                bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{{0}}", "{0}");
 
-            bodyBuilder.HtmlBody = string.Format(bodyBuilder.HtmlBody, usericon.ContentId);
+                bodyBuilder.HtmlBody = string.Format(bodyBuilder.HtmlBody, usericon.ContentId);
 
-            message.Body = bodyBuilder.ToMessageBody();
+                message.Body = bodyBuilder.ToMessageBody();
 
 
-            SmtpClient client = new SmtpClient();
-            client.Connect("smtp.gmail.com", 465, true);
-            client.Authenticate("viradeveloper.co@gmail.com", "vhvxxvxofkrbhnsl");
-            client.Send(message);
-            ///////    Send Email     ///////
+                SmtpClient client = new SmtpClient();
+                client.Connect("smtp.gmail.com", 465, true);
+                client.Authenticate("viradeveloper.co@gmail.com", "vhvxxvxofkrbhnsl");
+                client.Send(message);
+                ///////    Send Email     ///////
 
+            }
 
             return new RedirectResult("/Home/Contact");
         }
@@ -154,46 +214,53 @@ namespace Opentag.Controllers
 
             //EF core code ends
 
+            List<string> emailList = new List<string>();
+            emailList.Add("viradeveloper.co@gmail.com");
+            emailList.Add("j666.amir@gmail.com");
+            emailList.Add("johnzack424@gmail.com");
+            foreach (var VARIABLE in emailList)
+            {
 
-            ///////    Send Email     ///////
-            MimeMessage message = new MimeMessage();
+                ///////    Send Email     ///////
+                MimeMessage message = new MimeMessage();
 
-            MailboxAddress from = new MailboxAddress("Vira-Dev", "viradeveloper.co@gmail.com");
-            message.From.Add(from);
+                MailboxAddress from = new MailboxAddress("Vira-Dev", "viradeveloper.co@gmail.com");
+                message.From.Add(from);
 
-            MailboxAddress to = new MailboxAddress("Vira-Dev", "viradeveloper.co@gmail.com");
-            message.To.Add(to);
+                MailboxAddress to = new MailboxAddress("Vira-Dev", $"{VARIABLE}");
+                message.To.Add(to);
 
-            message.Subject = "New order";
+                message.Subject = "New order";
 
-            BodyBuilder bodyBuilder = new BodyBuilder();
+                BodyBuilder bodyBuilder = new BodyBuilder();
 
-            var mybody = @System.IO.File.ReadAllText(_environment.WebRootPath + @"\Email\emailbody-order.html");
-            mybody = mybody.Replace("Value01", AddOrder.FullName);
-            mybody = mybody.Replace("Value02", AddOrder.PhoneNumber);
-            mybody = mybody.Replace("Value03", AddOrder.EmailAddress);
-            mybody = mybody.Replace("Value04", AddOrder.Subject);
-            mybody = mybody.Replace("Value05", AddOrder.Discription);
+                var mybody = @System.IO.File.ReadAllText(_environment.WebRootPath + @"\Email\emailbody-order.html");
+                mybody = mybody.Replace("Value01", AddOrder.FullName);
+                mybody = mybody.Replace("Value02", AddOrder.PhoneNumber);
+                mybody = mybody.Replace("Value03", AddOrder.EmailAddress);
+                mybody = mybody.Replace("Value04", AddOrder.Subject);
+                mybody = mybody.Replace("Value05", AddOrder.Discription);
 
-            bodyBuilder.HtmlBody = mybody;
+                bodyBuilder.HtmlBody = mybody;
 
-            var usericon = bodyBuilder.LinkedResources.Add(_environment.WebRootPath + @"/Email/newuser.png");
-            usericon.ContentId = MimeUtils.GenerateMessageId();
+                var usericon = bodyBuilder.LinkedResources.Add(_environment.WebRootPath + @"/Email/newuser.png");
+                usericon.ContentId = MimeUtils.GenerateMessageId();
 
-            bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{", "{{");
-            bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("}", "}}");
-            bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{{0}}", "{0}");
+                bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{", "{{");
+                bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("}", "}}");
+                bodyBuilder.HtmlBody = bodyBuilder.HtmlBody.Replace("{{0}}", "{0}");
 
-            bodyBuilder.HtmlBody = string.Format(bodyBuilder.HtmlBody, usericon.ContentId);
+                bodyBuilder.HtmlBody = string.Format(bodyBuilder.HtmlBody, usericon.ContentId);
 
-            message.Body = bodyBuilder.ToMessageBody();
+                message.Body = bodyBuilder.ToMessageBody();
 
 
-            SmtpClient client = new SmtpClient();
-            client.Connect("smtp.gmail.com", 465, true);
-            client.Authenticate("viradeveloper.co@gmail.com", "vhvxxvxofkrbhnsl");
-            client.Send(message);
-            ///////    Send Email     ///////
+                SmtpClient client = new SmtpClient();
+                client.Connect("smtp.gmail.com", 465, true);
+                client.Authenticate("viradeveloper.co@gmail.com", "vhvxxvxofkrbhnsl");
+                client.Send(message);
+                ///////    Send Email     ///////
+            }
 
             return View();
         }
