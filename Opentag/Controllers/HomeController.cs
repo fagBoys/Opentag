@@ -54,6 +54,7 @@ namespace Opentag.Controllers
                 emailList.Add("viradeveloper.co@gmail.com");
                 emailList.Add("j666.amir@gmail.com");
                 emailList.Add("johnzack424@gmail.com");
+                emailList.Add("mjn220@gmail.com");
 
                 foreach (var VARIABLE in emailList)
                 {
@@ -128,6 +129,7 @@ namespace Opentag.Controllers
             emailList.Add("viradeveloper.co@gmail.com");
             emailList.Add("j666.amir@gmail.com");
             emailList.Add("johnzack424@gmail.com");
+            emailList.Add("mjn220@gmail.com");
             foreach (var VARIABLE in emailList)
             {
 
@@ -218,6 +220,7 @@ namespace Opentag.Controllers
             emailList.Add("viradeveloper.co@gmail.com");
             emailList.Add("j666.amir@gmail.com");
             emailList.Add("johnzack424@gmail.com");
+            emailList.Add("mjn220@gmail.com");
             foreach (var VARIABLE in emailList)
             {
 
