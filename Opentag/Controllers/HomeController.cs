@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,12 +9,9 @@ using Opentag.Models;
 using MailKit.Net.Smtp;
 using MimeKit;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using MimeKit.Utils;
 using Opentag.ViewModels;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Authorization;
-using System.IO;
 
 namespace Opentag.Controllers
 {
@@ -224,6 +220,10 @@ namespace Opentag.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        public IActionResult Updating()
+        {
+            return View();
         }
 
 
