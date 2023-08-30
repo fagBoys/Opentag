@@ -1,4 +1,5 @@
-﻿using Berlance.Core.Generator;
+﻿using BCrypt.Net;
+using Berlance.Core.Generator;
 using Microsoft.AspNetCore.Http;
 using Vira.Core.DTOs;
 using Vira.Core.DTOs.Main;
@@ -39,9 +40,20 @@ namespace Vira.Core.Services
 
         public User LoginUser(LoginViewModel login)
         {
-            string hashPassword = PasswordHelper.EncodePasswordMd5(login.Password);
-            //string email = FixedText.FixEmail(login.PhoneNeumber);
-            return _context.Users.SingleOrDefault(u => u.Email == login.Email && u.Password == hashPassword);
+            var user = _context.Users.FirstOrDefault(x => x.Email == login.Email);
+
+            if (!BCrypt.Net.BCrypt.Verify(login.Password, user.Password) || user == null)
+            {
+                return null;
+            }
+
+            return user;
+
+
+
+            //string hashPassword = PasswordHelper.EncodePasswordMd5(login.Password);
+            ////string email = FixedText.FixEmail(login.PhoneNeumber);
+            //return _context.Users.SingleOrDefault(u => u.Email == login.Email && u.Password == hashPassword);
         }
 
         public bool ActiveAccount(string activeCode)

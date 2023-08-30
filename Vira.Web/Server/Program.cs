@@ -1,9 +1,10 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.ResponseCompression;
+global using Vira.Web.Shared.Context;
+
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Vira.Core.Services;
 using Vira.Core.Services.Interfaces;
-using Vira.Web.Shared.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,19 +18,20 @@ builder.Services.AddSwaggerGen();
 
 #region Authentication
 
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey =
+                new SymmetricSecurityKey(System.Text.Encoding.UTF8
+                    .GetBytes(builder.Configuration.GetSection("AppSettings:Token").Value)),
+            ValidateIssuer = false,
+            ValidateAudience = false
 
-}).AddCookie(options =>
-{
-    options.LoginPath = "/Login";
-    options.LogoutPath = "/Logout";
-    options.ExpireTimeSpan = TimeSpan.FromMinutes(43200);
-
-});
+        };
+    });
 
 #endregion
 
@@ -38,13 +40,15 @@ builder.Services.AddDbContext<ViraContext>(options => options.UseSqlServer(build
 #endregion
 
 #region IOC
-builder.Services.AddTransient<IUserService,UserService>();
-builder.Services.AddTransient<IPermissionService,PermissionService>();
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IPermissionService, PermissionService>();
 #endregion
 
-var app = builder.Build();
-app.UseSwaggerUI();
+builder.Services.AddHttpContextAccessor();
 
+var app = builder.Build();
+
+app.UseSwaggerUI();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -66,6 +70,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapControllers();

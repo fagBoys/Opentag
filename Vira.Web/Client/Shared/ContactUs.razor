@@ -73,7 +73,7 @@
     public async Task FContactUs()
     {
         var result = await http.PostAsJsonAsync("api/Home/AddContactUs", AddContact);
-        var message = await result.Content.ReadFromJsonAsync<OperationResult>();
+        var message = await result.Content.ReadFromJsonAsync<OperationResult<string>>();
         mess = message.Message;
         if (message.isSuccedded == true)
         {

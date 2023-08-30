@@ -1,11 +1,12 @@
-﻿using System.Security.Claims;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using Berlance.Core.Generator;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Vira.Core.Convertors;
 using Vira.Core.DTOs;
-using Vira.Core.Security;
 using Vira.Core.Senders;
 using Vira.Core.Services.Interfaces;
 using Vira.Web.Shared;
@@ -19,21 +20,20 @@ namespace Vira.Web.Server.Controllers
     public class AccountController : Controller
     {
         private IUserService _userService;
-        private IViewRenderService _viewRender;
-
-        public AccountController(IUserService userService, IViewRenderService viewRender)
+        private readonly IConfiguration _configuration;
+        public AccountController(IUserService userService, IConfiguration configuration)
         {
             _userService = userService;
-            _viewRender = viewRender;
+            _configuration = configuration;
         }
 
         #region Register
 
         [HttpPost]
         [Route("Register")]
-        public OperationResult Register(RegisterViewModel register)
+        public OperationResult<string> Register(RegisterViewModel register)
         {
-            var opration = new OperationResult();
+            var opration = new OperationResult<string>();
 
             if (!ModelState.IsValid)
             {
@@ -43,15 +43,12 @@ namespace Vira.Web.Server.Controllers
 
             if (_userService.IsExistUserName(register.UserName))
             {
-                ModelState.AddModelError("UserName", "نام کاربری معتبر نمی باشد");
                 return opration.Failed(ApplicationMessages.ModelState);
             }
 
             if (_userService.IsExistEmail(FixedText.FixEmail(register.Email)))
             {
-                ModelState.AddModelError("Email", "ایمیل معتبر نمی باشد");
                 return opration.Failed(ApplicationMessages.ModelState);
-
             }
 
 
@@ -60,7 +57,7 @@ namespace Vira.Web.Server.Controllers
                 ActiveCode = NameGenerator.GenerateUniqCode(),
                 Email = FixedText.FixEmail(register.Email),
                 IsActive = false,
-                Password = PasswordHelper.EncodePasswordMd5(register.Password),
+                Password = BCrypt.Net.BCrypt.HashPassword(register.Password),
                 RegisterDate = DateTime.Now,
                 UserAvatar = "Defult.jpg",
                 UserName = register.UserName
@@ -69,12 +66,16 @@ namespace Vira.Web.Server.Controllers
 
             #region Send Activation Email
 
-            string body = _viewRender.RenderToStringAsync("_ActiveEmail", user);
-            SendEmail.Send(user.Email, "فعالسازی", body);
+            //string body = _viewRender.RenderToStringAsync("_ActiveEmail", user);
+            //SendEmail.Send(user.Email, "فعالسازی", body);
+
+
+
+
 
             #endregion
 
-            return opration.Succedded();
+            return opration.Succedded("ثبت نام با موفقیت انجام شد!");
 
         }
 
@@ -85,10 +86,10 @@ namespace Vira.Web.Server.Controllers
 
         [HttpPost]
         [Route("Login")]
-        public OperationResult Login(LoginViewModel login , string ReturnUrl = "/")
+        public OperationResult<string> Login(LoginViewModel login , string ReturnUrl = "/")
         {
-            var opration = new OperationResult();
-            if (!ModelState.IsValid)
+            var opration = new OperationResult<string>();
+            if (login.Password == null || login.Password == null)
             {
                 return opration.Failed(ApplicationMessages.ModelState);
             }
@@ -98,31 +99,33 @@ namespace Vira.Web.Server.Controllers
             {
                 if (user.IsActive)
                 {
-                    var claims = new List<Claim>()
+                    List<Claim> claims = new List<Claim>
                     {
-                        new Claim(ClaimTypes.NameIdentifier,user.UserId.ToString()),
-                        new Claim(ClaimTypes.Name,user.UserName)
+                        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+                        new Claim(ClaimTypes.Name, user.Email)
                     };
-                    var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                    var principal = new ClaimsPrincipal(identity);
 
-                    var properties = new AuthenticationProperties
-                    {
-                        IsPersistent = login.RememberMe
-                    };
-                    HttpContext.SignInAsync(principal, properties);
+                    var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8
+                        .GetBytes(_configuration.GetSection("AppSettings:Token").Value));
 
-                    ViewBag.IsSuccess = true;
+                    var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
+                    var token = new JwtSecurityToken(
+                        claims: claims,
+                        expires: DateTime.Now.AddDays(1),
+                        signingCredentials: creds);
+
+                    opration.Data = new JwtSecurityTokenHandler().WriteToken(token);
                     return opration.Succedded();
 
                 }
                 else
                 {
-                    return opration.Failed(ApplicationMessages.ModelState);
+                    return opration.Failed(ApplicationMessages.RecordNotFound);
                 }
             }
-            return opration.Failed(ApplicationMessages.ModelState);
+
+            return opration.Failed(ApplicationMessages.RecordNotFound);
 
         }
 
@@ -155,9 +158,9 @@ namespace Vira.Web.Server.Controllers
 
         [HttpPost]
         [Route("ForgotPassword")]
-        public OperationResult ForgotPassword(ForgotPasswordViewModel forgot)
+        public OperationResult<string> ForgotPassword(ForgotPasswordViewModel forgot)
         {
-            var opration = new OperationResult();
+            var opration = new OperationResult<string>();
 
             if (!ModelState.IsValid)
                 return opration.Failed(ApplicationMessages.ModelState);
@@ -171,8 +174,8 @@ namespace Vira.Web.Server.Controllers
                 return opration.Failed("کاربری یافت نشد");
             }
 
-            string bodyEmail = _viewRender.RenderToStringAsync("_ForgotPassword", user);
-            SendEmail.Send(user.Email, "بازیابی حساب کاربری", bodyEmail);
+            //string bodyEmail = _viewRender.RenderToStringAsync("_ForgotPassword", user);
+            //SendEmail.Send(user.Email, "بازیابی حساب کاربری", bodyEmail);
             ViewBag.IsSuccess = true;
 
             return opration.Succedded();
@@ -192,9 +195,9 @@ namespace Vira.Web.Server.Controllers
 
         [HttpPost]
         [Route("ResetPassword")]
-        public OperationResult ResetPassword(ResetPasswordViewModel reset)
+        public OperationResult<string> ResetPassword(ResetPasswordViewModel reset)
         {
-            var opration = new OperationResult();
+            var opration = new OperationResult<string>();
 
             if (!ModelState.IsValid)
                 return opration.Failed(ApplicationMessages.ModelState);
@@ -205,7 +208,7 @@ namespace Vira.Web.Server.Controllers
                 return opration.Failed(ApplicationMessages.ModelState);
 
 
-            string hashNewPassword = PasswordHelper.EncodePasswordMd5(reset.Password);
+            string hashNewPassword = BCrypt.Net.BCrypt.HashPassword(reset.Password);
             user.Password = hashNewPassword;
             _userService.UpdateUser(user);
 

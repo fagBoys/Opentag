@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 using Vira.Core.DTOs.Main;
 using Vira.Core.Services.Interfaces;
 using Vira.Web.Shared;
@@ -34,9 +35,9 @@ namespace Vira.Web.Server.Controllers
 
         [HttpPost]
         [Route("AddContactUs")]
-        public async Task<OperationResult> AddContactUs(AddContact AddContact)
+        public async Task<OperationResult<string>> AddContactUs(AddContact AddContact)
         {
-           OperationResult operation = new OperationResult();
+           OperationResult<string> operation = new OperationResult<string>();
 
             if (AddContact == null)
             {

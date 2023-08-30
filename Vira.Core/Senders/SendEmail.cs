@@ -8,7 +8,7 @@ namespace Vira.Core.Senders
         {
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
-            mail.From = new MailAddress("viradeveloper.co@gmail.com", "تاپ لرن");
+            mail.From = new MailAddress("viradeveloper.co@gmail.com", "شرکت طراحی سایت ویرا");
             mail.To.Add(to);
             mail.Subject = subject;
             mail.Body = body;

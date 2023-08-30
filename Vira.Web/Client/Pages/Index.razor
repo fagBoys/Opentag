@@ -1,5 +1,11 @@
 ﻿@page "/"
 @inject HttpClient http
+@attribute [Authorize]
+
+@inject ILocalStorageService LocalStorage
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+
 
 <PageTitle>
     طراحی سایت | فروشگاه ساز | طراحی وب سایت | شرکت Vira
@@ -23,6 +29,13 @@
     <meta property="og:type" content="website">
     <meta data-intl-tel-input-cdn-path="intlTelInput/">
 </HeadContent>
+
+<AuthorizeView>
+    <h3>سلام کاربر عزیز <i>@context.User.Identity.Name</i>.</h3>
+    <button class="dropdown-item" @onclick="Logout">خروج</button>
+
+</AuthorizeView>
+
 @* <BlazorCarousel/> *@
 <ContactUs/>
 
@@ -31,6 +44,13 @@
     protected override async Task OnInitializedAsync()
     {
         http.GetAsync("api/Home/AddVisitHomePage");
+    }
+
+    private async Task Logout()
+    {
+        await LocalStorage.RemoveItemAsync("authToken");
+        await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        NavigationManager.NavigateTo("");
     }
 }
 
