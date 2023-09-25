@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "vd2iQTqZwhsW2PBQR5tUssextUFdo5J7K3ZIMvurOCewkhrHJ5zHRLs8XyZvnMejXXRM/waP++dtLOdGBotOKw==",
+  "dgSpecHash": "euqmj+/3fZ0dIs7K1xdqJKt0v54YboDpsNEa0aTmufRjJPejjMFKG1l67tn0JqPa9VCLpfSGHa85sJhkhUnAcQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Core\\Vira.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zack\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\zack\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\zack\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",

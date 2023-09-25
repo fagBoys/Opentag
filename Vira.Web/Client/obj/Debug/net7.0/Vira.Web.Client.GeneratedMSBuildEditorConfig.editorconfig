@@ -28,20 +28,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/BlazorCarousel.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJsYXpvckNhcm91c2VsLnJhem9y
+[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/ContactUs.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbnRhY3RVcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/EventConsole.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEV2ZW50Q29uc29sZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/TelerikLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRlbGVyaWtMYXlvdXQucmF6b3I=
+[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/_Imports.razor]
@@ -63,3 +67,7 @@ build_metadata.AdditionalFiles.CssScope = b-33iqzedix5
 [C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/NewNavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5ld05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-fzv66f3jhg
+
+[C:/Users/zack/Documents/GitHub/Opentag/Vira.Web/Client/Shared/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZ2lzdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-6zmh3daqgz

@@ -30,6 +30,9 @@ namespace Vira.Web.Shared.Entities.User
         [Display(Name = "وضعیت")]
         public bool IsActive { get; set; }
 
+        [Display(Name = "تایید تدریس")]
+        public bool IsTeacher { get; set; }
+
         [Display(Name = "آواتار")]
         [MaxLength(200, ErrorMessage = "{0} نمی تواند بیشتر از {1} کاراکتر باشد .")]
         public string UserAvatar { get; set; }

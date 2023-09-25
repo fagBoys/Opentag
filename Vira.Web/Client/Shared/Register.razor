@@ -1,0 +1,54 @@
+﻿@using Radzen
+@using System.Text.Json
+<RadzenFieldset Text="مشخصات را وارد نمایید" class="RegTitleTop">
+    <div Class="rz-p-0 rz-p-md-12">
+        <RadzenRow Gap="1rem" class=" p-1">
+            <RadzenColumn Size="12" SizeSM="6">
+                <RadzenStack>
+                    <RadzenFormField Text="نام" Variant="@variant">
+                        <RadzenTextBox placeholder="نام" @bind-Value="@Name" />
+                    </RadzenFormField>
+                    <RadzenFormField Text="شماره همراه" Variant="@variant">
+                        <RadzenTextBox @bind-Value="@PhoneNumber" />
+                    </RadzenFormField>
+                    <RadzenFormField Text="رمز عبور" Variant="@variant">
+                        <RadzenPassword @bind-Value="@Password" />
+                    </RadzenFormField>
+
+                </RadzenStack>
+            </RadzenColumn>
+            <RadzenColumn Size="12" SizeSM="6">
+                <RadzenStack>
+                    <RadzenFormField Text="نام خانوادگی" Variant="@variant">
+                        <RadzenTextBox placeholder="نام خانوادگی" @bind-Value="@FamilyName" />
+                    </RadzenFormField>
+                    <RadzenFormField Text=" پست الکترونیک" Variant="@variant">
+                        <RadzenTextBox placeholder=" پست الکترونیک" @bind-Value="@Email" />
+                    </RadzenFormField>
+                    <RadzenFormField Text="تکرار رمز عبور" Variant="@variant">
+                        <RadzenPassword @bind-Value="@RePassword" />
+                    </RadzenFormField>
+                  
+                </RadzenStack>
+            </RadzenColumn>
+        </RadzenRow>
+    </div>
+</RadzenFieldset>
+@code {
+    Variant variant = Variant.Outlined;
+
+    string Name = "";
+    string FamilyName = "";
+    string value = "";
+    string Email = "";
+    string PhoneNumber;
+    string Password = "";
+    string RePassword = "";
+
+    int intValue = 123;
+    int radioButtonValue = 1;
+    string dropDownValue = "Around the Horn";
+    string dropDownDataGridValue = "";
+    string autoCompleteValue = "";
+
+}
