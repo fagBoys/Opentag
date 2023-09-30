@@ -6,6 +6,8 @@
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject NavigationManager NavigationManager
 
+@using Radzen.Blazor.Rendering
+
 
 <PageTitle>
     طراحی سایت | فروشگاه ساز | طراحی وب سایت | شرکت Vira
@@ -35,7 +37,6 @@
     <button class="dropdown-item" @onclick="Logout">خروج</button>
 </AuthorizeView>
 
-<Register/>
 
 
 <ContactUs/>
@@ -58,6 +59,38 @@
 
 
 
+
+
+
+
+
+
+
+
+@inject IJSRuntime JSRuntime
+
+<RadzenButton @ref=button Text="@(orderId != null ? "Selected order: " + orderId.ToString() : "Select order")" Click="@(args => popup.ToggleAsync(button.Element))" />
+
+<Popup @ref=popup Lazy=true Open="@OnOpen" Style="display:none;position:absolute;height:300px;width:600px;padding:5px;border:var(--rz-panel-border);background-color:var(--rz-panel-background-color);">
+       <Register/>
+</Popup>
+
+    @code {
+    RadzenButton button;
+    Popup popup;
+    int? orderId;
+    
+
+    async Task SelectOrder()
+    {
+        await popup.CloseAsync();
+    }
+
+    async Task OnOpen()
+    {
+        await JSRuntime.InvokeVoidAsync("eval", "setTimeout(function(){ document.getElementById('search').focus(); }, 200)");
+    }
+}
 
 
 
