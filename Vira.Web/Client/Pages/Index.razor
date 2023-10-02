@@ -1,6 +1,6 @@
 ﻿@page "/"
 @inject HttpClient http
-@attribute [Authorize]
+@* @attribute [Authorize] *@
 
 @inject ILocalStorageService LocalStorage
 @inject AuthenticationStateProvider AuthenticationStateProvider
@@ -30,13 +30,13 @@
     <meta data-intl-tel-input-cdn-path="intlTelInput/">
 </HeadContent>
 
-<AuthorizeView>
+@* <AuthorizeView>
     <h3>سلام کاربر عزیز <i>@context.User.Identity.Name</i>.</h3>
     <button class="dropdown-item" @onclick="Logout">خروج</button>
 
-</AuthorizeView>
+</AuthorizeView> *@
 
-@* <BlazorCarousel/> *@
+<BlazorCarousel/>
 <ContactUs/>
 
 @code

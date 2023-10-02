@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QrsIpm+0q69mQfU919cpVMyTkgvyKom5t/1APa3jk5Y=",
+  "Hash": "uE0GuPf/rk9r0JwrYHaQagDse2I9CGHv12r6rxayEtw=",
   "Source": "Vira.Web.Server",
   "BasePath": "_content/Vira.Web.Server",
   "Mode": "Default",
@@ -28,6 +28,57 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.10\\staticwebassets\\AuthenticationService.js",
+      "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.10\\staticwebassets\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "RelativePath": "AuthenticationService.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.10\\staticwebassets\\AuthenticationService.js"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\.nuget\\packages\\mudblazor\\6.9.0\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\zack\\.nuget\\packages\\mudblazor\\6.9.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\mudblazor\\6.9.0\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\.nuget\\packages\\mudblazor\\6.9.0\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\zack\\.nuget\\packages\\mudblazor\\6.9.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\mudblazor\\6.9.0\\staticwebassets\\MudBlazor.min.js"
+    },
     {
       "Identity": "C:\\Users\\zack\\.nuget\\packages\\telerik.ui.for.blazor\\4.0.0\\staticwebassets\\css\\kendo-theme-bootstrap\\all.css",
       "SourceId": "Telerik.UI.for.Blazor",
@@ -216,6 +267,23 @@
       "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.5\\build\\net7.0\\blazor.webassembly.js"
     },
     {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\blazored.localstorage\\4.4.0\\lib\\net7.0\\Blazored.LocalStorage.dll"
+    },
+    {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\dotnet.7.0.5.6znhj7x1sa.js",
       "SourceId": "Vira.Web.Client",
       "SourceType": "Project",
@@ -349,7 +417,24 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.10\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\7.0.10\\lib\\net7.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -366,7 +451,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.10\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -451,7 +536,24 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.10\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.WebUtilities.dll",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.WebUtilities.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.WebUtilities.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Bcl.AsyncInterfaces.dll",
@@ -777,6 +879,40 @@
       "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.FileSystemGlobbing.dll"
     },
     {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Localization.Abstractions.dll",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Localization.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\7.0.5\\lib\\net7.0\\Microsoft.Extensions.Localization.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Localization.dll",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Localization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.extensions.localization\\7.0.5\\lib\\net7.0\\Microsoft.Extensions.Localization.dll"
+    },
+    {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
       "SourceId": "Vira.Web.Client",
       "SourceType": "Project",
@@ -791,7 +927,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
@@ -1015,6 +1151,23 @@
       "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.5\\lib\\net7.0\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Net.Http.Headers.dll",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Net.Http.Headers.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\lib\\netstandard2.0\\Microsoft.Net.Http.Headers.dll"
+    },
+    {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.SqlServer.Server.dll",
       "SourceId": "Vira.Web.Client",
       "SourceType": "Project",
@@ -1132,6 +1285,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\mscorlib.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\MudBlazor.dll",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MudBlazor.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\.nuget\\packages\\mudblazor\\6.9.0\\lib\\net7.0\\MudBlazor.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\netstandard.dll",
@@ -4381,23 +4551,6 @@
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Windows.Extensions.dll"
     },
     {
-      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\+n50GGPW.gz",
-      "SourceId": "Vira.Web.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
-    },
-    {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\+TVd+Xwr.gz",
       "SourceId": "Vira.Web.Client",
       "SourceType": "Project",
@@ -4787,6 +4940,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.ValueTuple.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\60SrIxOA.gz",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Localization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Localization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Localization.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\6dNyi03j.gz",
@@ -5401,6 +5571,23 @@
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll"
     },
     {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\CN6OD2oP.gz",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
+    },
+    {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\COAZmaLz.gz",
       "SourceId": "Vira.Web.Client",
       "SourceType": "Project",
@@ -5569,6 +5756,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\e0HaXIkX.gz",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Net.Http.Headers.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Net.Http.Headers.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Net.Http.Headers.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\Ec+G4jg+.gz",
@@ -5826,23 +6030,6 @@
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Claims.dll"
     },
     {
-      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\Gk9VolpE.gz",
-      "SourceId": "Vira.Web.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
-    },
-    {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\GMZH+JzV.gz",
       "SourceId": "Vira.Web.Client",
       "SourceType": "Project",
@@ -5892,6 +6079,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\hASVpH76.gz",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MudBlazor.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\MudBlazor.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\MudBlazor.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\heDjMUFU.gz",
@@ -6113,6 +6317,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.CompilerServices.Unsafe.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\IQ+0p9XA.gz",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\ItL9DJlw.gz",
@@ -6351,6 +6572,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Buffers.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\KD9DynPY.gz",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\KETBQxF7.gz",
@@ -6795,23 +7033,6 @@
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Data.Common.dll"
     },
     {
-      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\NNAvht51.gz",
-      "SourceId": "Vira.Web.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
-    },
-    {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\NoFkPTAr.gz",
       "SourceId": "Vira.Web.Client",
       "SourceType": "Project",
@@ -6895,6 +7116,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.WebProxy.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\Ol6guCH1.gz",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Localization.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Localization.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Localization.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\ovYNRAXs.gz",
@@ -7169,23 +7407,6 @@
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Serialization.Primitives.dll"
     },
     {
-      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\QJ9rbwwz.gz",
-      "SourceId": "Vira.Web.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
-    },
-    {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\qNOiVk5P.gz",
       "SourceId": "Vira.Web.Client",
       "SourceType": "Project",
@@ -7201,6 +7422,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.Compression.FileSystem.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\qnpcX2Pl.gz",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\QOHjpKNa.gz",
@@ -7730,6 +7968,23 @@
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.ComponentModel.TypeConverter.dll"
     },
     {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\vUhM2iCc.gz",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll"
+    },
+    {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\vwnK9bi6.gz",
       "SourceId": "Vira.Web.Client",
       "SourceType": "Project",
@@ -7745,6 +8000,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Tokens.dll"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\VxQ+c9Ks.gz",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\vYfMIFmb.gz",
@@ -7830,6 +8102,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\dotnet.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\WcuRrmpH.gz",
+      "SourceId": "Vira.Web.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.WebUtilities.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.WebUtilities.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.WebUtilities.dll"
     },
     {
       "Identity": "C:\\Users\\zack\\Documents\\GitHub\\Opentag\\Vira.Web\\Client\\obj\\Debug\\net7.0\\build-gz\\WcWeefhA.gz",
