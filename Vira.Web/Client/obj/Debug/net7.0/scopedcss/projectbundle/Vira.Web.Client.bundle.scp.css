@@ -161,6 +161,19 @@ main[b-f7iboa25hu] {
         overflow-y: auto;
     }
 }
+/* /Shared/NewItems.razor.rz.scp.css */
+body[b-09a0opze7d] 
+{
+
+}
+.BackgroundCard[b-09a0opze7d] {
+    background-image: url("./images/photos/1.jpg");
+    background-size: cover;
+    /*background-position: right;*/
+    background-repeat: no-repeat;
+    /*width: 50px;*/
+    height: 300px;
+}
 /* /Shared/NewNavMenu.razor.rz.scp.css */
 /* Mobile */
 @media only screen and (max-width: 767px) {
