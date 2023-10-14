@@ -24,6 +24,8 @@ namespace Vira.Web.Shared.Context
         public DbSet<permission> Permission { get; set; }
         public DbSet<RolePermission> RolePermission { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<UserVisitCount> UserVisitCount { get; set; }
+
 
 
         #endregion
