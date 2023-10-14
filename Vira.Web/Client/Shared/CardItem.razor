@@ -1,0 +1,58 @@
+﻿<div class="card rounded m-2" dir="rtl">
+    
+    <div class="card-img-top w-100 h-100 p-2">
+        <a href="@LinkToGo">
+            <div class="BackgroundCard rounded-3" alt="Card image cap" style="background-image: url(@ImgURL);">
+
+            </div>
+        </a>
+    </div>
+    <div class="card-body">
+        <a href="@LinkToGo">
+            <h5 class="card-title">Tutorial title</h5>
+            <p class="card-text">
+                @SmallDescription
+            </p>
+        </a>
+    </div>
+    <div class="card-body p-1">
+        <div class="row">
+            <div class="col-6">
+                <a href="@TeacherPage">
+                    <span class="fa fa-user-circle-o"></span> user name
+                </a>
+            </div>
+            <div class="col-6 text-start fw-bold">
+                @Price <span>قیمت</span>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-1">
+
+        <div class="row small text-muted">
+            <div class="col text-end ">
+                @* publish Date *@
+                @PublishDate
+            </div>
+            <div class="col text-start">
+                @* Last updated DT *@
+                @UpdateDate
+            </div>
+        </div>
+    </div>
+  
+</div>
+
+@code 
+{
+    [Parameter]
+    public string SmallDescription { get; set; } = "Small Description Text Is Empty";
+    public string Price { get; set; } = "100,000";
+    public string ImgURL { get; set; } = "./images/photos/1.jpg";
+
+    public DateTime PublishDate { get; set; } = DateTime.Today.Date;
+    public DateTime UpdateDate { get; set; } = DateTime.Today.Date;
+
+    public string? LinkToGo { get; set; } = "https://www.google.com";
+    public string? TeacherPage { get; set; } = "https://play.google.com/store/apps/details?id=com.whatsweb.app&hl=en&gl=US&pli=1";
+}

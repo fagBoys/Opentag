@@ -1,0 +1,14 @@
+﻿.BackgroundCard 
+{
+    background-image: url("./images/photos/1.jpg");
+    background-size: cover;
+    /*background-position: right;*/
+    background-repeat: no-repeat;
+    /*width: 50px;*/
+    height: 300px;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
