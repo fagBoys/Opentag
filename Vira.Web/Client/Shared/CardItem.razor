@@ -1,4 +1,13 @@
-﻿<div class="card rounded m-2" dir="rtl">
+﻿@using System.Reflection
+@implements IAsyncDisposable
+@inject IJSRuntime JS
+
+
+<div class="btn btn-danger" @onclick="HandleButtonClick">
+    Show Text
+</div>
+
+<div class="card rounded m-2" dir="rtl">
     
     <div class="card-img-top w-100 h-100 p-2">
         <a href="@LinkToGo">
@@ -55,4 +64,40 @@
 
     public string? LinkToGo { get; set; } = "https://www.google.com";
     public string? TeacherPage { get; set; } = "https://play.google.com/store/apps/details?id=com.whatsweb.app&hl=en&gl=US&pli=1";
+
+
+
+
+    //Functions
+    //ForJs
+    private IJSObjectReference? animjs;
+
+    protected override async Task OnAfterRenderAsync(bool firestRender)
+    {
+        animjs = await JS.InvokeAsync<IJSObjectReference>("import", "./js/Anim.js");
+
+        if (firestRender)
+        {
+            await animjs.InvokeVoidAsync("ShowAlert", "Loading...");
+        }
+    }
+
+    private async Task HandleButtonClick()
+    {
+        if (animjs is not null)
+        {
+            await animjs.InvokeVoidAsync("ShowAlert", "called");
+        }
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (animjs is not null)
+        {
+            await animjs.DisposeAsync();
+        }
+
+    }
+
+
 }

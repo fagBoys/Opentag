@@ -1,6 +1,7 @@
-﻿<div class="">
+﻿@using Telerik.SvgIcons
+<div class="">
     <div class="row" dir="rtl">
-        <div class="col-6">
+        <div class="col-6 h4">
             @Title
         </div>
         <div class="col-6 text-start">
@@ -28,11 +29,12 @@
 @code 
 {
     //Most add Model Here and get values from model
-
     [Parameter]
     public string? Title { get; set; } = "Title Is Empty";
+    [Parameter]
     public string? LinkTitle { get; set; } = "Link title is empty";
+    [Parameter]
     public string? DescriptionOfThisSection { get; set; } = "Description of this section";
+    [Parameter]
     public string? LinkToGo { get; set; } = "https://www.google.com";
-
 }
