@@ -1,5 +1,5 @@
 ﻿export function ShowAlert(Msg)
 {
-    alert(Msg);
+    //alert(Msg);
 }
 
