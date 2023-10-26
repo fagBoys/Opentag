@@ -3,7 +3,18 @@
 @inherits LayoutComponentBase
 
 <div class="container-fluid">
-    <NewNavMenu Header="Vira" />
+    
+    @{ var bAdmin = true;}
+    @if (!bAdmin)
+    {
+        <NewNavMenu Header="Vira"/>
+    }
+    else
+    {
+        <span>
+            Admin
+        </span>
+    }
 
     @Body
 
