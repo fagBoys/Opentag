@@ -4,19 +4,28 @@
 
 <div class="container-fluid">
     
-    @{ var bAdmin = true;}
+    @{ var bAdmin = false;}
     @if (!bAdmin)
     {
         <NewNavMenu Header="Vira"/>
+        @Body
+
     }
     else
     {
-        <span>
-            Admin
-        </span>
+       
+        <div class="row col-12">
+            <div class="col-2 border">
+                <AdminMenu />
+            </div>
+            <div class="col-10">
+                @Body
+            </div>
+        </div>
+
+
     }
 
-    @Body
 
 </div>
 
