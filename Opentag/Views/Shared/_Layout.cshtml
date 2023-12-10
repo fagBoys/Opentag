@@ -1,107 +1,112 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>@ViewData["Title"] - Vira</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Vira</title>
 
-        <link rel="stylesheet" href="~/style.css">
-        <link rel="stylesheet" href="~/css/bootstrap.css">
-        <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/style.css">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
 
-        <script src="~/js/jQueryV3.5.1.js"></script>
-        <script src="~/js/popper.min.js"></script>
-        <script src="~/js/BootstrapV4.5.2.js"></script>
+    <script src="~/js/jQueryV3.5.1.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/BootstrapV4.5.2.js"></script>
 
-    </head>
-    <body class="body-style mainLayout myFarsiClass">
+</head>
+<body class="body-style mainLayout myFarsiClass">
 
-        <nav class="navbar navbar-expand-md bg-light navbar-light" style="position: absolute; top: 0; z-index: 2; background-color:white; width:100%; background-color: inherit; border-bottom: 1px solid #ced4da;">
+    <nav class="navbar navbar-expand-md bg-light navbar-light" style="position: absolute; top: 0; z-index: 2; background-color:white; width:100%; background-color: inherit; border-bottom: 1px solid #ced4da;">
 
-            <a class="navbar-brand logo-style" asp-controller="Home" asp-action="Index" style="margin-right:50px;">
-                <h1 class="logo-bold-style">Vira</h1>
-            </a>
+        <a class="navbar-brand logo-style" asp-controller="Home" asp-action="Index" style="margin-right:50px;">
+            <h1 class="logo-bold-style">Vira</h1>
+        </a>
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between " id="collapsibleNavbar">
-                <ul class="navbar-nav nav-justified">
-                    <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Index" class="menu-text-style navIndex">Home</a></h5></li>
-                    <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Services" class="menu-text-style navServices">Services</a></h5></li>
-                    <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Order" class="menu-text-style navOrder">Order</a></h5></li>
-                    <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="About" class="menu-text-style navAbout">About</a></h5></li>
-                    <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Contact" class="menu-text-style navContact">Contact</a></h5></li>
-                </ul>
-                <ul class="navbar-nav nav-justified">
-                    <li class="nav-item menu-item  " style="border:solid; border-width:2px;border-color:black!important;border-radius: 5px;"><h5 style="color:black!important;" class="LangButton"><a class=" menu-text-style  LangButtonText">EN</a></h5></li>
-                </ul>
-            </div>
-
-        </nav>
-
-
-        <div class="">
-            @*<main role="main" class="pb-3" style="margin: 150px 0px 100px 0px;">*@
-            <main role="main">
-
-                @RenderBody()
-            </main>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between " id="collapsibleNavbar">
+            <ul class="navbar-nav nav-justified">
+                <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Index" class="menu-text-style navIndex">Home</a></h5></li>
+                <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Services" class="menu-text-style navServices">Services</a></h5></li>
+                <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Order" class="menu-text-style navOrder">Order</a></h5></li>
+                <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="About" class="menu-text-style navAbout">About</a></h5></li>
+                <li class="nav-item menu-item"><h5><a asp-controller="Home" asp-action="Contact" class="menu-text-style navContact">Contact</a></h5></li>
+            </ul>
+            <ul class="navbar-nav nav-justified">
+                <li class="nav-item menu-item  " style="border:solid; border-width:2px;border-color:black!important;border-radius: 5px;"><h5 style="color:black!important;" class="LangButton"><a class=" menu-text-style  LangButtonText">EN</a></h5></li>
+            </ul>
         </div>
 
+    </nav>
 
 
-        <!-- Footer -->
-        <section class="section-style-footer">
-            <div class="container-fluid">
+    <div class="">
+        @*<main role="main" class="pb-3" style="margin: 150px 0px 100px 0px;">*@
+        <main role="main">
 
-                <div class="row footer-row-style">
-                    <div class="col-lg-4 footer-box-style">
-                        <div class="footer-title-style">
-                            <h4 class="footer-title-style footerSiteMap">site map</h4>
-                        </div>
-                        <div class="footer-content-sitemap-style">
-                            <p><a asp-controller="Home" asp-action="About" style="color:#468fb3; text-align:justify; text-justify: inter-word;" class="LayViraNews">Vira news - inside development</a></p>
-                            <p><a asp-controller="Home" asp-action="Services" style="color:#468fb3" class="LayViraServices">Checkout our services and features</a></p>
-                            <p><a asp-controller="Home" asp-action="Services" style="color:#468fb3" class="LayVirasamples">Our work samples and products</a></p>
-                            <p><a asp-controller="Home" asp-action="About" style="color:#468fb3" class="LayViraAbout">About - read our history</a></p>
-                            <p><a asp-controller="Home" asp-action="Contact" style="color:#468fb3" class="LayViraContact">Contact - keep in touch with us</a></p>
+            @RenderBody()
+        </main>
+    </div>
 
-                        </div>
+
+
+    <!-- Footer -->
+    <section class="section-style-footer">
+        <div class="container-fluid">
+
+            <div class="row footer-row-style">
+                <div class="col-lg-4 footer-box-style">
+                    <div class="footer-title-style">
+                        <h4 class="footer-title-style footerSiteMap">site map</h4>
                     </div>
-                    <div class="col-lg-4 footer-box-style">
-                        <div class="footer-title-style">
-                            <h4 class="footer-title-style footerAbout">about</h4>
-                        </div>
-                        <div class="footer-content-about-style">
-                            <p class="FooterAboutUsMid1">Our team is interested about builing web apps, mobile apps and game developing over Microsoft practical and usefull Frawmeworks.</p>
-                            <p class="FooterAboutUsMid2">If you are going to help or support programming communities, please follow us.</p>
-                        </div>
+                    <div class="footer-content-sitemap-style">
+                        <p><a asp-controller="Home" asp-action="About" style="color:#468fb3; text-align:justify; text-justify: inter-word;" class="LayViraNews">Vira news - inside development</a></p>
+                        <p><a asp-controller="Home" asp-action="Services" style="color:#468fb3" class="LayViraServices">Checkout our services and features</a></p>
+                        <p><a asp-controller="Home" asp-action="Services" style="color:#468fb3" class="LayVirasamples">Our work samples and products</a></p>
+                        <p><a asp-controller="Home" asp-action="About" style="color:#468fb3" class="LayViraAbout">About - read our history</a></p>
+                        <p><a asp-controller="Home" asp-action="Contact" style="color:#468fb3" class="LayViraContact">Contact - keep in touch with us</a></p>
+
                     </div>
-                    <div class="col-lg-4 footer-box-style">
-                        <div class="footer-title-style"><h4 class="footer-title-style footerContacts">contacts</h4></div>
-                        <div class="footer-content-contacts-style">
+                </div>
+                <div class="col-lg-4 footer-box-style">
+                    <div class="footer-title-style">
+                        <h4 class="footer-title-style footerAbout">about</h4>
+                    </div>
+                    <div class="footer-content-about-style">
+                        <p class="FooterAboutUsMid1">Our team is interested about builing web apps, mobile apps and game developing over Microsoft practical and usefull Frawmeworks.</p>
+                        <p class="FooterAboutUsMid2">If you are going to help or support programming communities, please follow us.</p>
+                    </div>
+                    <div class="footer-content-about-style">
+                        <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=434184&Code=s8v4zW6QIbkIo2UPrNHj7VlYU8MNRjQu'>
+                            <img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=434184&Code=s8v4zW6QIbkIo2UPrNHj7VlYU8MNRjQu' alt='شرکت طراحی سایت و نرم افزار ویرا' style='cursor:pointer' Code='s8v4zW6QIbkIo2UPrNHj7VlYU8MNRjQu'>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 footer-box-style">
+                    <div class="footer-title-style"><h4 class="footer-title-style footerContacts">contacts</h4></div>
+                    <div class="footer-content-contacts-style">
                         <p class="footerPhone" style="direction:ltr!important;"><a class="footerPhoneAtag" style="text-align:left!important; direction:ltr!important">Phone number</a></p>
-                            <P class="footerEmail">Email: info@Vira_DevGroup.ir</P>
+                        <P class="footerEmail">Email: info@Vira_DevGroup.ir</P>
 
                         <p class="footerAddress">Address:<br />Iran<br />Qom<br />Saedi St<br />Commercial Complex Sirang<br /> Floor -2<br />Plaque   203</p>
-                        </div>
                     </div>
                 </div>
-
             </div>
-        </section>
 
-        <!--End of Footer -->
-        <div class="last-content container-fluid">
-            <div class="row">
-                <div class="col-lg-12 last-box">
-                    <p class="last-logo-light-style">Powered by</p>
-                    <h1 class="last-logo-bold-style">Vira</h1>
-                </div>
+        </div>
+    </section>
+
+    <!--End of Footer -->
+    <div class="last-content container-fluid">
+        <div class="row">
+            <div class="col-lg-12 last-box">
+                <p class="last-logo-light-style">Powered by</p>
+                <h1 class="last-logo-bold-style">Vira</h1>
             </div>
         </div>
-        <script src="~/js/site.js"></script>
-    </body>
+    </div>
+    <script src="~/js/site.js"></script>
+</body>
 </html>
 
